@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AP07 · Kvænnes Area Development · PALT Nordreisa</title>
+<link rel="canonical" href="https://nordreisa.eu/ap07-kvaennes-rovdas">
+<meta name="description" content="Kvænnes area development: building phases, Naturarv Nord, preparedness, dome concepts and related area inputs, coordinated through P10, P11, P14, P16 and P19.">
+<meta property="og:title" content="AP07 · Kvænnes Area Development · PALT Nordreisa">
+<meta property="og:description" content="Kvænnes area development: building phases, Naturarv Nord, preparedness, dome concepts and related area inputs, coordinated through P10, P11, P14, P16 and P19.">
+<meta property="og:url" content="https://nordreisa.eu/ap07-kvaennes-rovdas">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PALT Nordreisa">
+<meta property="og:image" content="https://leamarketing.github.io/nordreisa-bilder/webp/nr-hoved-innspill-7-sone-1-48cffb38.webp">
+<meta property="og:image:alt" content="Main proposal 7 — Zone 1 development concept at Kvænnes">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AP07 · Kvænnes Area Development · PALT Nordreisa">
+<meta name="twitter:description" content="Kvænnes area development: building phases, Naturarv Nord, preparedness, dome concepts and related area inputs, coordinated through P10, P11, P14, P16 and P19.">
+<meta name="twitter:image" content="https://leamarketing.github.io/nordreisa-bilder/webp/nr-hoved-innspill-7-sone-1-48cffb38.webp">
+<meta name="twitter:image:alt" content="Main proposal 7 — Zone 1 development concept at Kvænnes">
+<meta name="theme-color" content="#070b12">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+
+    #palt-ap07 {
+        --bg: #070b12;
+        --bg-elev: #0d1420;
+        --ink: #f3f6fb;
+        --muted: #9aa8bc;
+        --dim: #6b7a90;
+        --line: rgba(255, 255, 255, .08);
+        --line-strong: rgba(255, 255, 255, .14);
+        --accent: #5eead4;
+        --accent-2: #7dd3fc;
+        --accent-soft: rgba(94, 234, 212, .12);
+        --warm: #fbbf24;
+        --glass: rgba(16, 24, 40, .55);
+        --glass-border: rgba(255, 255, 255, .12);
+        --radius: 18px;
+        --radius-sm: 12px;
+        --shadow: 0 24px 80px rgba(0, 0, 0, .45);
+        --max: 1180px;
+        --font: "Instrument Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        --display: "Fraunces", Georgia, "Times New Roman", serif;
+    }
+
+    #palt-ap07 *,
+    #palt-ap07 *::before,
+    #palt-ap07 *::after {
+        box-sizing: border-box;
+    }
+
+    #palt-ap07 {
+        scroll-behavior: smooth;
+    }
+
+    #palt-ap07 {
+        margin: 0;
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    #palt-ap07 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #palt-ap07 a {
+        color: var(--accent-2);
+        text-decoration: none;
+        transition: color .2s ease, opacity .2s ease;
+    }
+
+    #palt-ap07 a:hover {
+        color: var(--accent);
+    }
+
+    #palt-ap07 .wrap {
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    #palt-ap07 .site-header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+        border-bottom: 1px solid transparent;
+    }
+
+    #palt-ap07 .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    #palt-ap07 .brand {
+        font-weight: 700;
+        letter-spacing: .04em;
+        color: var(--ink);
+        font-size: .95rem;
+        text-transform: uppercase;
+    }
+
+    #palt-ap07 .brand em {
+        font-style: normal;
+        color: var(--accent);
+    }
+
+    #palt-ap07 .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .25rem .9rem;
+    }
+
+    #palt-ap07 .nav-links a {
+        color: var(--muted);
+        font-size: .9rem;
+        font-weight: 500;
+        padding: .35rem .2rem;
+    }
+
+    #palt-ap07 .nav-links a:hover,
+    #palt-ap07 .nav-links a.active {
+        color: var(--ink);
+    }
+
+    #palt-ap07 .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        background: var(--accent);
+        color: #042f2e !important;
+        font-weight: 600;
+        font-size: .85rem;
+        padding: .55rem 1rem;
+        border-radius: 999px;
+    }
+
+    #palt-ap07 .nav-cta:hover {
+        filter: brightness(1.05);
+        color: #042f2e !important;
+    }
+
+    #palt-ap07 .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: .45rem;
+        padding: .75rem 1.25rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: .92rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    #palt-ap07 .btn-primary {
+        background: var(--accent);
+        color: #042f2e !important;
+    }
+
+    #palt-ap07 .btn-primary:hover {
+        filter: brightness(1.06);
+        color: #042f2e !important;
+    }
+
+    #palt-ap07 .btn-ghost {
+        background: rgba(255, 255, 255, .06);
+        color: var(--ink) !important;
+        border-color: var(--line-strong);
+    }
+
+    #palt-ap07 .btn-ghost:hover {
+        border-color: rgba(94, 234, 212, .45);
+        color: var(--accent) !important;
+    }
+
+    #palt-ap07 .eyebrow {
+        font-size: .78rem;
+        font-weight: 600;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .85rem;
+    }
+
+    #palt-ap07 .section-label {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .5rem;
+    }
+
+    #palt-ap07 .proj-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.15rem;
+    }
+
+    #palt-ap07 .proj-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        color: inherit;
+        backdrop-filter: blur(10px);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    #palt-ap07 .proj-card:hover {
+        text-decoration: none;
+        color: inherit;
+        border-color: rgba(94, 234, 212, .35);
+        transform: translateY(-3px);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+    }
+
+    #palt-ap07 .proj-card .thumb {
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: #0a1220;
+    }
+
+    #palt-ap07 .proj-card .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    #palt-ap07 .proj-card:hover .thumb img {
+        transform: scale(1.05);
+    }
+
+    #palt-ap07 .proj-card .body {
+        padding: 1rem 1.1rem 1.2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #palt-ap07 .proj-card .id {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        color: var(--accent);
+    }
+
+    #palt-ap07 .proj-card h3 {
+        font-size: 1.05rem;
+        margin: .3rem 0 .45rem;
+        line-height: 1.25;
+        font-weight: 600;
+    }
+
+    #palt-ap07 .proj-card .place {
+        font-size: .85rem;
+        color: var(--muted);
+        margin-bottom: .6rem;
+    }
+
+    #palt-ap07 .proj-card .foot {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .8rem;
+        color: var(--dim);
+        padding-top: .5rem;
+        border-top: 1px solid var(--line);
+    }
+
+    #palt-ap07 .proj-card .foot .link {
+        color: var(--accent);
+        font-weight: 600;
+    }
+
+    #palt-ap07 .glass {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(14px);
+        padding: 1.35rem 1.45rem;
+    }
+
+    #palt-ap07 .page-hero {
+        position: relative;
+        min-height: 52vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 6.5rem 0 2.5rem;
+        overflow: hidden;
+    }
+
+    #palt-ap07 .page-hero .hero-media {
+        position: absolute;
+        inset: 0;
+    }
+
+    #palt-ap07 .page-hero .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #palt-ap07 .page-hero .hero-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(7, 11, 18, .4), rgba(7, 11, 18, .88) 70%, var(--bg));
+    }
+
+    #palt-ap07 .page-hero .inner {
+        position: relative;
+        z-index: 1;
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    #palt-ap07 .breadcrumbs {
+        font-size: .82rem;
+        color: var(--dim);
+        margin-bottom: .85rem;
+    }
+
+    #palt-ap07 .breadcrumbs a {
+        color: var(--muted);
+    }
+
+    #palt-ap07 .page-hero h1 {
+        font-family: var(--display);
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        margin: .4rem 0 .6rem;
+        line-height: 1.1;
+        max-width: min(28ch, 100%);
+    }
+
+    #palt-ap07 .page-hero .hero-sub {
+        color: rgba(243, 246, 251, .8);
+        max-width: 48ch;
+        font-size: 1.05rem;
+        margin: 0;
+    }
+
+    #palt-ap07 .content {
+        padding: 2.5rem 0 4rem;
+    }
+
+    #palt-ap07 .split {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 880px) {
+        #palt-ap07 .split {
+            grid-template-columns: 1.4fr .85fr;
+            align-items: start;
+        }
+    }
+
+    #palt-ap07 .prose h2 {
+        font-family: var(--display);
+        font-size: 1.45rem;
+        margin: 0 0 1rem;
+    }
+
+    #palt-ap07 .prose p {
+        margin: 0 0 1rem;
+        color: rgba(243, 246, 251, .88);
+    }
+
+    #palt-ap07 .prose ul {
+        margin: 0 0 1.2rem;
+        padding-left: 1.15rem;
+        color: rgba(243, 246, 251, .88);
+    }
+
+    #palt-ap07 .prose li {
+        margin-bottom: .4rem;
+    }
+
+    #palt-ap07 .prose li strong {
+        color: var(--ink);
+    }
+
+    #palt-ap07 .side-stack {
+        display: grid;
+        gap: 1rem;
+        position: sticky;
+        top: 5.5rem;
+    }
+
+    #palt-ap07 .fig-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    #palt-ap07 .fig-chip {
+        background: rgba(255, 255, 255, .05);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        padding: .7rem .9rem;
+        min-width: 7.5rem;
+    }
+
+    #palt-ap07 .fig-chip .k {
+        font-size: .68rem;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--dim);
+    }
+
+    #palt-ap07 .fig-chip .v {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--accent-2);
+        margin-top: .15rem;
+    }
+
+    #palt-ap07 .stat-list {
+        display: grid;
+        gap: .55rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #palt-ap07 .stat-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: .9rem;
+        padding: .45rem 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    #palt-ap07 .stat-list .k {
+        color: var(--muted);
+    }
+
+    #palt-ap07 .stat-list .v {
+        color: var(--ink);
+        font-weight: 600;
+        text-align: right;
+    }
+
+    #palt-ap07 .related {
+        margin-top: 2.5rem;
+    }
+
+    #palt-ap07 .related h2 {
+        font-family: var(--display);
+        font-size: 1.35rem;
+        margin: 0 0 1rem;
+    }
+
+    #palt-ap07 .pager {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--line);
+    }
+
+    #palt-ap07 .pager a {
+        color: var(--ink);
+        font-weight: 500;
+        font-size: .9rem;
+        padding: .65rem 1rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .03);
+    }
+
+    #palt-ap07 .pager a:hover {
+        border-color: rgba(94, 234, 212, .4);
+        color: var(--accent);
+    }
+
+    #palt-ap07 footer {
+        border-top: 1px solid var(--line);
+        padding: 3rem 0 3.5rem;
+        color: var(--muted);
+        font-size: .92rem;
+    }
+
+    #palt-ap07 .contact-card h3 {
+        margin: 0 0 .35rem;
+        color: var(--ink);
+        font-size: 1.1rem;
+    }
+
+    #palt-ap07 .contact-card .org {
+        color: var(--accent);
+        font-size: .85rem;
+        font-weight: 600;
+        margin-bottom: .75rem;
+    }
+
+    #palt-ap07 .footer-grid {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 720px) {
+        #palt-ap07 .footer-grid {
+            grid-template-columns: 1.2fr 1fr;
+        }
+    }
+
+    @media (max-width: 720px) {
+
+        #palt-ap07 .nav-cta {
+            display: none;
+        }
+    }
+
+    #palt-ap07 section.wrap {
+        padding: 3rem 0;
+    }
+
+    #palt-ap07 font {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    #palt-ap07 font[style*="vertical-align"] {
+        display: inline !important;
+    }
+
+    #palt-ap07 .page-hero h1 {
+        max-width: min(28ch, 100%) !important;
+        line-height: 1.15 !important;
+    }
+
+    #palt-ap07 .page-hero .hero-sub,
+    #palt-ap07 .prose p,
+    #palt-ap07 .page-hero .hero-sub {
+        line-height: 1.65 !important;
+        max-width: 62ch;
+    }
+
+    #palt-ap07 .split>*,
+    #palt-ap07 .side-stack,
+    #palt-ap07 .palt-feedback {
+        min-width: 0;
+    }
+
+    #palt-ap07 .palt-feedback input,
+    #palt-ap07 .palt-feedback textarea {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #palt-ap07 {
+        position: relative;
+        isolation: isolate;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    #palt-ap07 .site-header {
+        position: sticky;
+        background: rgba(7, 11, 18, .96);
+        border-bottom-color: var(--line);
+    }
+
+    #palt-ap07 a:focus-visible,
+    #palt-ap07 button:focus-visible,
+    #palt-ap07 input:focus-visible,
+    #palt-ap07 textarea:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+
+        #palt-ap07,
+        #palt-ap07 * {
+            scroll-behavior: auto;
+            transition: none;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+<div id="palt-ap07" lang="en">
+    <header class="site-header">
+        <div class="wrap nav">
+            <a class="brand" href="/">PALT <em>·</em> Nordreisa</a>
+            <nav class="nav-links" aria-label="Main">
+                <a href="/">Overview</a>
+                <a href="/#packages" class="active">Packages</a>
+                <a href="/#projects">Projects</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+            <a class="nav-cta" href="/#packages">Explore portfolio</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="hero-media"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/nr-hoved-innspill-7-sone-1-48cffb38.webp" alt="Main proposal 7 — Zone 1 development concept at Kvænnes" width="1600" height="900" loading="eager" decoding="async" fetchpriority="high"></div>
+            <div class="inner">
+                <div class="breadcrumbs"><a href="/">Overview</a> · Packages · AP07</div>
+                <div class="eyebrow">AP07 · Maturity 2/5</div>
+                <h1>Kvænnes Area Development</h1>
+                <p class="hero-sub">Coordinate Kvænnes building phases, nature heritage, preparedness and dome development in one area programme, with shared infrastructure and a clear sequence for P10, P11, P14, P16 and P19.</p>
+            </div>
+        </section>
+        <div class="wrap content">
+            <div class="split">
+                <div class="prose">
+                    <h2>Why this package</h2>
+                    <p>Coordinate Kvænnes building phases, nature heritage, preparedness and dome development in one area programme, with shared infrastructure and a clear sequence for P10, P11, P14, P16 and P19.</p>
+                    <h2>Sub-inputs and their role</h2>
+                    <ul>
+                        <li><strong>P10 — Kvænnes Building Phase 1.</strong> First building phase and zone 1: the starting point for the wider Kvænnes programme.</li>
+                        <li><strong>P11 — Naturarv Nord.</strong> Nature heritage interpretation, learning and stewardship linked to the area development.</li>
+                        <li><strong>P14 — Preparedness (Beredskap).</strong> Civil preparedness capacity, shared facilities and community resilience integrated with area planning.</li>
+                        <li><strong>P16 — Domes at Kvænnes.</strong> Dome lodging and activity nodes, coordinated with the phase plan and energy and heat needs.</li>
+                        <li><strong>P19 — Kvænnes Area Input 19.</strong> Additional area input to be aligned with the P10 zone structure and incorporated into the phase plan.</li>
+                    </ul>
+                    <h2>Proposed phasing</h2>
+                    <p>Define the phase-1 programme and the public/private infrastructure split first. Coordinate access, energy and heat, visitor services, nature stewardship and preparedness needs before setting the sequence for later building phases and dome concepts. Incorporate P19 into the same phase plan.</p>
+                    <h2>Revenue and operating logic</h2>
+                    <ul>
+                        <li>P10 and P19: development-dependent income, linked to the agreed phase programme.</li>
+                        <li>P11: guided offers, tickets and education programmes.</li>
+                        <li>P16: lodging and activities.</li>
+                        <li>P14: primarily public value, with possible shared facilities and operating arrangements.</li>
+                    </ul>
+                    <h2>Societal value</h2>
+                    <ul>
+                        <li>A foundation for settlement growth and local workplaces.</li>
+                        <li>Nature and cultural heritage education and responsible tourism.</li>
+                        <li>Preparedness, safety and resilience for residents and visitors.</li>
+                        <li>Visitor accommodation and activities coordinated with the wider area programme.</li>
+                    </ul>
+                    <h2>Open questions for this package</h2>
+                    <p>Which infrastructure is needed for phase 1, and how should responsibilities and costs be divided? How should nature stewardship, visitor use and preparedness functions work together? Which dome typologies and densities fit the zone plan and its energy and heat supply?</p>
+                    <h2>Next gate</h2>
+                    <p>Define the phase-1 programme and public/private CAPEX split, prepare the preparedness needs statement with the municipal emergency lead, and align the five project inputs in one phase plan.</p>
+                    <div class="related">
+                        <h2>Projects in this package</h2>
+                        <div class="proj-grid"><a class="proj-card" href="/p10-kvaennes-building-phase-1">
+                                <div class="thumb"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/signaturbyggsone3kvaenangen.webp" alt="Later-phase Kvænnes concept with a glass-domed waterpark and underground facilities" width="1672" height="806" loading="lazy" decoding="async" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/signaturbyggsone3kvaenangen-480w.webp 480w, https://leamarketing.github.io/nordreisa-bilder/webp/signaturbyggsone3kvaenangen-960w.webp 960w, https://leamarketing.github.io/nordreisa-bilder/webp/signaturbyggsone3kvaenangen.webp 1672w" sizes="(max-width: 579px) calc(100vw - 2.5rem), 350px" onerror="this.onerror=null;this.removeAttribute('srcset');this.removeAttribute('sizes');this.src='https://leamarketing.github.io/nordreisa-bilder/webp/signaturbyggsone3kvaenangen.webp';"></div>
+                                <div class="body">
+                                    <div class="id">P10</div>
+                                    <h3>Kvænnes Building Phase 1</h3>
+                                    <div class="place">Kvænnes</div>
+                                    <div class="foot"><span>Phased</span><span class="link">Open →</span></div>
+                                </div>
+                            </a><a class="proj-card" href="/p11-naturarv-nord">
+                                <div class="thumb"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-naturarv-nord-plakat-87af97775d-1600w.webp" alt="Naturarv Nord nature heritage park poster" width="1600" height="900" loading="lazy" decoding="async"></div>
+                                <div class="body">
+                                    <div class="id">P11</div>
+                                    <h3>Naturarv Nord</h3>
+                                    <div class="place">Kvænnes</div>
+                                    <div class="foot"><span>Phased</span><span class="link">Open →</span></div>
+                                </div>
+                            </a><a class="proj-card" href="/p14-preparedness-beredskap">
+                                <div class="thumb"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/beredskap.webp" alt="Preparedness infrastructure concept for the Kvænnes area" width="1600" height="432" loading="lazy" decoding="async"></div>
+                                <div class="body">
+                                    <div class="id">P14</div>
+                                    <h3>Preparedness (Beredskap)</h3>
+                                    <div class="place">Kvænnes area</div>
+                                    <div class="foot"><span>Phased</span><span class="link">Open →</span></div>
+                                </div>
+                            </a><a class="proj-card" href="/p16-domes-at-rovdas-kvaennes">
+                                <div class="thumb"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/kvaenagenzone3.webp" alt="Dome development concept at Kvænnes — Zone 3" width="1672" height="941" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/kvaenagenzone3-480w.webp 480w, https://leamarketing.github.io/nordreisa-bilder/webp/kvaenagenzone3-960w.webp 960w, https://leamarketing.github.io/nordreisa-bilder/webp/kvaenagenzone3.webp 1672w" sizes="(max-width: 579px) calc(100vw - 2.5rem), 350px" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.removeAttribute('sizes');this.src='https://leamarketing.github.io/nordreisa-bilder/webp/kvaenagenzone3.webp';"></div>
+                                <div class="body">
+                                    <div class="id">P16</div>
+                                    <h3>Domes at Kvænnes</h3>
+                                    <div class="place">Kvænnes</div>
+                                    <div class="foot"><span>Phased</span><span class="link">Open →</span></div>
+                                </div>
+                            </a><a class="proj-card" href="/p19-kvaennes-area-input-19">
+                                <div class="thumb"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-19-1-c621944e2e-1600w.webp" alt="Kvænnes area proposal 19 — concept illustration" width="1600" height="900" loading="lazy" decoding="async"></div>
+                                <div class="body">
+                                    <div class="id">P19</div>
+                                    <h3>Kvænnes Area Input 19</h3>
+                                    <div class="place">Kvænnes</div>
+                                    <div class="foot"><span>Phased</span><span class="link">Open →</span></div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+                <aside class="side-stack">
+                    <div class="glass">
+                        <div class="fig-chips">
+                            <div class="fig-chip">
+                                <div class="k">Package</div>
+                                <div class="v">AP07</div>
+                            </div>
+                            <div class="fig-chip">
+                                <div class="k">Projects</div>
+                                <div class="v">5</div>
+                            </div>
+                            <div class="fig-chip">
+                                <div class="k">Maturity</div>
+                                <div class="v">2/5</div>
+                            </div>
+                        </div>
+                        <p style="margin:1rem 0 0;font-size:.82rem;color:var(--dim)">Concept proposals and working estimates — subject to planning and further study.</p>
+                    </div>
+                    <div class="glass">
+                        <ul class="stat-list">
+                            <li><span class="k">Code</span><span class="v">AP07</span></li>
+                            <li><span class="k">Location</span><span class="v">Kvænnes</span></li>
+                            <li><span class="k">Projects</span><span class="v">P10, P11, P14, P16, P19</span></li>
+                        </ul>
+                    </div>
+                    <div class="glass">
+                        <h2 style="font-family:var(--display);font-size:1.15rem;margin:0 0 .75rem">Working estimates</h2>
+                        <p style="color:var(--muted);margin:0 0 1rem">Costs, assumptions and open questions are listed per project in the cost overview.</p><a href="/calculations#p10" class="btn btn-ghost">Open cost overview →</a>
+                    </div>
+                </aside>
+            </div>
+            <div class="pager">
+                <a href="/">← Overview</a>
+                <a href="/#packages">All packages</a>
+            </div>
+        </div>
+        <section class="wrap" style="padding-top:0">
+            <div class="glass" style="padding:1.75rem 1.75rem 2rem">
+                <div class="section-label">Feedback</div>
+                <h2 style="font-family:var(--display);font-size:1.35rem;margin:0 0 .5rem">Have a suggestion for this page?</h2>
+                <p style="margin:0 0 1.25rem;color:var(--muted);max-width:56ch">Have a suggestion? Your email app opens with a draft addressed to the PALT team. Review the message and send it from your email app.</p>
+                <form class="palt-feedback" onsubmit="event.preventDefault();
+var f=this;
+var name=(f.elements.namedItem('name').value||'').trim()||'Anonymous';
+var email=(f.elements.namedItem('email').value||'').trim();
+var comment=(f.elements.namedItem('comment').value||'').trim();
+if(!comment)return false;
+var slug='ap07-kvaennes-rovdas';
+var subject='PALT feedback: '+slug;
+var message='Page: '+slug+'\nName: '+name+(email?'\nEmail: '+email:'')+'\n\nComment:\n'+comment;
+window.location.href='mailto:vivi-ann@polararena.no?subject='+encodeURIComponent(subject)+'&amp;body='+encodeURIComponent(message);
+return false;" style="display:grid;gap:.75rem;max-width:520px">
+                    <input type="text" name="name" aria-label="Name" placeholder="Name (optional)" style="background:var(--bg-elev);border:1px solid var(--line-strong);border-radius:var(--radius-sm);padding:.7rem .9rem;color:var(--ink);font-family:var(--font);font-size:.92rem">
+                    <input type="email" name="email" aria-label="Email" placeholder="Email (optional, for a reply)" style="background:var(--bg-elev);border:1px solid var(--line-strong);border-radius:var(--radius-sm);padding:.7rem .9rem;color:var(--ink);font-family:var(--font);font-size:.92rem">
+                    <textarea name="comment" aria-label="Your suggestion or comment" required="" placeholder="Your suggestion or comment" rows="4" style="background:var(--bg-elev);border:1px solid var(--line-strong);border-radius:var(--radius-sm);padding:.7rem .9rem;color:var(--ink);font-family:var(--font);font-size:.92rem;resize:vertical"></textarea>
+                    <button type="submit" class="btn btn-primary" style="justify-self:start">Open email draft</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="wrap footer-grid">
+            <div class="contact-card glass">
+                <div class="org">PALT</div>
+                <h3>Vivi-Ann Sandnes</h3>
+                <p style="margin:.2rem 0 1rem;color:var(--muted)">Partner for municipal, county and investor dialogue.</p>
+                <p style="margin:0">
+                    <a href="mailto:vivi-ann@polararena.no">vivi-ann@polararena.no</a><br>
+                    <a href="tel:+4790508660">+47 90 50 86 60</a>
+                </p>
+            </div>
+            <div>
+                <p style="margin:0 0 .75rem">Explore PALT’s 25 land-use proposals for Nordreisa, organised into ten work packages for community development.</p>
+                <p style="margin:0;font-size:.85rem;color:var(--dim)">Concept proposals and working estimates · P01–P25 project references</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

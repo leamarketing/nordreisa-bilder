@@ -1,0 +1,17 @@
+NORDREISA – FERDIGE SIDEFILER MED GITHUB-BILDER
+
+Bildene ligger nå i et eget Nordreisa-bibliotek på GitHub Pages.
+Hver TXT-fil inneholder hele HTML-dokumentet for én side.
+
+1. Åpne riktig side i ClickSites.
+2. Ta en kopi av sidens eksisterende HTML.
+3. Erstatt hele HTML-koden med innholdet i TXT-filen med samme sidenavn.
+4. Lagre og publiser siden.
+5. Kontroller den publiserte siden.
+
+Begynn gjerne med p02-spa-sauna-waterpark.txt. Alle P02-bildene er allerede lagt inn i bildelageret.
+forside.txt gjelder førstesiden. ap01–ap10 gjelder områdepakkene. p01–p25 gjelder prosjektsidene.
+overview.txt, calculations.txt og why-nordreisa.txt er de tre øvrige sidene.
+
+TXT-filene er klargjort. Dette betyr ikke at de er limt inn eller publisert på nordreisa.eu.
+Selve bildeleveringen er flyttet; ClickSites-sidene må få de nye adressene ved publisering av disse filene.

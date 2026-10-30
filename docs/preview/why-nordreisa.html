@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#070b12">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+
+    :root {
+        --bg: #070b12;
+        --bg-elev: #0d1420;
+        --bg-soft: #111b2a;
+        --ink: #f3f6fb;
+        --muted: #a8b5c8;
+        --dim: #74849a;
+        --line: rgba(255, 255, 255, .09);
+        --line-strong: rgba(255, 255, 255, .16);
+        --accent: #5eead4;
+        --accent-2: #7dd3fc;
+        --accent-soft: rgba(94, 234, 212, .12);
+        --warm: #fbbf24;
+        --warm-soft: rgba(251, 191, 36, .12);
+        --danger-soft: rgba(251, 113, 133, .10);
+        --glass: rgba(10, 18, 30, .68);
+        --glass-border: rgba(255, 255, 255, .13);
+        --radius: 20px;
+        --radius-sm: 13px;
+        --shadow: 0 28px 90px rgba(0, 0, 0, .42);
+        --max: 1180px;
+        --font: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        --display: "Fraunces", Georgia, serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: var(--font);
+        color: var(--ink);
+        background:
+            radial-gradient(circle at 78% 9%, rgba(125, 211, 252, .10), transparent 30rem),
+            radial-gradient(circle at 12% 42%, rgba(94, 234, 212, .06), transparent 28rem),
+            var(--bg);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        color: var(--accent-2);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--accent);
+    }
+
+    button,
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .wrap {
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin-inline: auto;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .site-header {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 100;
+        border-bottom: 1px solid transparent;
+        transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+    }
+
+    .site-header.is-scrolled {
+        background: rgba(7, 11, 18, .80);
+        border-bottom-color: var(--line);
+        backdrop-filter: blur(18px) saturate(1.15);
+        -webkit-backdrop-filter: blur(18px) saturate(1.15);
+    }
+
+    .nav {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.2rem;
+    }
+
+    .brand {
+        color: var(--ink);
+        font-weight: 700;
+        font-size: .95rem;
+        text-transform: uppercase;
+        letter-spacing: .055em;
+        white-space: nowrap;
+    }
+
+    .brand em {
+        color: var(--accent);
+        font-style: normal;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.35rem;
+        font-size: .9rem;
+    }
+
+    .nav-links a {
+        color: var(--muted);
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+        color: var(--ink);
+    }
+
+    .nav-cta,
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: .75rem 1.15rem;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: .9rem;
+        border: 1px solid var(--line-strong);
+        transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+    .nav-cta {
+        background: var(--ink);
+        color: var(--bg);
+        border-color: var(--ink);
+    }
+
+    .nav-cta:hover {
+        color: var(--bg);
+        transform: translateY(-1px);
+    }
+
+    .btn-primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #04131a;
+    }
+
+    .btn-primary:hover {
+        color: #04131a;
+        transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+        background: rgba(7, 11, 18, .34);
+        color: var(--ink);
+        border-color: rgba(255, 255, 255, .30);
+        backdrop-filter: blur(10px);
+    }
+
+    .btn-ghost:hover {
+        color: var(--ink);
+        border-color: var(--accent);
+        transform: translateY(-2px);
+    }
+
+    .hero {
+        position: relative;
+        min-height: clamp(660px, 82vh, 760px);
+        padding: 0;
+        display: grid;
+        align-items: center;
+        overflow: hidden;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .hero-media,
+    .hero-media::after {
+        position: absolute;
+        inset: 0;
+    }
+
+    .hero-media {
+        background-color: var(--bg);
+        background-image: url("https://leamarketing.github.io/nordreisa-bilder/webp/nordreisa-arctic-position-map-ubakgrunn.webp");
+        background-repeat: no-repeat;
+        background-size: min(760px, 54vw) auto;
+        background-position: calc(100% - 3vw) center;
+    }
+
+    .hero-media img {
+        display: none;
+    }
+
+    .hero-media::after {
+        content: "";
+        background:
+            linear-gradient(90deg, rgba(7, 11, 18, .98) 0%, rgba(7, 11, 18, .91) 30%, rgba(7, 11, 18, .36) 49%, rgba(7, 11, 18, .04) 72%, rgba(7, 11, 18, .10) 100%),
+            linear-gradient(0deg, rgba(7, 11, 18, .82) 0%, rgba(7, 11, 18, .02) 44%, rgba(7, 11, 18, .18) 100%);
+    }
+
+    .hero-inner {
+        position: relative;
+        z-index: 2;
+        padding: 7rem 0 3rem;
+    }
+
+    .hero-copy {
+        max-width: 650px;
+    }
+
+    .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: .6rem;
+        margin-bottom: 1.35rem;
+        color: var(--accent);
+        font-size: .78rem;
+        line-height: 1;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .eyebrow::before {
+        content: "";
+        width: 46px;
+        height: 2px;
+        background: var(--warm);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        margin-top: 0;
+    }
+
+    h1 {
+        max-width: 700px;
+        margin-bottom: 1.35rem;
+        font-family: var(--display);
+        font-size: clamp(3rem, 5.8vw, 5.6rem);
+        line-height: .97;
+        letter-spacing: -.055em;
+        text-wrap: balance;
+    }
+
+    .hero-lead {
+        max-width: 690px;
+        margin-bottom: 1.7rem;
+        color: #dbe7f3;
+        font-size: clamp(1.1rem, 2vw, 1.35rem);
+        line-height: 1.55;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+        margin-bottom: 2rem;
+    }
+
+    .status-note {
+        display: flex;
+        align-items: flex-start;
+        gap: .7rem;
+        max-width: 700px;
+        color: #ccd8e6;
+        font-size: .84rem;
+    }
+
+    .status-note .dot {
+        flex: 0 0 auto;
+        width: 9px;
+        height: 9px;
+        margin-top: .42rem;
+        border-radius: 50%;
+        background: var(--warm);
+        box-shadow: 0 0 0 5px rgba(251, 191, 36, .13);
+    }
+
+    .audience-strip {
+        position: relative;
+        z-index: 3;
+        margin-top: -1px;
+        background: rgba(7, 11, 18, .92);
+        border-bottom: 1px solid var(--line);
+    }
+
+    .audience-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+        overflow-x: auto;
+    }
+
+    .audience-title {
+        color: var(--dim);
+        font-size: .72rem;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .audience-list {
+        display: flex;
+        gap: .55rem;
+        justify-content: flex-end;
+    }
+
+    .audience-list span {
+        padding: .42rem .72rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: .78rem;
+        white-space: nowrap;
+    }
+
+    section {
+        padding: 5.4rem 0;
+    }
+
+    section+section {
+        border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+        max-width: 850px;
+        margin-bottom: 3.25rem;
+    }
+
+    .section-label {
+        margin-bottom: .85rem;
+        color: var(--accent);
+        font-size: .75rem;
+        font-weight: 700;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin-bottom: 1.15rem;
+        font-family: var(--display);
+        font-size: clamp(2.45rem, 5vw, 4.6rem);
+        line-height: 1.02;
+        letter-spacing: -.04em;
+        text-wrap: balance;
+    }
+
+    h3 {
+        margin-bottom: .55rem;
+        font-size: 1.18rem;
+        line-height: 1.35;
+    }
+
+    .section-lead {
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 1.1rem;
+    }
+
+    .context-layout {
+        display: grid;
+        grid-template-columns: 1.05fr .95fr;
+        gap: 1.2rem;
+        align-items: stretch;
+    }
+
+    .context-copy,
+    .stat-panel,
+    .glass-card {
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        background: linear-gradient(145deg, rgba(17, 27, 42, .88), rgba(9, 16, 27, .72));
+        box-shadow: var(--shadow);
+    }
+
+    .context-copy {
+        padding: clamp(1.7rem, 4vw, 3.2rem);
+    }
+
+    .context-copy p {
+        color: var(--muted);
+    }
+
+    .context-copy strong {
+        color: var(--ink);
+    }
+
+    .stat-panel {
+        padding: clamp(1.5rem, 3vw, 2.6rem);
+        display: grid;
+        align-content: center;
+    }
+
+    .big-stat {
+        margin-bottom: .4rem;
+        color: var(--warm);
+        font-size: clamp(4.4rem, 10vw, 8.4rem);
+        line-height: .85;
+        font-weight: 700;
+        letter-spacing: -.075em;
+    }
+
+    .big-stat-label {
+        max-width: 430px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .big-stat-source {
+        margin-top: 1.1rem;
+        color: var(--dim);
+        font-size: .78rem;
+    }
+
+    .route {
+        margin-top: 1.25rem;
+        padding: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .65rem;
+        border: 1px solid rgba(94, 234, 212, .34);
+        border-radius: var(--radius);
+        background: linear-gradient(90deg, rgba(94, 234, 212, .07), rgba(125, 211, 252, .07));
+        overflow-x: auto;
+    }
+
+    .route-node {
+        min-width: max-content;
+        color: var(--ink);
+        font-size: .8rem;
+        font-weight: 700;
+        letter-spacing: .045em;
+        text-transform: uppercase;
+    }
+
+    .route-node.focus {
+        color: var(--warm);
+    }
+
+    .route-arrow {
+        color: var(--accent);
+        font-size: 1.3rem;
+    }
+
+    .location-grid {
+        display: grid;
+        grid-template-columns: .92fr 1.08fr;
+        gap: 1.4rem;
+        align-items: start;
+    }
+
+    .overview-visual {
+        position: sticky;
+        top: 96px;
+        overflow: hidden;
+        border: 1px solid var(--line-strong);
+        border-radius: var(--radius);
+        background: var(--bg-elev);
+        box-shadow: var(--shadow);
+    }
+
+    .overview-visual img {
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    .caption {
+        padding: .85rem 1rem;
+        color: var(--dim);
+        font-size: .75rem;
+        border-top: 1px solid var(--line);
+    }
+
+    .location-list {
+        display: grid;
+        gap: .75rem;
+    }
+
+    .location-item {
+        padding: 1.2rem 1.25rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        background: rgba(13, 20, 32, .72);
+    }
+
+    .location-top {
+        display: flex;
+        align-items: flex-start;
+        gap: .9rem;
+    }
+
+    .location-number {
+        flex: 0 0 auto;
+        display: grid;
+        place-items: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        color: #04131a;
+        background: var(--accent);
+        font-size: .8rem;
+        font-weight: 700;
+    }
+
+    .location-item p {
+        margin: .45rem 0 0 2.9rem;
+        color: var(--muted);
+        font-size: .94rem;
+    }
+
+    .tag {
+        display: inline-flex;
+        margin-left: .45rem;
+        padding: .18rem .45rem;
+        border-radius: 999px;
+        vertical-align: .1em;
+        color: var(--warm);
+        background: var(--warm-soft);
+        font-size: .65rem;
+        font-weight: 700;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+    }
+
+    .areas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .area-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--bg-elev);
+    }
+
+    .area-image {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 16 / 10;
+        background: var(--bg-soft);
+    }
+
+    .area-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    .area-card:hover .area-image img {
+        transform: scale(1.035);
+    }
+
+    .area-image::after {
+        content: "Concept";
+        position: absolute;
+        right: .65rem;
+        bottom: .65rem;
+        padding: .3rem .55rem;
+        border-radius: 999px;
+        color: var(--ink);
+        background: rgba(7, 11, 18, .76);
+        border: 1px solid rgba(255, 255, 255, .22);
+        font-size: .66rem;
+        font-weight: 700;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        backdrop-filter: blur(8px);
+    }
+
+    .area-body {
+        padding: 1.35rem;
+    }
+
+    .area-kicker {
+        margin-bottom: .45rem;
+        color: var(--accent);
+        font-size: .68rem;
+        font-weight: 700;
+        letter-spacing: .11em;
+        text-transform: uppercase;
+    }
+
+    .area-body p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: .92rem;
+    }
+
+    .palt-block {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(2rem, 5vw, 4rem);
+        border: 1px solid var(--line-strong);
+        border-radius: calc(var(--radius) + 4px);
+        background: linear-gradient(145deg, rgba(18, 32, 47, .96), rgba(8, 16, 28, .96));
+        box-shadow: var(--shadow);
+    }
+
+    .palt-block::before {
+        content: "PALT";
+        position: absolute;
+        right: -1rem;
+        top: -5rem;
+        color: rgba(255, 255, 255, .025);
+        font-size: 17rem;
+        font-weight: 700;
+        letter-spacing: -.1em;
+        line-height: 1;
+    }
+
+    .palt-definition {
+        position: relative;
+        max-width: 870px;
+    }
+
+    .palt-name {
+        display: inline-block;
+        margin-bottom: .85rem;
+        color: var(--warm);
+        font-size: .78rem;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+    }
+
+    .palt-definition h2 {
+        font-size: clamp(2.6rem, 5vw, 4.8rem);
+    }
+
+    .palt-definition p {
+        color: var(--muted);
+        font-size: 1.08rem;
+    }
+
+    .principles {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .85rem;
+        margin-top: 2.2rem;
+    }
+
+    .principle {
+        padding: 1.15rem;
+        border-top: 2px solid var(--accent);
+        background: rgba(255, 255, 255, .035);
+    }
+
+    .principle:nth-child(2) {
+        border-top-color: var(--accent-2);
+    }
+
+    .principle:nth-child(3) {
+        border-top-color: var(--warm);
+    }
+
+    .principle p {
+        margin: 0;
+        color: var(--muted);
+        font-size: .9rem;
+    }
+
+    .legal-note {
+        position: relative;
+        margin-top: 1.5rem;
+        color: var(--dim);
+        font-size: .76rem;
+    }
+
+    .system-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .75rem;
+    }
+
+    .system-item {
+        min-height: 155px;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        background: rgba(13, 20, 32, .72);
+    }
+
+    .system-icon {
+        color: var(--accent);
+        font-size: 1.4rem;
+    }
+
+    .system-item p {
+        margin: .35rem 0 0;
+        color: var(--muted);
+        font-size: .86rem;
+    }
+
+    .rules-layout {
+        display: grid;
+        grid-template-columns: .9fr 1.1fr;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    .rules-side {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
+        align-self: stretch;
+    }
+
+    .rules-intro {
+        padding: 1.5rem;
+        border-left: 3px solid var(--warm);
+        background: var(--warm-soft);
+    }
+
+    .rules-intro p {
+        margin: 0;
+        color: #d9e4ef;
+    }
+
+    .nature-visual {
+        margin: 0;
+        overflow: hidden;
+        align-self: stretch;
+        border: 1px solid var(--line-strong);
+        border-radius: var(--radius-sm);
+        background: var(--bg-elev);
+    }
+
+    .nature-visual img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .nature-visual figcaption {
+        padding: .75rem .9rem;
+        color: var(--muted);
+        background: rgba(13, 20, 32, .96);
+        border-top: 1px solid var(--line);
+        font-size: .76rem;
+    }
+
+    .rules {
+        display: grid;
+        gap: .6rem;
+    }
+
+    .rule {
+        padding: 1rem 1.1rem;
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+        gap: .75rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        background: rgba(13, 20, 32, .72);
+    }
+
+    .rule b {
+        color: var(--accent);
+    }
+
+    .rule p {
+        margin: .25rem 0 0;
+        color: var(--muted);
+        font-size: .88rem;
+    }
+
+    .partners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .partner-card {
+        padding: clamp(1.5rem, 4vw, 2.5rem);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--bg-elev);
+    }
+
+    .partner-card ul {
+        margin: 1.1rem 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .partner-card li {
+        position: relative;
+        padding: .55rem 0 .55rem 1.4rem;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+    }
+
+    .partner-card li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+    }
+
+    .status-table {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+    }
+
+    .status-row {
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        gap: 1.25rem;
+        padding: 1.1rem 1.2rem;
+        background: rgba(13, 20, 32, .72);
+    }
+
+    .status-row+.status-row {
+        border-top: 1px solid var(--line);
+    }
+
+    .status-key {
+        font-weight: 700;
+    }
+
+    .status-row:nth-child(1) .status-key {
+        color: var(--accent);
+    }
+
+    .status-row:nth-child(2) .status-key {
+        color: var(--warm);
+    }
+
+    .status-row:nth-child(3) .status-key {
+        color: #fb7185;
+    }
+
+    .status-row p {
+        margin: 0;
+        color: var(--muted);
+    }
+
+    .cta {
+        text-align: center;
+    }
+
+    .cta-panel {
+        padding: clamp(2.2rem, 7vw, 5rem);
+        border: 1px solid rgba(94, 234, 212, .30);
+        border-radius: calc(var(--radius) + 6px);
+        background: radial-gradient(circle at 50% 0%, rgba(94, 234, 212, .15), transparent 25rem), var(--bg-elev);
+        box-shadow: var(--shadow);
+    }
+
+    .cta-panel h2 {
+        max-width: 920px;
+        margin-inline: auto;
+    }
+
+    .cta-panel p {
+        max-width: 740px;
+        margin-inline: auto;
+        color: var(--muted);
+        font-size: 1.05rem;
+    }
+
+    .cta-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .75rem;
+        margin-top: 1.7rem;
+    }
+
+    .sources {
+        padding: 3rem 0;
+        background: #05080d;
+    }
+
+    .sources h2 {
+        font-family: var(--font);
+        font-size: 1.05rem;
+        letter-spacing: 0;
+    }
+
+    .sources ul {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: var(--dim);
+        font-size: .78rem;
+    }
+
+    .sources li+li {
+        margin-top: .45rem;
+    }
+
+    .sources a {
+        color: var(--muted);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    footer {
+        padding: 3.5rem 0;
+        border-top: 1px solid var(--line);
+        background: #04070b;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: .9fr 1.1fr;
+        gap: 2rem;
+    }
+
+    .contact-card {
+        padding: 1.3rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        background: rgba(255, 255, 255, .03);
+    }
+
+    .contact-card .org {
+        margin-bottom: .5rem;
+        color: var(--accent);
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+    }
+
+    .footer-copy {
+        color: var(--muted);
+        font-size: .9rem;
+    }
+
+    .footer-small {
+        color: var(--dim);
+        font-size: .76rem;
+    }
+
+    @media (max-width: 980px) {
+        .nav-links {
+            display: none;
+        }
+
+        .hero {
+            min-height: 680px;
+        }
+
+        .hero-inner {
+            padding: 6.5rem 0 3rem;
+        }
+
+        .hero-media {
+            background-size: min(700px, 78vw) auto;
+            background-position: 88% center;
+        }
+
+        .hero-media::after {
+            background: linear-gradient(90deg, rgba(7, 11, 18, .94), rgba(7, 11, 18, .42)), linear-gradient(0deg, rgba(7, 11, 18, .96), transparent 60%);
+        }
+
+        .context-layout,
+        .location-grid,
+        .rules-layout {
+            grid-template-columns: 1fr;
+        }
+
+        .overview-visual {
+            position: relative;
+            top: auto;
+        }
+
+        .overview-visual img {
+            aspect-ratio: 16 / 9;
+        }
+
+        .areas,
+        .principles,
+        .system-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 680px) {
+        .wrap {
+            width: min(100% - 1.35rem, var(--max));
+        }
+
+        .nav {
+            min-height: 64px;
+        }
+
+        .nav-cta {
+            display: inline-flex;
+            min-height: 38px;
+            padding: .55rem .8rem;
+            font-size: .76rem;
+        }
+
+        .hero {
+            min-height: 0;
+        }
+
+        .hero-inner {
+            min-height: 640px;
+            padding: 5.75rem 0 2.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-media {
+            background-size: min(680px, 112vw) auto;
+            background-position: 62% center;
+        }
+
+        .audience-inner {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .audience-list {
+            justify-content: flex-start;
+        }
+
+        section {
+            padding: 3.8rem 0;
+        }
+
+        .route {
+            justify-content: flex-start;
+        }
+
+        .areas,
+        .principles,
+        .system-grid,
+        .partners {
+            grid-template-columns: 1fr;
+        }
+
+        .status-row {
+            grid-template-columns: 1fr;
+            gap: .35rem;
+        }
+
+        .location-item p {
+            margin-left: 0;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            transition: none !important;
+        }
+    }
+</style>
+
+
+<title>From the Bering Strait to the Barents Sea: Nordreisa&#x27;s strategic Arctic position. | Nordreisa PALT</title>
+<link rel="canonical" href="https://nordreisa.eu/why-nordreisa">
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+<header class="site-header is-scrolled" aria-label="Site header">
+    <div class="wrap nav">
+        <a class="brand" href="./forside.html" aria-label="Go to the Nordreisa main website">PALT <em>·</em> Nordreisa</a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="./forside.html">Main website</a>
+            <a class="active" href="#top">Why Nordreisa</a>
+            <a href="./forside.html#packages">Work packages</a>
+            <a href="./forside.html#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="./forside.html">START HERE ↗</a>
+    </div>
+</header>
+
+<main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="Polar map showing an illustrative route from the Bering Strait across Arctic waters and the Barents Sea to Nordreisa in Northern Norway">
+            <img src="https://leamarketing.github.io/nordreisa-bilder/webp/nordreisa-arctic-position-map-ubakgrunn.webp" alt="" aria-hidden="true" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://leamarketing.github.io/nordreisa-bilder/webp/nordreisa-arctic-position-map-ubakgrunn.webp&quot;;this.parentElement.style.backgroundImage=&quot;url('https://leamarketing.github.io/nordreisa-bilder/webp/nordreisa-arctic-position-map-ubakgrunn.webp')&quot;;" width="883" height="829" loading="eager" decoding="async" fetchpriority="high">
+        </div>
+        <div class="wrap hero-inner">
+            <div class="hero-copy">
+                <div class="eyebrow">Bering Strait · Arctic routes · Northern Norway</div>
+                <h1 id="hero-title">From the Bering Strait to the Barents Sea: Nordreisa's strategic Arctic position.</h1>
+                <p class="hero-lead">At 69.8°N, Nordreisa lies on the European side of the Arctic, west of the Barents Sea. Its opportunity is the combination of geography, the E6 transport backbone, Sørkjosen Airport, fjord access, mountain resources and an established regional community.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#location">Explore the location logic</a>
+                    <a class="btn btn-ghost" href="#palt">What PALT stands for</a>
+                </div>
+                <div class="status-note">
+                    <span class="dot" aria-hidden="true"></span>
+                    <span>The map uses generalized coastline data and an illustrative Arctic corridor. It is not a navigation chart, a traffic forecast or a claim that Nordreisa is already an Arctic logistics hub.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="audience-strip">
+        <div class="wrap audience-inner">
+            <div class="audience-title">Prepared for dialogue with</div>
+            <div class="audience-list" aria-label="Target audiences">
+                <span>Municipalities</span>
+                <span>Troms County</span>
+                <span>Regional partners</span>
+                <span>National authorities</span>
+                <span>International investors</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="arctic-context">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="section-label">The Arctic context</div>
+                <h2>From the Pacific gateway to Northern Norway, geography shapes strategic options.</h2>
+                <p class="section-lead">The argument for Nordreisa is not based on one building or one shipping forecast. It is based on how its northern location — together with sea, road, air, mountain and community functions — can support long-term regional resilience.</p>
+            </div>
+
+            <div class="context-layout">
+                <article class="context-copy">
+                    <h3>The gateway logic</h3>
+                    <p><strong>The Bering Strait is the only maritime passage between the Pacific and Arctic oceans.</strong> From there, Arctic routes may continue along the Russian Arctic coast toward the Barents Sea and the North Atlantic. Actual voyages depend on ice, weather, regulation, vessel class, economics and geopolitics.</p>
+                    <p><strong>Nordreisa is not located at the Bering Strait and does not claim to replace established Arctic ports.</strong> Its relevance is its position in Northern Norway on the European side of this wider geography. The opportunity is to study a complementary regional node linking proposed maritime capacity with E6, nearby aviation, protected mountain infrastructure, local services and community development.</p>
+                </article>
+                <aside class="stat-panel" aria-label="Arctic shipping statistic">
+                    <div class="big-stat">+40%</div>
+                    <div class="big-stat-label">more unique vessels entered the Arctic Polar Code area in 2025 than in 2013.</div>
+                    <div class="big-stat-source">Source: Arctic Council / PAME, February 2026. This is Arctic-wide traffic data, not a forecast for Nordreisa.</div>
+                </aside>
+            </div>
+
+            <div class="route" aria-label="Geographic relationship from the Pacific through the Arctic to Nordreisa">
+                <span class="route-node">Pacific</span><span class="route-arrow">→</span>
+                <span class="route-node">Bering Strait</span><span class="route-arrow">→</span>
+                <span class="route-node">Arctic routes</span><span class="route-arrow">→</span>
+                <span class="route-node">Barents Sea</span><span class="route-arrow">→</span>
+                <span class="route-node">Northern Norway</span><span class="route-arrow">→</span>
+                <span class="route-node focus">Nordreisa</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="section-label">Why this location</div>
+                <h2>Five connected places can perform as one regional system.</h2>
+                <p class="section-lead">The strength of Nordreisa is the short functional distance between the proposed development areas. Each site has a different role; together they create a more resilient and investable sequence.</p>
+            </div>
+
+            <div class="location-grid">
+                <figure class="overview-visual">
+                    <img src="https://leamarketing.github.io/nordreisa-bilder/webp/alleomradernordreisa.webp" alt="Concept overview of the PALT development areas in Nordreisa" loading="lazy" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/alleomradernordreisa-480w.webp 480w, https://leamarketing.github.io/nordreisa-bilder/webp/alleomradernordreisa.webp 898w" sizes="(max-width: 900px) calc(100vw - 2.5rem), 600px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/AlleOmr%C3%A5derNordreisa.png&quot;;" width="898" height="527" decoding="async">
+                    <figcaption class="caption">Illustrative overview from the PALT portfolio. Boundaries, access, capacity and construction require formal planning and surveys.</figcaption>
+                </figure>
+
+                <div class="location-list">
+                    <article class="location-item">
+                        <div class="location-top"><span class="location-number">1</span>
+                            <h3>Storslett and Sørkjosen — the regional service centre</h3>
+                        </div>
+                        <p>Public services, local business, population, education and the nearby airport provide the human and operational base that large infrastructure alone cannot create.</p>
+                    </article>
+                    <article class="location-item">
+                        <div class="location-top"><span class="location-number">2</span>
+                            <h3>Kvænnes — resilience, logistics and community functions <span class="tag">Proposed</span></h3>
+                        </div>
+                        <p>Near E6 and Storslett, Kvænnes is proposed as the main phased hub for emergency services, crisis coordination, storage, logistics, competence, health, learning and public-facing facilities.</p>
+                    </article>
+                    <article class="location-item">
+                        <div class="location-top"><span class="location-number">3</span>
+                            <h3>Nordkjosnes and Nordkjosfjellet — sea and mountain interface <span class="tag">Study track</span></h3>
+                        </div>
+                        <p>A proposed deep-water quay, tunnel connection and protected mountain facilities could support supply, maritime preparedness, logistics and digital infrastructure if feasibility and permits are confirmed.</p>
+                    </article>
+                    <article class="location-item">
+                        <div class="location-top"><span class="location-number">4</span>
+                            <h3>Sandnes Fjord Camping — the nature-based pilot</h3>
+                        </div>
+                        <p>A smaller, visible pilot where year-round tourism, wellness, fjord experiences, local food and circular operating principles can be tested before larger phases are built.</p>
+                    </article>
+                    <article class="location-item">
+                        <div class="location-top"><span class="location-number">5</span>
+                            <h3>Veibakken and Rovdas — housing and life-course development</h3>
+                        </div>
+                        <p>Smaller homes, family housing and age-friendly living can strengthen settlement, recruitment and quality of life while supporting the wider regional workforce.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="section-label">The proposed development sequence</div>
+                <h2>Start with practical pilots. Study major infrastructure. Build only when evidence is ready.</h2>
+                <p class="section-lead">PALT combines near-term projects that can demonstrate value with long-term concepts that must pass engineering, environmental, market and financing tests.</p>
+            </div>
+
+            <div class="areas">
+                <article class="area-card">
+                    <div class="area-image"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/dypvannskaifjellanleggnordkjosnes.webp" alt="Concept visualization of a deep-water quay and mountain facility at Nordkjosnes" loading="lazy" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/dypvannskaifjellanleggnordkjosnes-480w.webp 480w, https://leamarketing.github.io/nordreisa-bilder/webp/dypvannskaifjellanleggnordkjosnes-960w.webp 960w, https://leamarketing.github.io/nordreisa-bilder/webp/dypvannskaifjellanleggnordkjosnes.webp 1672w" sizes="(max-width: 900px) calc(100vw - 2.5rem), 400px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/DypvannskaiFjellanleggNordkjosnes.png&quot;;" width="1672" height="941" decoding="async"></div>
+                    <div class="area-body">
+                        <div class="area-kicker">Long-term infrastructure</div>
+                        <h3>Nordkjosnes &amp; Nordkjosfjellet</h3>
+                        <p>Proposed deep-water capacity, tunnels and mountain halls for logistics, preparedness, storage and technology. Kept on a formal study track before major capital commitments.</p>
+                    </div>
+                </article>
+                <article class="area-card">
+                    <div class="area-image"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-1344w.webp" alt="Concept visualization representing phased Kvænnes and Nordkjosnes connectivity" loading="lazy" width="1344" height="768" decoding="async"></div>
+                    <div class="area-body">
+                        <div class="area-kicker">Regional hub</div>
+                        <h3>Kveannes Peace Center</h3>
+                        <p>Peace translated into practical resilience: emergency services, crisis coordination, water, energy, logistics, competence, health and safe public functions developed in phases.</p>
+                    </div>
+                </article>
+                <article class="area-card">
+                    <div class="area-image"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/sfc-spawatherpark.webp" alt="Concept visualization of nature-based tourism and wellness at Sandnes Fjord Camping" loading="lazy" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/sfc-spawatherpark-480w.webp 480w, https://leamarketing.github.io/nordreisa-bilder/webp/sfc-spawatherpark-960w.webp 960w, https://leamarketing.github.io/nordreisa-bilder/webp/sfc-spawatherpark.webp 1672w" sizes="(max-width: 900px) calc(100vw - 2.5rem), 400px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/SFC-SpaWatherpark.png&quot;;" width="1672" height="941" decoding="async"></div>
+                    <div class="area-body">
+                        <div class="area-kicker">Pilot and proof of concept</div>
+                        <h3>Sandnes Fjord Camping</h3>
+                        <p>Nature-based tourism, wellness, accommodation and local experiences can create early activity and demonstrate PALT's operating principles at a manageable scale.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="palt">
+        <div class="wrap">
+            <div class="palt-block">
+                <div class="palt-definition">
+                    <span class="palt-name">Polar Arena Land Trust</span>
+                    <h2>PALT is a coordinated Arctic development platform — not a collection of isolated buildings.</h2>
+                    <p>PALT brings housing, preparedness, food, water, energy, logistics, health, learning, culture, tourism and local enterprise into one phased framework. The purpose is to create places where public benefit, local value and long-term investment reinforce each other.</p>
+                </div>
+                <div class="principles">
+                    <article class="principle">
+                        <h3>People &amp; preparedness</h3>
+                        <p>Projects should improve safety, health, settlement, competence and daily life — not only asset values.</p>
+                    </article>
+                    <article class="principle">
+                        <h3>Nature &amp; stewardship</h3>
+                        <p>Development begins with knowledge of the landscape, ecological connections and cumulative impacts.</p>
+                    </article>
+                    <article class="principle">
+                        <h3>Local value &amp; delivery</h3>
+                        <p>Local resources, jobs and business should grow through realistic phases, partnerships and transparent decision gates.</p>
+                    </article>
+                </div>
+                <p class="legal-note">PALT is presented here as the project and coordination platform. Legal ownership, financing vehicles, concessions and delivery structures must be defined separately for each approved phase.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="system">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="section-label">One system · multiple outcomes</div>
+                <h2>The value is created between the projects.</h2>
+                <p class="section-lead">A tourism pilot can support local food. Housing supports recruitment. Reused local materials can lower transport needs. Public facilities can serve both everyday life and crisis conditions.</p>
+            </div>
+            <div class="system-grid">
+                <article class="system-item"><span class="system-icon">◎</span>
+                    <div>
+                        <h3>Preparedness</h3>
+                        <p>Emergency coordination, protected functions, storage and continuity.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">⌂</span>
+                    <div>
+                        <h3>Housing</h3>
+                        <p>Homes for families, workers, older residents and new settlement.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">✦</span>
+                    <div>
+                        <h3>Health &amp; wellbeing</h3>
+                        <p>Prevention, activity, swimming, rehabilitation and community life.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">◌</span>
+                    <div>
+                        <h3>Food &amp; water</h3>
+                        <p>Greenhouses, aquaponics, water reuse and local supply resilience.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">↔</span>
+                    <div>
+                        <h3>Logistics</h3>
+                        <p>Road, air, proposed sea access, storage and regional distribution.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">△</span>
+                    <div>
+                        <h3>Nature &amp; tourism</h3>
+                        <p>Year-round experiences shaped by fjord, mountains, culture and seasons.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">◇</span>
+                    <div>
+                        <h3>Learning &amp; innovation</h3>
+                        <p>Experimentarium, research, practical training and technology pilots.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">⟳</span>
+                    <div>
+                        <h3>Circular resources</h3>
+                        <p>Local material processing, reuse, repair and reduced waste streams.</p>
+                    </div>
+                </article>
+                <article class="system-item"><span class="system-icon">✺</span>
+                    <div>
+                        <h3>Local enterprise</h3>
+                        <p>Jobs, suppliers, services and investable operating models in Nord-Troms.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="nature">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="section-label">Rules for responsible development</div>
+                <h2>Nature is not decoration around the project. It is a planning condition.</h2>
+            </div>
+            <div class="rules-layout">
+                <div class="rules-side">
+                    <div class="rules-intro">
+                        <p>All PALT concepts must be tested against Norwegian planning requirements, the principles of the Nature Diversity Act, local knowledge and site-specific studies. Where impacts cannot be avoided, they must be reduced, documented and addressed.</p>
+                    </div>
+                    <figure class="nature-visual">
+                        <img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-naturarv-nord-plakat-87af97775d-1600w.webp" alt="Naturarv Nord visual showing a northern fjord landscape and the principle of knowledge-based development with nature" width="1600" height="900" loading="lazy" decoding="async">
+                        <figcaption>Naturarv Nord — knowledge-based development with nature as a planning condition.</figcaption>
+                    </figure>
+                </div>
+                <div class="rules">
+                    <article class="rule"><b>01</b>
+                        <div>
+                            <h3>Knowledge base</h3>
+                            <p>Map biodiversity, landscape, water, geology, outdoor use, cultural history and local experience before design is fixed.</p>
+                        </div>
+                    </article>
+                    <article class="rule"><b>02</b>
+                        <div>
+                            <h3>Precaution</h3>
+                            <p>Uncertainty is a reason for better studies and careful phasing — not for pretending risk is absent.</p>
+                        </div>
+                    </article>
+                    <article class="rule"><b>03</b>
+                        <div>
+                            <h3>Cumulative impact</h3>
+                            <p>Assess the combined effect of roads, buildings, traffic, shoreline activity, energy and visitor pressure.</p>
+                        </div>
+                    </article>
+                    <article class="rule"><b>04</b>
+                        <div>
+                            <h3>Responsibility</h3>
+                            <p>Costs and consequences of environmental impact must be visible in planning and project economics.</p>
+                        </div>
+                    </article>
+                    <article class="rule"><b>05</b>
+                        <div>
+                            <h3>Environmentally sound solutions</h3>
+                            <p>Prefer compact footprints, existing corridors, underground placement where appropriate, reuse and reversible pilots.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dialogue">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="section-label">For public partners and investors</div>
+                <h2>Different partners need different evidence — but they can work from the same plan.</h2>
+                <p class="section-lead">The page is designed for dialogue across Norway and internationally, including partners from India, Asia, Europe and the Nordic region.</p>
+            </div>
+            <div class="partners">
+                <article class="partner-card">
+                    <h3>Municipality, county, region and state</h3>
+                    <ul>
+                        <li>Assess the portfolio as a connected regional development model.</li>
+                        <li>Agree on planning sequence, public needs and decision gates.</li>
+                        <li>Coordinate preparedness, transport, nature, housing and business policy.</li>
+                        <li>Identify which studies and public programmes can be shared.</li>
+                    </ul>
+                </article>
+                <article class="partner-card">
+                    <h3>Investors, industry and technology partners</h3>
+                    <ul>
+                        <li>Enter through defined phases rather than one oversized capital commitment.</li>
+                        <li>Support feasibility, engineering, pilots and operating models.</li>
+                        <li>Combine patient infrastructure capital with commercial projects.</li>
+                        <li>Use transparent assumptions, independent due diligence and clear risk allocation.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="status">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="section-label">Read the page correctly</div>
+                <h2>Ambitious vision. Clear status.</h2>
+            </div>
+            <div class="status-table">
+                <div class="status-row">
+                    <div class="status-key">Existing strengths</div>
+                    <p>Nordreisa's communities, E6, Sørkjosen Airport, fjords, mountain landscape, local services, businesses, knowledge and culture.</p>
+                </div>
+                <div class="status-row">
+                    <div class="status-key">PALT proposals</div>
+                    <p>Kvænnes hub, deep-water quay, mountain halls, tunnels, public facilities, tourism concepts, housing and circular production described on this site.</p>
+                </div>
+                <div class="status-row">
+                    <div class="status-key">Required before construction</div>
+                    <p>Ownership and boundary confirmation, municipal planning, environmental and geotechnical studies, traffic and fire engineering, permits, market validation, financing and final investment approval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+        <div class="wrap">
+            <div class="cta-panel">
+                <div class="section-label">The next step is structured dialogue</div>
+                <h2 id="cta-title">Let us test what Nordreisa can deliver — carefully, transparently and in the right sequence.</h2>
+                <p>PALT invites public authorities, regional partners, research environments, industry and long-term investors to help turn the strongest concepts into verified, financeable projects.</p>
+                <div class="cta-actions">
+                    <a class="btn btn-primary" href="mailto:vivi-ann@polararena.no?subject=Dialogue%20about%20PALT%20and%20Nordreisa">Contact PALT</a>
+                    <a class="btn btn-ghost" href="./forside.html#packages">View the 10 work packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sources" aria-labelledby="sources-title">
+        <div class="wrap">
+            <h2 id="sources-title">Selected sources and project basis</h2>
+            <ul>
+                <li><a href="https://arctic-council.org/news/increase-in-arctic-shipping/" target="_blank" rel="noopener">Arctic Council / PAME: Arctic Shipping Update — 40% Increase in Ships in the Arctic (12 February 2026)</a>.</li>
+                <li><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>: public-domain coastline and boundary data used for the generalized Arctic location map.</li>
+                <li><a href="https://www.regjeringen.no/no/dokumenter/meld.-st.-9-20242025/id3082364/" target="_blank" rel="noopener">Norwegian Government: Meld. St. 9 (2024–2025), Total Preparedness — Prepared for Crises and War</a>.</li>
+                <li><a href="https://lovdata.no/dokument/NL/lov/2009-06-19-100" target="_blank" rel="noopener">Norwegian Nature Diversity Act</a>, including the environmental decision principles in Sections 8–12.</li>
+                <li>PALT project basis: the 25 Nordreisa land-use proposals, consolidated into 10 work packages; Kvænnes Peace Center submission; PALT regenerative Arctic community model; and the current project source archive.</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer id="contact">
+    <div class="wrap footer-grid">
+        <div class="contact-card">
+            <div class="org">PALT · Polar Arena Land Trust</div>
+            <h3>Vivi-Ann Sandnes</h3>
+            <p style="margin:.2rem 0 1rem;color:var(--muted)">Partner for municipal, county and investor dialogue.</p>
+            <p style="margin:0"><a href="mailto:vivi-ann@polararena.no">vivi-ann@polararena.no</a><br><a href="tel:+4790508660">+47 90 50 86 60</a></p>
+        </div>
+        <div class="footer-copy">
+            <p>Technical, legal and financial decisions must always rely on verified source material and project-specific professional advice.</p>
+            <p class="footer-small">Concept visualizations are illustrative · No offer of securities · No guarantee of permits or returns · Project scope and phasing may change through planning and due diligence.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        window.PALT_LANG = {
+            source: "en",
+            readyForGenerator: true
+        };
+        document.documentElement.lang = "en";
+        var header = document.querySelector(".site-header");
+        var onScroll = function() {
+            if (!header) return;
+            if (window.scrollY > 24) header.classList.add("is-scrolled");
+            else header.classList.remove("is-scrolled");
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll, {
+            passive: true
+        });
+    })();
+</script>
+<script data-palt-seo="why-nordreisa">
+    (function() {
+        if (!document.head) return;
+        var seo = {
+            "title": "Why Nordreisa · PALT Arctic Development Platform",
+            "description": "How Nordreisa is positioned in relation to the Bering Strait, Arctic sea routes and the Barents Sea — and how PALT connects this geography to phased regional development.",
+            "url": "https://nordreisa.eu/why-nordreisa",
+            "image": "https://leamarketing.github.io/nordreisa-bilder/webp/nordreisa-arctic-position-map-ubakgrunn.webp",
+            "imageAlt": "Polar map showing an illustrative route from the Bering Strait across Arctic waters and the Barents Sea to Nordreisa in Northern Norway"
+        };
+        var meta = [
+            ["name", "description", "How Nordreisa is positioned in relation to the Bering Strait, Arctic sea routes and the Barents Sea — and how PALT connects this geography to phased regional development."],
+            ["name", "robots", "index, follow"],
+            ["property", "og:title", "Why Nordreisa · PALT Arctic Development Platform"],
+            ["property", "og:description", "From the Bering Strait to the Barents Sea: Nordreisa's strategic position on the European side of the Arctic."],
+            ["property", "og:url", "https://nordreisa.eu/why-nordreisa"],
+            ["property", "og:type", "website"],
+            ["property", "og:site_name", "PALT Arctic Development Platform"],
+            ["property", "og:image", "https://leamarketing.github.io/nordreisa-bilder/webp/nordreisa-arctic-position-map-ubakgrunn.webp"],
+            ["property", "og:image:alt", "Polar map showing an illustrative route from the Bering Strait across Arctic waters and the Barents Sea to Nordreisa in Northern Norway"],
+            ["property", "og:image:width", "883"],
+            ["property", "og:image:height", "829"],
+            ["name", "twitter:card", "summary_large_image"],
+            ["name", "twitter:title", "Why Nordreisa · PALT Arctic Development Platform"],
+            ["name", "twitter:description", "From the Bering Strait to the Barents Sea: Nordreisa's strategic position on the European side of the Arctic."],
+            ["name", "twitter:image", "https://leamarketing.github.io/nordreisa-bilder/webp/nordreisa-arctic-position-map-ubakgrunn.webp"],
+            ["name", "twitter:image:alt", "Polar map showing an illustrative route from the Bering Strait across Arctic waters and the Barents Sea to Nordreisa in Northern Norway"]
+        ];
+
+        function updateHead(selector, tagName, attributes, text) {
+            var matches = document.querySelectorAll(selector);
+            var element = null;
+            var i;
+            for (i = 0; i < matches.length; i++) {
+                if (matches[i].parentNode === document.head) {
+                    element = matches[i];
+                    break;
+                }
+            }
+            element = element || matches[0] || document.createElement(tagName);
+            for (var name in attributes) {
+                if (Object.prototype.hasOwnProperty.call(attributes, name)) {
+                    if (element.getAttribute(name) !== attributes[name]) {
+                        element.setAttribute(name, attributes[name]);
+                    }
+                }
+            }
+            if (typeof text === "string" && element.textContent !== text) element.textContent = text;
+            for (i = 0; i < matches.length; i++) {
+                if (matches[i] !== element && matches[i].parentNode) {
+                    matches[i].parentNode.removeChild(matches[i]);
+                }
+            }
+            if (element.parentNode !== document.head) document.head.appendChild(element);
+        }
+
+        var initialPath = window.location.pathname;
+        var observer = null;
+        var observerOptions = {
+            childList: true,
+            subtree: true,
+            characterData: true,
+            attributes: true,
+            attributeFilter: ["content", "href", "name", "property", "rel"]
+        };
+
+        function applySeo() {
+            if (window.location.pathname !== initialPath) {
+                if (observer) observer.disconnect();
+                return;
+            }
+            if (observer) observer.disconnect();
+            updateHead("title", "title", {}, seo.title);
+            for (var i = 0; i < meta.length; i++) {
+                var attributes = {
+                    content: meta[i][2]
+                };
+                attributes[meta[i][0]] = meta[i][1];
+                updateHead('meta[' + meta[i][0] + '="' + meta[i][1] + '"]', "meta", attributes);
+            }
+            updateHead('link[rel="canonical"]', "link", {
+                rel: "canonical",
+                href: seo.url
+            });
+            if (observer) observer.observe(document.head, observerOptions);
+        }
+
+        applySeo();
+        if (typeof window.MutationObserver === "function") {
+            observer = new window.MutationObserver(applySeo);
+            observer.observe(document.head, observerOptions);
+        }
+        document.addEventListener("DOMContentLoaded", applySeo, {
+            once: true
+        });
+        window.addEventListener("load", applySeo, {
+            once: true
+        });
+    })();
+</script>
+</body>
+</html>

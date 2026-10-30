@@ -67,9 +67,17 @@ def main():
     public_base = json.loads(publishing.read_text())['public_base_url'] if publishing.is_file() else None
     base = urlsplit(public_base) if public_base else None
     checked_links = 0
-    files = [DOCS / 'index.html'] + sorted((ROOT / 'clicksites').glob('*.txt')) + sorted((DOCS / 'preview').glob('*.html'))
+    page_files = [(ROOT / 'clicksites' / (page['slug'] + '.txt')) for page in manifest['pages']] if (ROOT / 'clicksites').is_dir() else []
+    files = [DOCS / 'index.html'] + page_files + sorted((DOCS / 'preview').glob('*.html'))
     for file in files:
+        if not file.is_file():
+            errors.append('Missing page file: ' + str(file.relative_to(ROOT)))
+            continue
         source = file.read_text()
+        if file.parent.name == 'clicksites':
+            download = DOCS / 'sidefiler' / file.name
+            if not download.is_file() or download.read_bytes() != file.read_bytes():
+                errors.append('Download differs from the prepared page: ' + file.name)
         parser = ImageLinks()
         parser.feed(source)
         if file.suffix == '.txt' and not all(tag in source.lower() for tag in ('<!doctype html>', '<html', '<head', '<body', '</html>')):

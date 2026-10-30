@@ -1,0 +1,275 @@
+[
+  {
+    "page": "https://nordreisa.eu/",
+    "txt": "forside.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap04-rovdas",
+    "txt": "ap04-rovdas.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap03-energi",
+    "txt": "ap03-energi.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap02-mat",
+    "txt": "ap02-mat.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap01-sandnes-fjord",
+    "txt": "ap01-sandnes-fjord.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap08-strategi",
+    "txt": "ap08-strategi.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap06-servicenoder",
+    "txt": "ap06-servicenoder.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap09-vinter",
+    "txt": "ap09-vinter.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap05-nordkjosfjellet",
+    "txt": "ap05-nordkjosfjellet.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap07-kvaennes-rovdas",
+    "txt": "ap07-kvaennes-rovdas.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p01-sandnes-fjord-camping-domes",
+    "txt": "p01-sandnes-fjord-camping-domes.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/calculations",
+    "txt": "calculations.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/ap10-veibakken",
+    "txt": "ap10-veibakken.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p02-spa-sauna-waterpark",
+    "txt": "p02-spa-sauna-waterpark.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/overview",
+    "txt": "overview.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p05-rovdas-minihouse-8-units",
+    "txt": "p05-rovdas-minihouse-8-units.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p06-rovdas-two-storey-housing",
+    "txt": "p06-rovdas-two-storey-housing.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p03-greenhouse-aquaponic-dome",
+    "txt": "p03-greenhouse-aquaponic-dome.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p07-cave-lodging-web3-in-the-mountain",
+    "txt": "p07-cave-lodging-web3-in-the-mountain.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p04-clc-energy",
+    "txt": "p04-clc-energy.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p09-service-node-input-9",
+    "txt": "p09-service-node-input-9.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p08-motorhome-parking-nordkjos",
+    "txt": "p08-motorhome-parking-nordkjos.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p10-kvaennes-building-phase-1",
+    "txt": "p10-kvaennes-building-phase-1.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p11-naturarv-nord",
+    "txt": "p11-naturarv-nord.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p12-deep-water-quay-mountain-facility",
+    "txt": "p12-deep-water-quay-mountain-facility.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p15-growth-circle-in-the-dome-environment",
+    "txt": "p15-growth-circle-in-the-dome-environment.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p13-motorhome-parking-nordkjos-variant",
+    "txt": "p13-motorhome-parking-nordkjos-variant.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p16-domes-at-rovdas-kvaennes",
+    "txt": "p16-domes-at-rovdas-kvaennes.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p14-preparedness-beredskap",
+    "txt": "p14-preparedness-beredskap.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p17-web3-layer",
+    "txt": "p17-web3-layer.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p20-strategy-input-20",
+    "txt": "p20-strategy-input-20.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p18-clc-energy-review-extension",
+    "txt": "p18-clc-energy-review-extension.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p22-winter-offer",
+    "txt": "p22-winter-offer.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p21-strategy-input-21",
+    "txt": "p21-strategy-input-21.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p19-kvaennes-area-input-19",
+    "txt": "p19-kvaennes-area-input-19.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p25-nordkjosfjellet-input-25",
+    "txt": "p25-nordkjosfjellet-input-25.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p24-veibakken-input-24",
+    "txt": "p24-veibakken-input-24.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/p23-gudepark",
+    "txt": "p23-gudepark.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  },
+  {
+    "page": "https://nordreisa.eu/why-nordreisa",
+    "txt": "why-nordreisa.txt",
+    "visible_text_preserved": true,
+    "controls_preserved": true,
+    "scripts_preserved": true
+  }
+]

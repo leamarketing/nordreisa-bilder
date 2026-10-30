@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#070b12">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+
+    :root {
+        --bg: #070b12;
+        --bg-elev: #0d1420;
+        --ink: #f3f6fb;
+        --muted: #9aa8bc;
+        --dim: #6b7a90;
+        --line: rgba(255, 255, 255, .08);
+        --line-strong: rgba(255, 255, 255, .14);
+        --accent: #5eead4;
+        --accent-2: #7dd3fc;
+        --accent-soft: rgba(94, 234, 212, .12);
+        --warm: #fbbf24;
+        --glass: rgba(16, 24, 40, .55);
+        --glass-border: rgba(255, 255, 255, .12);
+        --radius: 18px;
+        --radius-sm: 12px;
+        --shadow: 0 24px 80px rgba(0, 0, 0, .45);
+        --max: 1180px;
+        --font: "Instrument Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        --display: "Fraunces", Georgia, "Times New Roman", serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    a {
+        color: var(--accent-2);
+        text-decoration: none;
+        transition: color .2s ease, opacity .2s ease;
+    }
+
+    a:hover {
+        color: var(--accent);
+    }
+
+    .wrap {
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+        border-bottom: 1px solid transparent;
+    }
+
+    .site-header.is-scrolled {
+        background: rgba(7, 11, 18, .72);
+        backdrop-filter: blur(16px) saturate(1.2);
+        -webkit-backdrop-filter: blur(16px) saturate(1.2);
+        border-bottom-color: var(--line);
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        font-weight: 700;
+        letter-spacing: .04em;
+        color: var(--ink);
+        font-size: .95rem;
+        text-transform: uppercase;
+    }
+
+    .brand em {
+        font-style: normal;
+        color: var(--accent);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .25rem .9rem;
+    }
+
+    .nav-links a {
+        color: var(--muted);
+        font-size: .9rem;
+        font-weight: 500;
+        padding: .35rem .2rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: var(--ink);
+    }
+
+    .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        background: var(--accent);
+        color: #042f2e !important;
+        font-weight: 600;
+        font-size: .85rem;
+        padding: .55rem 1rem;
+        border-radius: 999px;
+    }
+
+    .nav-cta:hover {
+        filter: brightness(1.05);
+        color: #042f2e !important;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: .45rem;
+        padding: .75rem 1.25rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: .92rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background: var(--accent);
+        color: #042f2e !important;
+    }
+
+    .btn-primary:hover {
+        filter: brightness(1.06);
+        color: #042f2e !important;
+    }
+
+    .btn-ghost {
+        background: rgba(255, 255, 255, .06);
+        color: var(--ink) !important;
+        border-color: var(--line-strong);
+    }
+
+    .btn-ghost:hover {
+        border-color: rgba(94, 234, 212, .45);
+        color: var(--accent) !important;
+    }
+
+    .btn-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+        margin-top: 1.5rem;
+    }
+
+    .hero-bleed {
+        position: relative;
+        min-height: 88vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 7rem 0 3.5rem;
+        overflow: hidden;
+    }
+
+    .hero-bleed .hero-media {
+        position: absolute;
+        inset: 0;
+    }
+
+    .hero-bleed .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(1.05) contrast(1.05);
+    }
+
+    .hero-bleed .hero-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(105deg, rgba(7, 11, 18, .92) 0%, rgba(7, 11, 18, .72) 42%, rgba(7, 11, 18, .35) 70%, rgba(7, 11, 18, .55) 100%),
+            linear-gradient(180deg, rgba(7, 11, 18, .25), rgba(7, 11, 18, .95) 88%);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    .eyebrow {
+        font-size: .78rem;
+        font-weight: 600;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .85rem;
+    }
+
+    .hero-bleed h1 {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: clamp(2.4rem, 6vw, 4.2rem);
+        line-height: 1.05;
+        margin: 0 0 1rem;
+        max-width: min(28ch, 100%);
+    }
+
+    .hero-lead {
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+        color: rgba(243, 246, 251, .85);
+        max-width: 42ch;
+        margin: 0;
+    }
+
+    .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1.35rem;
+    }
+
+    .chip {
+        font-size: .82rem;
+        color: var(--muted);
+        padding: .4rem .85rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .04);
+        backdrop-filter: blur(8px);
+    }
+
+    .chip strong {
+        color: var(--ink);
+        font-weight: 700;
+    }
+
+    .kpi-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .85rem;
+        margin: -2.2rem auto 2rem;
+        position: relative;
+        z-index: 2;
+        width: min(var(--max), calc(100% - 2.5rem));
+    }
+
+    .kpi-cell {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(14px);
+        padding: 1.1rem 1.2rem;
+        box-shadow: var(--shadow);
+    }
+
+    .kpi-cell .label {
+        font-size: .72rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--dim);
+    }
+
+    .kpi-cell .value {
+        font-family: var(--display);
+        font-size: 1.55rem;
+        font-weight: 700;
+        margin: .25rem 0 .15rem;
+        color: var(--accent-2);
+    }
+
+    .kpi-cell .hint {
+        font-size: .78rem;
+        color: var(--muted);
+    }
+
+    .disclaimer-quiet {
+        font-size: .85rem;
+        color: var(--dim);
+        max-width: 72ch;
+        margin: 0 auto 2.5rem;
+        width: min(var(--max), calc(100% - 2.5rem));
+    }
+
+    .disclaimer-quiet strong {
+        color: var(--muted);
+    }
+
+    .section-head {
+        margin: 0 0 1.75rem;
+    }
+
+    .section-label {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .5rem;
+    }
+
+    .section-head h2 {
+        font-family: var(--display);
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        margin: 0 0 .55rem;
+        line-height: 1.15;
+    }
+
+    .section-head p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 54ch;
+    }
+
+    .pkg-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.15rem;
+    }
+
+    .pkg-tile {
+        display: flex;
+        flex-direction: column;
+        color: inherit;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        backdrop-filter: blur(12px);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .pkg-tile:hover {
+        text-decoration: none;
+        color: inherit;
+        border-color: rgba(94, 234, 212, .4);
+        transform: translateY(-4px);
+        box-shadow: 0 20px 55px rgba(0, 0, 0, .4);
+    }
+
+    .pkg-tile .cover {
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: #0a1220;
+    }
+
+    .pkg-tile .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    .pkg-tile:hover .cover img {
+        transform: scale(1.06);
+    }
+
+    .pkg-tile .body {
+        padding: 1.15rem 1.2rem 1.3rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pkg-tile .code {
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .1em;
+        color: var(--accent);
+        text-transform: uppercase;
+    }
+
+    .pkg-tile h3 {
+        font-family: var(--display);
+        font-size: 1.15rem;
+        margin: .35rem 0 .4rem;
+        line-height: 1.2;
+    }
+
+    .pkg-tile .meta {
+        font-size: .8rem;
+        color: rgba(243, 246, 251, .7);
+    }
+
+    .pkg-tile .cta {
+        margin-top: .65rem;
+        font-size: .82rem;
+        font-weight: 600;
+        color: var(--accent);
+        opacity: 0;
+        transform: translateY(4px);
+        transition: opacity .2s, transform .2s;
+    }
+
+    .pkg-tile:hover .cta {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .proj-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.15rem;
+    }
+
+    .proj-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        color: inherit;
+        backdrop-filter: blur(10px);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .proj-card:hover {
+        text-decoration: none;
+        color: inherit;
+        border-color: rgba(94, 234, 212, .35);
+        transform: translateY(-3px);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+    }
+
+    .proj-card .thumb {
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: #0a1220;
+    }
+
+    .proj-card .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    .proj-card:hover .thumb img {
+        transform: scale(1.05);
+    }
+
+    .proj-card .thumb .ph {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        color: var(--dim);
+        font-size: .85rem;
+        background: linear-gradient(135deg, #0f1a2c, #132033);
+    }
+
+    .proj-card .body {
+        padding: 1rem 1.1rem 1.2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proj-card .id {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        color: var(--accent);
+    }
+
+    .proj-card h3 {
+        font-size: 1.05rem;
+        margin: .3rem 0 .45rem;
+        line-height: 1.25;
+        font-weight: 600;
+    }
+
+    .proj-card .place {
+        font-size: .85rem;
+        color: var(--muted);
+        margin-bottom: .6rem;
+    }
+
+    .proj-card .foot {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .8rem;
+        color: var(--dim);
+        padding-top: .5rem;
+        border-top: 1px solid var(--line);
+    }
+
+    .proj-card .foot .link {
+        color: var(--accent);
+        font-weight: 600;
+    }
+
+    .glass {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(14px);
+        padding: 1.35rem 1.45rem;
+    }
+
+    .asks {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: .7rem;
+    }
+
+    .asks li {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: .9rem;
+        align-items: start;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-sm);
+        padding: 1rem 1.15rem;
+    }
+
+    .asks .n {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        font-size: .8rem;
+        font-weight: 700;
+        background: var(--accent-soft);
+        color: var(--accent);
+        border: 1px solid rgba(94, 234, 212, .25);
+    }
+
+    .audience {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+
+    .audience span {
+        padding: .35rem .8rem;
+        border-radius: 999px;
+        font-size: .82rem;
+        color: var(--muted);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .03);
+    }
+
+    .page-hero {
+        position: relative;
+        min-height: 52vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 6.5rem 0 2.5rem;
+        overflow: hidden;
+    }
+
+    .page-hero .hero-media {
+        position: absolute;
+        inset: 0;
+    }
+
+    .page-hero .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .page-hero .hero-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(7, 11, 18, .4), rgba(7, 11, 18, .88) 70%, var(--bg));
+    }
+
+    .page-hero .inner {
+        position: relative;
+        z-index: 1;
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    .breadcrumbs {
+        font-size: .82rem;
+        color: var(--dim);
+        margin-bottom: .85rem;
+    }
+
+    .breadcrumbs a {
+        color: var(--muted);
+    }
+
+    .page-hero h1 {
+        font-family: var(--display);
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        margin: .4rem 0 .6rem;
+        line-height: 1.1;
+        max-width: min(28ch, 100%);
+    }
+
+    .page-hero .hero-sub {
+        color: rgba(243, 246, 251, .8);
+        max-width: 48ch;
+        font-size: 1.05rem;
+        margin: 0;
+    }
+
+    .content {
+        padding: 2.5rem 0 4rem;
+    }
+
+    .split {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 880px) {
+        .split {
+            grid-template-columns: 1.4fr .85fr;
+            align-items: start;
+        }
+    }
+
+    .prose h2 {
+        font-family: var(--display);
+        font-size: 1.45rem;
+        margin: 0 0 1rem;
+    }
+
+    .prose p {
+        margin: 0 0 1rem;
+        color: rgba(243, 246, 251, .88);
+    }
+
+    .prose ul {
+        margin: 0 0 1.2rem;
+        padding-left: 1.15rem;
+        color: rgba(243, 246, 251, .88);
+    }
+
+    .prose li {
+        margin-bottom: .4rem;
+    }
+
+    .prose li strong {
+        color: var(--ink);
+    }
+
+    .side-stack {
+        display: grid;
+        gap: 1rem;
+        position: sticky;
+        top: 5.5rem;
+    }
+
+    .fig-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .fig-chip {
+        background: rgba(255, 255, 255, .05);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        padding: .7rem .9rem;
+        min-width: 7.5rem;
+    }
+
+    .fig-chip .k {
+        font-size: .68rem;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--dim);
+    }
+
+    .fig-chip .v {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--accent-2);
+        margin-top: .15rem;
+    }
+
+    .stat-list {
+        display: grid;
+        gap: .55rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .stat-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: .9rem;
+        padding: .45rem 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .stat-list .k {
+        color: var(--muted);
+    }
+
+    .stat-list .v {
+        color: var(--ink);
+        font-weight: 600;
+        text-align: right;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: .85rem;
+        margin: 1.25rem 0;
+    }
+
+    .gallery figure {
+        margin: 0;
+        border-radius: var(--radius-sm);
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: #0a1220;
+    }
+
+    .gallery img {
+        width: 100%;
+        aspect-ratio: 16/10;
+        object-fit: cover;
+    }
+
+    .gallery figcaption {
+        font-size: .78rem;
+        color: var(--dim);
+        padding: .55rem .7rem;
+    }
+
+    .related {
+        margin-top: 2.5rem;
+    }
+
+    .related h2 {
+        font-family: var(--display);
+        font-size: 1.35rem;
+        margin: 0 0 1rem;
+    }
+
+    .pager {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--line);
+    }
+
+    .pager a {
+        color: var(--ink);
+        font-weight: 500;
+        font-size: .9rem;
+        padding: .65rem 1rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .03);
+    }
+
+    .pager a:hover {
+        border-color: rgba(94, 234, 212, .4);
+        color: var(--accent);
+    }
+
+    .placeholder {
+        min-height: 160px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: var(--dim);
+        background: linear-gradient(135deg, #0f1a2c, #132033);
+        border: 1px dashed var(--line);
+        border-radius: var(--radius-sm);
+        padding: 1.2rem;
+        font-size: .9rem;
+    }
+
+    footer {
+        border-top: 1px solid var(--line);
+        padding: 3rem 0 3.5rem;
+        color: var(--muted);
+        font-size: .92rem;
+    }
+
+    .contact-card h3 {
+        margin: 0 0 .35rem;
+        color: var(--ink);
+        font-size: 1.1rem;
+    }
+
+    .contact-card .org {
+        color: var(--accent);
+        font-size: .85rem;
+        font-weight: 600;
+        margin-bottom: .75rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 720px) {
+        .footer-grid {
+            grid-template-columns: 1.2fr 1fr;
+        }
+    }
+
+    @media (max-width: 720px) {
+        .kpi-strip {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .pkg-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-bleed {
+            min-height: 78vh;
+            padding-top: 6rem;
+        }
+
+        .nav-cta {
+            display: none;
+        }
+    }
+
+    section.wrap {
+        padding: 3rem 0;
+    }
+
+    /* —— ClickSites / GTranslate overlap fix —— */
+    font {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    body font[style*="vertical-align"] {
+        display: inline !important;
+    }
+
+    .page-hero h1,
+    .hero-bleed h1 {
+        max-width: min(28ch, 100%) !important;
+        line-height: 1.15 !important;
+    }
+
+    .page-hero .hero-sub,
+    .prose p,
+    .hero-lead,
+    .page-hero .hero-sub {
+        line-height: 1.65 !important;
+        max-width: 62ch;
+    }
+
+    .split>*,
+    .side-stack,
+    .palt-feedback {
+        min-width: 0;
+    }
+
+    .palt-feedback input,
+    .palt-feedback textarea {
+        width: 100%;
+        min-width: 0;
+    }
+</style>
+
+
+<title>Motorhome Parking Nordkjosnes (variant) | Nordreisa PALT</title>
+<link rel="canonical" href="https://nordreisa.eu/p13-motorhome-parking-nordkjos-variant">
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+<header class="site-header">
+    <div class="wrap nav">
+        <a class="brand" href="./forside.html">PALT <em>·</em> Nordreisa</a>
+        <nav class="nav-links" aria-label="Main">
+            <a href="./forside.html">Overview</a>
+            <a href="./forside.html#packages">Packages</a>
+            <a href="./forside.html#projects" class="active">Projects</a>
+            <a href="./forside.html#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="./forside.html#packages">Explore portfolio</a>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="hero-media"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp" alt="Motorhome parking concept at Nordkjosnes — variant" width="1600" height="900" loading="eager" decoding="async" fetchpriority="high"></div>
+        <div class="inner">
+            <div class="breadcrumbs">
+                <a href="./forside.html">Overview</a> ·
+                <a href="./ap06-servicenoder.html">AP06</a> ·
+                P13
+            </div>
+            <div class="eyebrow">P13 · Clarify then phase</div>
+            <h1>Motorhome Parking Nordkjosnes (variant)</h1>
+            <p class="hero-sub">Related motorhome parking concept at Nordkjosnes — scope must be clarified versus P08.</p>
+        </div>
+    </section>
+    <div class="wrap content">
+        <div class="split">
+            <div class="prose">
+                <h2>The idea</h2>
+                <p>Related motorhome parking concept at Nordkjosnes — scope must be clarified versus P08.</p>
+                <h2>Role</h2>
+                <p>Service node variant / expansion</p>
+                <h2>Revenue logic</h2>
+                <p>Pitch and service fees.</p>
+                <h2>Societal value</h2>
+                <p>Visitor management.</p>
+                <h2>Plan change needed</h2>
+                <p>Avoid double-counting areal; merge or differentiate from P08.</p>
+                <h2>Dependencies</h2>
+                <p>P08.</p>
+                <h2>Next step</h2>
+                <p>Explicit P08/P13 reconciliation note for municipality.</p>
+                <h2>Visuals</h2>
+                <div class="gallery">
+                    <figure><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp" alt="Motorhome parking concept at Nordkjosnes — variant" width="1600" height="900" loading="lazy" decoding="async">
+                        <figcaption>Motorhome parking concept at Nordkjosnes — variant</figcaption>
+                    </figure>
+                </div>
+                <div class="related">
+                    <h2>Related in AP06</h2>
+                    <div class="proj-grid"><a class="proj-card" href="./p08-motorhome-parking-nordkjos.html">
+                            <div class="body" style="padding:1rem">
+                                <div class="id">P08</div>
+                                <h3>Motorhome Parking Nordkjosnes</h3>
+                                <div class="foot"><span class="link">Open →</span></div>
+                            </div>
+                        </a><a class="proj-card" href="./p09-service-node-input-9.html">
+                            <div class="body" style="padding:1rem">
+                                <div class="id">P09</div>
+                                <h3>Service Node Input 9</h3>
+                                <div class="foot"><span class="link">Open →</span></div>
+                            </div>
+                        </a></div>
+                </div>
+            </div>
+            <aside class="side-stack">
+                <div class="glass">
+                    <div class="fig-chips">
+                        <div class="fig-chip">
+                            <div class="k">CAPEX</div>
+                            <div class="v">~12 MNOK</div>
+                        </div>
+                        <div class="fig-chip">
+                            <div class="k">Income / yr</div>
+                            <div class="v">~2.4 MNOK</div>
+                        </div>
+                        <div class="fig-chip">
+                            <div class="k">Jobs</div>
+                            <div class="v">3–8</div>
+                        </div>
+                        <div class="fig-chip">
+                            <div class="k">Maturity</div>
+                            <div class="v">2/5</div>
+                        </div>
+                    </div>
+                    <p style="margin:1rem 0 0;font-size:.82rem;color:var(--dim)">Working estimates — not approved budgets. Source: PALT Grovkalkyler / politikerversjon.</p>
+                </div>
+                <div class="glass">
+                    <ul class="stat-list">
+                        <li><span class="k">Place</span><span class="v">Nordkjosnes</span></li>
+                        <li><span class="k">Package</span><span class="v"><a href="./ap06-servicenoder.html">AP06</a></span></li>
+                        <li><span class="k">Maturity</span><span class="v">2/5</span></li>
+                        <li><span class="k">Priority</span><span class="v">Clarify then phase</span></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="pager"><a href="./p12-deep-water-quay-mountain-facility.html">← P12</a><a href="./p14-preparedness-beredskap.html">P14 →</a></div>
+    </div>
+    <section class="wrap" style="padding-top:0">
+        <div class="glass" style="padding:1.75rem 1.75rem 2rem">
+            <div class="section-label">Feedback</div>
+            <h2 style="font-family:var(--display);font-size:1.35rem;margin:0 0 .5rem">Have a suggestion for this page?</h2>
+            <p style="margin:0 0 1.25rem;color:var(--muted);max-width:56ch">Have a suggestion? Your email app opens with a draft addressed to the PALT team. Review the message and send it from your email app.</p>
+            <form class="palt-feedback" onsubmit="return paltFeedback(event,'p13-motorhome-parking-nordkjos-variant')" style="display:grid;gap:.75rem;max-width:520px">
+                <input type="text" name="name" aria-label="Name" placeholder="Name (optional)" style="background:var(--bg-elev);border:1px solid var(--line-strong);border-radius:var(--radius-sm);padding:.7rem .9rem;color:var(--ink);font-family:var(--font);font-size:.92rem">
+                <input type="email" name="email" aria-label="Email" placeholder="Email (optional, for a reply)" style="background:var(--bg-elev);border:1px solid var(--line-strong);border-radius:var(--radius-sm);padding:.7rem .9rem;color:var(--ink);font-family:var(--font);font-size:.92rem">
+                <textarea name="comment" aria-label="Your suggestion or comment" required="" placeholder="Your suggestion or comment" rows="4" style="background:var(--bg-elev);border:1px solid var(--line-strong);border-radius:var(--radius-sm);padding:.7rem .9rem;color:var(--ink);font-family:var(--font);font-size:.92rem;resize:vertical"></textarea>
+                <button type="submit" class="btn btn-primary" style="justify-self:start">Open email draft</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer id="contact">
+    <div class="wrap footer-grid">
+        <div class="contact-card glass">
+            <div class="org">PALT</div>
+            <h3>Vivi-Ann Sandnes</h3>
+            <p style="margin:.2rem 0 1rem;color:var(--muted)">Partner for municipal, county and investor dialogue.</p>
+            <p style="margin:0">
+                <a href="mailto:vivi-ann@polararena.no">vivi-ann@polararena.no</a><br>
+                <a href="tel:+4790508660">+47 90 50 86 60</a>
+            </p>
+        </div>
+        <div>
+            <p style="margin:0 0 .75rem">Explore PALT’s 25 land-use proposals for Nordreisa, organised into ten work packages for community development.</p>
+            <p style="margin:0;font-size:.85rem;color:var(--dim)">Concept proposals and working estimates · P01–P25 project references</p>
+        </div>
+    </div>
+</footer>
+<script>
+    function paltFeedback(evt, slug) {
+        evt.preventDefault();
+        var f = evt.currentTarget || evt.target;
+        var name = (f.elements.namedItem("name").value || "").trim() || "Anonymous";
+        var email = (f.elements.namedItem("email").value || "").trim();
+        var comment = (f.elements.namedItem("comment").value || "").trim();
+        if (!comment) return false;
+        var subject = "PALT feedback: " + slug;
+        var body = "Page: " + slug + "\nName: " + name + (email ? "\nEmail: " + email : "") + "\n\nComment:\n" + comment;
+        window.location.href = "mailto:vivi-ann@polararena.no?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        return false;
+    }
+    (function() {
+        window.PALT_LANG = {
+            source: "en",
+            readyForGenerator: true
+        };
+        document.documentElement.lang = "en";
+        var header = document.querySelector(".site-header");
+        if (header) {
+            var onScroll = function() {
+                if (window.scrollY > 24) header.classList.add("is-scrolled");
+                else header.classList.remove("is-scrolled");
+            };
+            onScroll();
+            window.addEventListener("scroll", onScroll, {
+                passive: true
+            });
+        }
+    })();
+</script>
+<script data-palt-seo="p13-motorhome-parking-nordkjos-variant">
+    (function() {
+        if (!document.head) return;
+        var seo = {
+            "title": "P13 · Motorhome Parking Nordkjosnes (variant) · PALT Nordreisa",
+            "description": "Related motorhome parking concept at Nordkjosnes — scope must be clarified versus P08.",
+            "url": "https://nordreisa.eu/p13-motorhome-parking-nordkjos-variant",
+            "image": "https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp",
+            "imageAlt": "Motorhome parking concept at Nordkjosnes — variant"
+        };
+        var meta = [
+            ["name", "description", "Related motorhome parking concept at Nordkjosnes — scope must be clarified versus P08."],
+            ["property", "og:title", "P13 · Motorhome Parking Nordkjosnes (variant) · PALT Nordreisa"],
+            ["property", "og:description", "Related motorhome parking concept at Nordkjosnes — scope must be clarified versus P08."],
+            ["property", "og:url", "https://nordreisa.eu/p13-motorhome-parking-nordkjos-variant"],
+            ["property", "og:type", "website"],
+            ["property", "og:site_name", "PALT Nordreisa"],
+            ["property", "og:image", "https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp"],
+            ["property", "og:image:alt", "Motorhome parking concept at Nordkjosnes — variant"],
+            ["property", "og:image:width", "1600"],
+            ["property", "og:image:height", "900"],
+            ["name", "twitter:card", "summary_large_image"],
+            ["name", "twitter:title", "P13 · Motorhome Parking Nordkjosnes (variant) · PALT Nordreisa"],
+            ["name", "twitter:description", "Related motorhome parking concept at Nordkjosnes — scope must be clarified versus P08."],
+            ["name", "twitter:image", "https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp"],
+            ["name", "twitter:image:alt", "Motorhome parking concept at Nordkjosnes — variant"]
+        ];
+
+        function updateHead(selector, tagName, attributes, text) {
+            var matches = document.querySelectorAll(selector);
+            var element = null;
+            var i;
+            for (i = 0; i < matches.length; i++) {
+                if (matches[i].parentNode === document.head) {
+                    element = matches[i];
+                    break;
+                }
+            }
+            element = element || matches[0] || document.createElement(tagName);
+            for (var name in attributes) {
+                if (Object.prototype.hasOwnProperty.call(attributes, name)) {
+                    if (element.getAttribute(name) !== attributes[name]) {
+                        element.setAttribute(name, attributes[name]);
+                    }
+                }
+            }
+            if (typeof text === "string" && element.textContent !== text) element.textContent = text;
+            for (i = 0; i < matches.length; i++) {
+                if (matches[i] !== element && matches[i].parentNode) {
+                    matches[i].parentNode.removeChild(matches[i]);
+                }
+            }
+            if (element.parentNode !== document.head) document.head.appendChild(element);
+        }
+
+        var initialPath = window.location.pathname;
+        var observer = null;
+        var observerOptions = {
+            childList: true,
+            subtree: true,
+            characterData: true,
+            attributes: true,
+            attributeFilter: ["content", "href", "name", "property", "rel"]
+        };
+
+        function applySeo() {
+            if (window.location.pathname !== initialPath) {
+                if (observer) observer.disconnect();
+                return;
+            }
+            if (observer) observer.disconnect();
+            updateHead("title", "title", {}, seo.title);
+            for (var i = 0; i < meta.length; i++) {
+                var attributes = {
+                    content: meta[i][2]
+                };
+                attributes[meta[i][0]] = meta[i][1];
+                updateHead('meta[' + meta[i][0] + '="' + meta[i][1] + '"]', "meta", attributes);
+            }
+            updateHead('link[rel="canonical"]', "link", {
+                rel: "canonical",
+                href: seo.url
+            });
+            if (observer) observer.observe(document.head, observerOptions);
+        }
+
+        applySeo();
+        if (typeof window.MutationObserver === "function") {
+            observer = new window.MutationObserver(applySeo);
+            observer.observe(document.head, observerOptions);
+        }
+        document.addEventListener("DOMContentLoaded", applySeo, {
+            once: true
+        });
+        window.addEventListener("load", applySeo, {
+            once: true
+        });
+    })();
+</script>
+</body>
+</html>

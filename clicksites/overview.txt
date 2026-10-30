@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PALT Nordreisa | 25 land-use proposals</title>
+<style id="palt-fonts">
+    /* vietnamese */
+    @font-face {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCBTeP2Xz5fU8w.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCFTeP2Xz5fU8w.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* vietnamese */
+    @font-face {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCBTeP2Xz5fU8w.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCFTeP2Xz5fU8w.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1ZuWi3hKpA.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1ZuWi3g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1ZuWi3hKpA.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1ZuWi3g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1ZuWi3hKpA.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1ZuWi3g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1ZuWi3hKpA.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+        font-family: 'Instrument Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1ZuWi3g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+<style>
+    #palt-home {
+        --bg: #070b12;
+        --bg-elev: #0d1420;
+        --ink: #f3f6fb;
+        --muted: #9aa8bc;
+        --dim: #91a2bb;
+        --line: rgba(255, 255, 255, .08);
+        --line-strong: rgba(255, 255, 255, .14);
+        --accent: #5eead4;
+        --accent-2: #7dd3fc;
+        --accent-soft: rgba(94, 234, 212, .12);
+        --warm: #fbbf24;
+        --glass: rgba(16, 24, 40, .55);
+        --glass-border: rgba(255, 255, 255, .12);
+        --radius: 18px;
+        --radius-sm: 12px;
+        --shadow: 0 24px 80px rgba(0, 0, 0, .45);
+        --max: 1180px;
+        --font: "Instrument Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        --display: "Fraunces", Georgia, "Times New Roman", serif;
+    }
+
+    #palt-home *,
+    #palt-home *::before,
+    #palt-home *::after {
+        box-sizing: border-box;
+    }
+
+    #palt-home {
+        scroll-behavior: smooth;
+    }
+
+    #palt-home {
+        margin: 0;
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    #palt-home img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #palt-home a {
+        color: var(--accent-2);
+        text-decoration: none;
+        transition: color .2s ease, opacity .2s ease;
+    }
+
+    #palt-home a:hover {
+        color: var(--accent);
+    }
+
+    #palt-home .wrap {
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    #palt-home .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+        border-bottom: 1px solid transparent;
+    }
+
+    #palt-home .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    #palt-home .brand {
+        font-weight: 700;
+        letter-spacing: .04em;
+        color: var(--ink);
+        font-size: .95rem;
+        text-transform: uppercase;
+    }
+
+    #palt-home .brand em {
+        font-style: normal;
+        color: var(--accent);
+    }
+
+    #palt-home .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .25rem .9rem;
+    }
+
+    #palt-home .nav-links a {
+        color: var(--muted);
+        font-size: .9rem;
+        font-weight: 500;
+        padding: .35rem .2rem;
+    }
+
+    #palt-home .nav-links a:hover,
+    #palt-home .nav-links a.active {
+        color: var(--ink);
+    }
+
+    #palt-home .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        background: var(--accent);
+        color: #042f2e !important;
+        font-weight: 600;
+        font-size: .85rem;
+        padding: .55rem 1rem;
+        border-radius: 999px;
+    }
+
+    #palt-home .nav-cta:hover {
+        filter: brightness(1.05);
+        color: #042f2e !important;
+    }
+
+    #palt-home .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: .45rem;
+        padding: .75rem 1.25rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: .92rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    #palt-home .btn-primary {
+        background: var(--accent);
+        color: #042f2e !important;
+    }
+
+    #palt-home .btn-primary:hover {
+        filter: brightness(1.06);
+        color: #042f2e !important;
+    }
+
+    #palt-home .btn-ghost {
+        background: rgba(255, 255, 255, .06);
+        color: var(--ink) !important;
+        border-color: var(--line-strong);
+    }
+
+    #palt-home .btn-ghost:hover {
+        border-color: rgba(94, 234, 212, .45);
+        color: var(--accent) !important;
+    }
+
+    #palt-home .btn-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+        margin-top: 1.5rem;
+    }
+
+    #palt-home .hero-bleed {
+        position: relative;
+        min-height: 88vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 7rem 0 3.5rem;
+        overflow: hidden;
+    }
+
+    #palt-home .hero-bleed .hero-media {
+        position: absolute;
+        inset: 0;
+    }
+
+    #palt-home .hero-bleed .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(1.05) contrast(1.05);
+    }
+
+    #palt-home .hero-bleed .hero-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(105deg, rgba(7, 11, 18, .92) 0%, rgba(7, 11, 18, .72) 42%, rgba(7, 11, 18, .35) 70%, rgba(7, 11, 18, .55) 100%),
+            linear-gradient(180deg, rgba(7, 11, 18, .25), rgba(7, 11, 18, .95) 88%);
+    }
+
+    #palt-home .hero-content {
+        position: relative;
+        z-index: 1;
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    #palt-home .eyebrow {
+        font-size: .78rem;
+        font-weight: 600;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .85rem;
+    }
+
+    #palt-home .hero-bleed h1 {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: clamp(2.4rem, 6vw, 4.2rem);
+        line-height: 1.05;
+        margin: 0 0 1rem;
+        max-width: min(28ch, 100%);
+    }
+
+    #palt-home .hero-lead {
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+        color: rgba(243, 246, 251, .85);
+        max-width: 42ch;
+        margin: 0;
+    }
+
+    #palt-home .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1.35rem;
+    }
+
+    #palt-home .chip {
+        font-size: .82rem;
+        color: var(--muted);
+        padding: .4rem .85rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .04);
+        backdrop-filter: blur(8px);
+    }
+
+    #palt-home .chip strong {
+        color: var(--ink);
+        font-weight: 700;
+    }
+
+    #palt-home .kpi-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .85rem;
+        margin: -2.2rem auto 2rem;
+        position: relative;
+        z-index: 2;
+        width: min(var(--max), calc(100% - 2.5rem));
+    }
+
+    #palt-home .kpi-cell {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(14px);
+        padding: 1.1rem 1.2rem;
+        box-shadow: var(--shadow);
+    }
+
+    #palt-home .kpi-cell .label {
+        font-size: .72rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--dim);
+    }
+
+    #palt-home .kpi-cell .value {
+        font-family: var(--display);
+        font-size: 1.55rem;
+        font-weight: 700;
+        margin: .25rem 0 .15rem;
+        color: var(--accent-2);
+    }
+
+    #palt-home .kpi-cell .hint {
+        font-size: .78rem;
+        color: var(--muted);
+    }
+
+    #palt-home .disclaimer-quiet {
+        font-size: .85rem;
+        color: var(--dim);
+        max-width: 72ch;
+        margin: 0 auto 2.5rem;
+        width: min(var(--max), calc(100% - 2.5rem));
+    }
+
+    #palt-home .disclaimer-quiet strong {
+        color: var(--muted);
+    }
+
+    #palt-home .section-head {
+        margin: 0 0 1.75rem;
+    }
+
+    #palt-home .section-label {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .5rem;
+    }
+
+    #palt-home .section-head h2 {
+        font-family: var(--display);
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        margin: 0 0 .55rem;
+        line-height: 1.15;
+    }
+
+    #palt-home .section-head p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 54ch;
+    }
+
+    #palt-home .pkg-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.15rem;
+    }
+
+    #palt-home .pkg-tile {
+        display: flex;
+        flex-direction: column;
+        color: inherit;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        backdrop-filter: blur(12px);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    #palt-home .pkg-tile:hover {
+        text-decoration: none;
+        color: inherit;
+        border-color: rgba(94, 234, 212, .4);
+        transform: translateY(-4px);
+        box-shadow: 0 20px 55px rgba(0, 0, 0, .4);
+    }
+
+    #palt-home .pkg-tile .cover {
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: #0a1220;
+    }
+
+    #palt-home .pkg-tile .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    #palt-home .pkg-tile:hover .cover img {
+        transform: scale(1.06);
+    }
+
+    #palt-home .pkg-tile .body {
+        padding: 1.15rem 1.2rem 1.3rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #palt-home .pkg-tile .code {
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .1em;
+        color: var(--accent);
+        text-transform: uppercase;
+    }
+
+    #palt-home .pkg-tile h3 {
+        font-family: var(--display);
+        font-size: 1.15rem;
+        margin: .35rem 0 .4rem;
+        line-height: 1.2;
+    }
+
+    #palt-home .pkg-tile .meta {
+        font-size: .8rem;
+        color: rgba(243, 246, 251, .7);
+    }
+
+    #palt-home .pkg-tile .cta {
+        margin-top: .65rem;
+        font-size: .82rem;
+        font-weight: 600;
+        color: var(--accent);
+        opacity: 0;
+        transform: translateY(4px);
+        transition: opacity .2s, transform .2s;
+    }
+
+    #palt-home .pkg-tile:hover .cta {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #palt-home .proj-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.15rem;
+    }
+
+    #palt-home .proj-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        color: inherit;
+        backdrop-filter: blur(10px);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    #palt-home .proj-card:hover {
+        text-decoration: none;
+        color: inherit;
+        border-color: rgba(94, 234, 212, .35);
+        transform: translateY(-3px);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+    }
+
+    #palt-home .proj-card .thumb {
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: #0a1220;
+    }
+
+    #palt-home .proj-card .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    #palt-home .proj-card:hover .thumb img {
+        transform: scale(1.05);
+    }
+
+    #palt-home .proj-card .body {
+        padding: 1rem 1.1rem 1.2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #palt-home .proj-card .id {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        color: var(--accent);
+    }
+
+    #palt-home .proj-card h3 {
+        font-size: 1.05rem;
+        margin: .3rem 0 .45rem;
+        line-height: 1.25;
+        font-weight: 600;
+    }
+
+    #palt-home .proj-card .place {
+        font-size: .85rem;
+        color: var(--muted);
+        margin-bottom: .6rem;
+    }
+
+    #palt-home .proj-card .foot {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .8rem;
+        color: var(--dim);
+        padding-top: .5rem;
+        border-top: 1px solid var(--line);
+    }
+
+    #palt-home .proj-card .foot .link {
+        color: var(--accent);
+        font-weight: 600;
+    }
+
+    #palt-home .glass {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(14px);
+        padding: 1.35rem 1.45rem;
+    }
+
+    #palt-home .asks {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: .7rem;
+    }
+
+    #palt-home .asks li {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: .9rem;
+        align-items: start;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-sm);
+        padding: 1rem 1.15rem;
+    }
+
+    #palt-home .asks .n {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        font-size: .8rem;
+        font-weight: 700;
+        background: var(--accent-soft);
+        color: var(--accent);
+        border: 1px solid rgba(94, 234, 212, .25);
+    }
+
+    #palt-home .audience {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+
+    #palt-home .audience span {
+        padding: .35rem .8rem;
+        border-radius: 999px;
+        font-size: .82rem;
+        color: var(--muted);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .03);
+    }
+
+    @media (min-width: 880px) {}
+
+    #palt-home footer {
+        border-top: 1px solid var(--line);
+        padding: 3rem 0 3.5rem;
+        color: var(--muted);
+        font-size: .92rem;
+    }
+
+    #palt-home .contact-card h3 {
+        margin: 0 0 .35rem;
+        color: var(--ink);
+        font-size: 1.1rem;
+    }
+
+    #palt-home .contact-card .org {
+        color: var(--accent);
+        font-size: .85rem;
+        font-weight: 600;
+        margin-bottom: .75rem;
+    }
+
+    #palt-home .footer-grid {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 720px) {
+        #palt-home .footer-grid {
+            grid-template-columns: 1.2fr 1fr;
+        }
+    }
+
+    @media (max-width: 720px) {
+        #palt-home .kpi-strip {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #palt-home .pkg-grid {
+            grid-template-columns: 1fr;
+        }
+
+        #palt-home .hero-bleed {
+            min-height: 78vh;
+            padding-top: 6rem;
+        }
+
+        #palt-home .nav-cta {
+            display: none;
+        }
+    }
+
+    #palt-home section.wrap {
+        padding: 3rem 0;
+    }
+
+    #palt-home font {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    #palt-home font[style*="vertical-align"] {
+        display: inline !important;
+    }
+
+    #palt-home .hero-bleed h1 {
+        max-width: min(28ch, 100%) !important;
+        line-height: 1.15 !important;
+    }
+
+    #palt-home .hero-lead {
+        line-height: 1.65 !important;
+        max-width: 62ch;
+    }
+
+    #palt-home {
+        position: relative;
+        isolation: isolate;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    #palt-home main,
+    #palt-home .pkg-grid,
+    #palt-home .proj-grid,
+    #palt-home .kpi-cell {
+        min-width: 0;
+    }
+
+    #palt-home a:focus-visible,
+    #palt-home button:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 4px;
+    }
+
+    #palt-home [id] {
+        scroll-margin-top: 8rem;
+    }
+
+    #palt-home .palt-skip {
+        position: absolute;
+        left: 1rem;
+        top: .5rem;
+        z-index: 1000;
+        padding: .75rem 1rem;
+        background: #5eead4;
+        color: #042f2e;
+        border-radius: 8px;
+        transform: translateY(-200%);
+    }
+
+    #palt-home .palt-skip:focus {
+        transform: translateY(0);
+    }
+
+    #palt-home .hero-media picture,
+    #palt-home .cover picture,
+    #palt-home .thumb picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+
+        #palt-home,
+        #palt-home * {
+            scroll-behavior: auto;
+            transition: none;
+        }
+    }
+</style>
+<meta name="description" content="Explore PALT’s 25 land-use proposals for Nordreisa, organised into ten work packages for destination development, housing, food, energy and preparedness.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PALT Nordreisa">
+<meta property="og:title" content="PALT Nordreisa | 25 land-use proposals">
+<meta property="og:description" content="Explore PALT’s 25 land-use proposals for Nordreisa, organised into ten work packages for destination development, housing, food, energy and preparedness.">
+<meta property="og:url" content="https://nordreisa.eu/">
+<meta property="og:image" content="https://leamarketing.github.io/nordreisa-bilder/webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp">
+<meta property="og:image:alt" content="Overview of the PALT development areas in Nordreisa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PALT Nordreisa | 25 land-use proposals">
+<meta name="twitter:description" content="Explore PALT’s 25 land-use proposals for Nordreisa, organised into ten work packages for destination development, housing, food, energy and preparedness.">
+<meta name="twitter:image" content="https://leamarketing.github.io/nordreisa-bilder/webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp">
+<link rel="canonical" href="https://nordreisa.eu/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="preconnect" href="https://leamarketing.github.io">
+<style id="palt-scroll-marker-style">
+    #palt-home .palt-scroll-marker {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+    }
+</style>
+
+</head>
+<body>
+<div id="palt-home" lang="en">
+    <span class="palt-scroll-marker" aria-hidden="true"></span><a href="#main-content" class="palt-skip">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap nav">
+            <a class="brand" href="/">PALT <em>·</em> Nordreisa</a>
+            <nav class="nav-links" aria-label="Main">
+                <a href="/" class="active">Overview</a>
+                <a href="https://nordreisa.eu/calculations">Calculations</a>
+                <a href="/#projects">Projects</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+            <a class="nav-cta" href="/#packages">Explore portfolio</a>
+        </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+        <section class="hero-bleed" aria-label="Hero">
+            <div class="hero-media">
+                <picture>
+                    <source type="image/avif" srcset="https://leamarketing.github.io/nordreisa-bilder/avif/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-r2-1510w.avif">
+                    <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp" alt="Overview of the PALT development areas in Nordreisa" width="1510" height="630" decoding="async" loading="eager" fetchpriority="high">
+                </picture>
+            </div>
+            <div class="hero-content">
+                <div class="eyebrow">PALT · Polar Arena / local development</div>
+                <h1>Regenerative community development</h1>
+                <h2>- Pilot project: 25 land-use proposals for the municipality of Nordreisa</h2>
+                <p class="hero-lead">Based on pilot projects proposed for a municipality in Northern Troms, Northern Norway. We follow the processes through political and administrative review in accordance with the current Planning and Building Act.</p>
+                <div class="hero-meta">
+                    <span class="chip">
+                        <strong>25</strong> projects</span>
+                    <span class="chip">
+                        <strong>10</strong> packages</span>
+                    <span class="chip">Nordreisa · Northern Norway</span>
+                </div>
+                <div class="btn-row">
+                    <a class="btn btn-primary" href="https://nordreisa.eu/calculations">Browse Calculations</a>
+                    <a class="btn btn-ghost" href="https://nordreisa.eu/calculations">All projects P01–P25</a>
+                </div>
+            </div>
+        </section>
+        <div class="kpi-strip" aria-label="Portfolio indicators">
+            <div class="kpi-cell">
+                <div class="label">Indicative CAPEX</div>
+                <div class="value">~4 391.6</div>
+                <div class="hint">MNOK working estimate</div>
+            </div>
+            <div class="kpi-cell">
+                <div class="label">Annual income</div>
+                <div class="value">~409.6</div>
+                <div class="hint">MNOK / year class</div>
+            </div>
+            <div class="kpi-cell">
+                <div class="label">Jobs range</div>
+                <div class="value">247–1 015</div>
+                <div class="hint">Indicative</div>
+            </div>
+            <div class="kpi-cell">
+                <div class="label">Structure</div>
+                <div class="value">25 → 10</div>
+                <div class="hint">Projects to packages</div>
+            </div>
+        </div>
+        <p class="disclaimer-quiet">
+            <strong>Disclaimer:</strong> All figures are working estimates (arbeidsanslag), not approved budgets. They come from PALT rough calculations (Grovkalkyler) and politikerversjon materials and will change with studies, design and decisions.
+        </p>
+        <section class="wrap" id="packages">
+            <div class="section-head">
+                <div class="section-label">Work packages</div>
+                <h2>Ten decision packages — not 25 isolated cases</h2>
+                <p>Each package groups related projects so kommune, fylke, state and investors can steer the portfolio.</p>
+            </div>
+            <div class="pkg-grid">
+                <a class="pkg-tile" href="/ap01-sandnes-fjord">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/avif" srcset="https://leamarketing.github.io/nordreisa-bilder/avif/palt-sfc-spawatherpark-2af3e82305-r2-400w.avif 400w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-sfc-spawatherpark-2af3e82305-r2-700w.avif 700w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-sfc-spawatherpark-2af3e82305-r2-1000w.avif 1000w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-sfc-spawatherpark-2af3e82305-r2-1500w.avif 1500w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px">
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-sfc-spawatherpark-2af3e82305-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-sfc-spawatherpark-2af3e82305-1600w.webp 1600w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/sfc-spawatherpark.webp" alt="" loading="lazy" width="1672" height="941" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP01</div>
+                        <h3>Sandnes FjordCamping Destination</h3>
+                        <div class="meta">P01, P02 · Maturity 3/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap02-mat">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/avif" srcset="https://leamarketing.github.io/nordreisa-bilder/avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-400w.avif 400w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-700w.avif 700w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1000w.avif 1000w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1500w.avif 1500w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px">
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-1502w.webp 1502w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/akapodiskdomeminihusveibakken-a.webp" alt="" loading="lazy" width="1502" height="1047" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP02</div>
+                        <h3>Food &amp; Circular Agriculture</h3>
+                        <div class="meta">P03, P15 · Maturity 2/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap03-energi">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-no-fa880e64ff-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-no-fa880e64ff-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-no-fa880e64ff-1600w.webp 1600w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/clc-energi-no.webp" alt="" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP03</div>
+                        <h3>Energy (CLC)</h3>
+                        <div class="meta">P04, P18 · Maturity 2/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap04-rovdas">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/avif" srcset="https://leamarketing.github.io/nordreisa-bilder/avif/palt-minihusrovdas-9a5298fce5-r2-400w.avif 400w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-minihusrovdas-9a5298fce5-r2-700w.avif 700w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-minihusrovdas-9a5298fce5-r2-1000w.avif 1000w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-minihusrovdas-9a5298fce5-r2-1500w.avif 1500w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px">
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-minihusrovdas-9a5298fce5-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-minihusrovdas-9a5298fce5-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-minihusrovdas-9a5298fce5-1536w.webp 1536w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/minihusrovdas.webp" alt="" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP04</div>
+                        <h3>Rovdas Housing</h3>
+                        <div class="meta">P05, P06 · Maturity 4/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap05-nordkjosfjellet">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/avif" srcset="https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-400w.avif 400w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-700w.avif 700w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-1000w.avif 1000w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-1500w.avif 1500w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px">
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-i-fjell-ca1b8b567f-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-i-fjell-ca1b8b567f-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-i-fjell-ca1b8b567f-1536w.webp 1536w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/web3-i-fjell.webp" alt="" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP05</div>
+                        <h3>Nordkjosfjellet</h3>
+                        <div class="meta">P07, P12, P17, P25 · Maturity 1/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap06-servicenoder">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/avif" srcset="https://leamarketing.github.io/nordreisa-bilder/avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-400w.avif 400w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-700w.avif 700w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1000w.avif 1000w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1500w.avif 1500w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px">
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-1600w.webp 1600w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-1600w.webp" alt="" loading="lazy" width="1672" height="941" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP06</div>
+                        <h3>Service Nodes</h3>
+                        <div class="meta">P08, P09, P13 · Maturity 2–3/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap07-kvaennes-rovdas">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-1600w.webp 1600w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/dypvannskaifjellanleggnordkjosnes.webp" alt="" loading="lazy" width="1672" height="941" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP07</div>
+                        <h3>Kvænnes Area Development</h3>
+                        <div class="meta">P10, P11, P14, P16, P19 · Maturity 2/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap08-strategi">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-1600w.webp 1600w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-1600w.webp" alt="" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP08</div>
+                        <h3>Strategy &amp; Governance</h3>
+                        <div class="meta">P20, P21 · Maturity 2/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap09-vinter">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-22-a-e2ff31b8f4-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-22-a-e2ff31b8f4-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-22-a-e2ff31b8f4-1600w.webp 1600w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/innspill-22-a.webp" alt="" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP09</div>
+                        <h3>Winter</h3>
+                        <div class="meta">P22 · Maturity 3/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+                <a class="pkg-tile" href="/ap10-veibakken">
+                    <div class="cover">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-gudepark-84a933a3b2-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-gudepark-84a933a3b2-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-gudepark-84a933a3b2-1536w.webp 1536w" sizes="(max-width: 720px) calc(100vw - 2.5rem), (max-width: 916px) calc((100vw - 3.65rem) / 2), (max-width: 1215px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/gudepark.webp" alt="" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="code">AP10</div>
+                        <h3>Veibakken</h3>
+                        <div class="meta">P23, P24 · Maturity 2/5</div>
+                        <div class="cta">Open package →</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="wrap" id="projects">
+            <div class="section-head">
+                <div class="section-label">Project gallery</div>
+                <h2>P01–P25 at a glance</h2>
+                <p>Norwegian place names and project IDs kept for traceability. Open any card for punchy facts, figures and related work.</p>
+            </div>
+            <div class="proj-grid">
+                <a class="proj-card" href="/p01-sandnes-fjord-camping-domes">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-nye-sandnesfjordcamping-b63c8bccc1-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-nye-sandnesfjordcamping-b63c8bccc1-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-nye-sandnesfjordcamping-b63c8bccc1-1448w.webp 1448w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/nye-sandnesfjordcamping.webp" alt="Sandnes Fjord Camping &amp; Domes" loading="lazy" width="1448" height="1086" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P01</div>
+                        <h3>Sandnes Fjord Camping &amp; Domes</h3>
+                        <div class="place">StraumFjord</div>
+                        <div class="foot">
+                            <span>Pilot first</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p02-spa-sauna-waterpark">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-1448w.webp 1448w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/spa-sauna-badelands-anlegget.webp" alt="Spa–Sauna–Waterpark" loading="lazy" width="1448" height="1086" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P02</div>
+                        <h3>Spa–Sauna–Waterpark</h3>
+                        <div class="place">Straumfjord</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p03-greenhouse-aquaponic-dome">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-3-veksthus-og-landbruk-06d5fa17b8-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-3-veksthus-og-landbruk-06d5fa17b8-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-3-veksthus-og-landbruk-06d5fa17b8-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-3-veksthus-og-landbruk-06d5fa17b8-1600w.webp" alt="Greenhouse &amp; Aquaponic Dome" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P03</div>
+                        <h3>Greenhouse &amp; Aquaponic Dome</h3>
+                        <div class="place">Dome / agriculture zone</div>
+                        <div class="foot">
+                            <span>Study</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p04-clc-energy">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-no-fa880e64ff-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-no-fa880e64ff-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-no-fa880e64ff-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/clc-energi-no.webp" alt="CLC Energy" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P04</div>
+                        <h3>CLC Energy</h3>
+                        <div class="place">Nordreisa energy sites</div>
+                        <div class="foot">
+                            <span>Study</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p05-rovdas-minihouse-8-units">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/8-boliger-rovdas-minihouse-no.webp" alt="Rovdas MiniHouse (8–12 units)" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P05</div>
+                        <h3>Rovdas MiniHouse (8–12 units)</h3>
+                        <div class="place">Rovdas</div>
+                        <div class="foot">
+                            <span>Pilot first</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p06-rovdas-two-storey-housing">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-rovdas-2-etasjes-boliger-3c54089121-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-rovdas-2-etasjes-boliger-3c54089121-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-rovdas-2-etasjes-boliger-3c54089121-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/rovdas-2-etasjes-boliger.webp" alt="Veibakken Two-Storey Housing" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P06</div>
+                        <h3>Veibakken Two-Storey Housing</h3>
+                        <div class="place">Veibakken</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p07-cave-lodging-web3-in-the-mountain">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/avif" srcset="https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-400w.avif 400w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-700w.avif 700w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-1000w.avif 1000w, https://leamarketing.github.io/nordreisa-bilder/avif/palt-web3-i-fjell-ca1b8b567f-r2-1500w.avif 1500w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px">
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-i-fjell-ca1b8b567f-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-i-fjell-ca1b8b567f-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-i-fjell-ca1b8b567f-1536w.webp 1536w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/web3-i-fjell.webp" alt="Cave Lodging / WEB3 in the Mountain" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P07</div>
+                        <h3>Cave Lodging / WEB3 in the Mountain</h3>
+                        <div class="place">Nordkjosen / Nordkjosfjellet</div>
+                        <div class="foot">
+                            <span>Option / study then pilot</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p08-motorhome-parking-nordkjos">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-7fbc17ad1d-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-7fbc17ad1d-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-7fbc17ad1d-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-7fbc17ad1d-1600w.webp" alt="Motorhome Parking Nordkjos" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P08</div>
+                        <h3>Motorhome Parking Nordkjos</h3>
+                        <div class="place">Nordkjos</div>
+                        <div class="foot">
+                            <span>Pilot first (node 1)</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p09-service-node-input-9">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-9-0f28859ae9-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-9-0f28859ae9-1376w.webp 1376w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/innspill-9.webp" alt="Service Node Input 9" loading="lazy" width="1376" height="768" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P09</div>
+                        <h3>Service Node Input 9</h3>
+                        <div class="place">Nordreisa service corridor</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p10-kvaennes-building-phase-1">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp 1536w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp" alt="Deep-water quay and mountain facility concept, Kvænnes building phase 1" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P10</div>
+                        <h3>Kvænnes Building Phase 1</h3>
+                        <div class="place">Kvænnes</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p11-naturarv-nord">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-naturarv-nord-plakat-87af97775d-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-naturarv-nord-plakat-87af97775d-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-naturarv-nord-plakat-87af97775d-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-naturarv-nord-plakat-87af97775d-1600w.webp" alt="Naturarv Nord" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P11</div>
+                        <h3>Naturarv Nord</h3>
+                        <div class="place">Kvænnes / nature zone</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p12-deep-water-quay-mountain-facility">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp 1536w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp" alt="Deep-Water Quay &amp; Mountain Facility" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P12</div>
+                        <h3>Deep-Water Quay &amp; Mountain Facility</h3>
+                        <div class="place">Nordkjosnes</div>
+                        <div class="foot">
+                            <span>Study</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p13-motorhome-parking-nordkjos-variant">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp" alt="Motorhome Parking Nordkjosnes (variant)" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P13</div>
+                        <h3>Motorhome Parking Nordkjosnes (variant)</h3>
+                        <div class="place">Nordkjosnes</div>
+                        <div class="foot">
+                            <span>Clarify then phase</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p14-preparedness-beredskap">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-beredskap-c17c973c0b-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-beredskap-c17c973c0b-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-beredskap-c17c973c0b-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/beredskap.webp" alt="Preparedness (Beredskap)" loading="lazy" width="1600" height="432" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P14</div>
+                        <h3>Preparedness (Beredskap)</h3>
+                        <div class="place">Kvænnes area</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p15-growth-circle-in-the-dome-environment">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-1448w.webp 1448w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-1448w.webp" alt="Growth Circle in the Dome Environment" loading="lazy" width="1448" height="1086" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P15</div>
+                        <h3>Growth Circle in the Dome Environment</h3>
+                        <div class="place">Dome environment</div>
+                        <div class="foot">
+                            <span>Study</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p16-domes-at-rovdas-kvaennes">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-1344w.webp 1344w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-1344w.webp" alt="Domes at Kvænnes" loading="lazy" width="1344" height="768" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P16</div>
+                        <h3>Domes at Kvænnes</h3>
+                        <div class="place">Kvænnes</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p17-web3-layer">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-b6c3dd4e34-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-b6c3dd4e34-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-web3-b6c3dd4e34-1536w.webp 1536w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/web3.webp" alt="WEB3 Layer" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P17</div>
+                        <h3>WEB3 Layer</h3>
+                        <div class="place">Nordkjosfjellet / digital</div>
+                        <div class="foot">
+                            <span>Option</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p18-clc-energy-review-extension">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-gjennomgang-no-ea253f7487-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-gjennomgang-no-ea253f7487-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-clc-energi-gjennomgang-no-ea253f7487-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/clc-energi-gjennomgang-no.webp" alt="CLC Energy Review / Extension" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P18</div>
+                        <h3>CLC Energy Review / Extension</h3>
+                        <div class="place">Nordreisa</div>
+                        <div class="foot">
+                            <span>Study</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p19-kvaennes-area-input-19">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-19-1-c621944e2e-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-19-1-c621944e2e-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-19-1-c621944e2e-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-19-1-c621944e2e-1600w.webp" alt="Kvænnes Area Input 19" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P19</div>
+                        <h3>Kvænnes Area Input 19</h3>
+                        <div class="place">Kvænnes</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p20-strategy-input-20">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-20-a-3102a04bcc-1600w.webp" alt="Strategy Input 20" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P20</div>
+                        <h3>Strategy Input 20</h3>
+                        <div class="place">Nordreisa (non-areal)</div>
+                        <div class="foot">
+                            <span>Pilot first (process)</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p21-strategy-input-21">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-21-a-a4d4625153-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-21-a-a4d4625153-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-21-a-a4d4625153-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-21-a-a4d4625153-1600w.webp" alt="Strategy Input 21" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P21</div>
+                        <h3>Strategy Input 21</h3>
+                        <div class="place">Nordreisa (non-areal)</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p22-winter-offer">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-22-a-e2ff31b8f4-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-22-a-e2ff31b8f4-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-22-a-e2ff31b8f4-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/innspill-22-a.webp" alt="Winter Offer" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P22</div>
+                        <h3>Winter Offer</h3>
+                        <div class="place">Nordreisa winter arenas</div>
+                        <div class="foot">
+                            <span>Pilot first</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p23-gudepark">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-gudepark-84a933a3b2-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-gudepark-84a933a3b2-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-gudepark-84a933a3b2-1536w.webp 1536w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/gudepark.webp" alt="Gudepark" loading="lazy" width="1536" height="1024" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P23</div>
+                        <h3>Gudepark</h3>
+                        <div class="place">Veibakken</div>
+                        <div class="foot">
+                            <span>Study / phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p24-veibakken-input-24">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-24-f76d5667f7-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-24-f76d5667f7-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-24-f76d5667f7-1376w.webp 1376w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-24-f76d5667f7-1376w.webp" alt="Veibakken Input 24" loading="lazy" width="1376" height="768" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P24</div>
+                        <h3>Veibakken Input 24</h3>
+                        <div class="place">Veibakken</div>
+                        <div class="foot">
+                            <span>Phased</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="proj-card" href="/p25-nordkjosfjellet-input-25">
+                    <div class="thumb">
+                        <picture>
+                            <source type="image/webp" srcset="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-25-1-fc107daa17-400w.webp 400w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-25-1-fc107daa17-800w.webp 800w, https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-25-1-fc107daa17-1600w.webp 1600w" sizes="(max-width: 578px) calc(100vw - 2.5rem), (max-width: 856px) calc((100vw - 3.65rem) / 2), (max-width: 1135px) calc((100vw - 4.8rem) / 3), 282px"><img src="https://leamarketing.github.io/nordreisa-bilder/webp/palt-innspill-25-1-fc107daa17-1600w.webp" alt="Nordkjosfjellet Input 25" loading="lazy" width="1600" height="900" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="body">
+                        <div class="id">P25</div>
+                        <h3>Nordkjosfjellet Input 25</h3>
+                        <div class="place">Nordkjosfjellet</div>
+                        <div class="foot">
+                            <span>Option</span>
+                            <span class="link">View →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="wrap" id="asks">
+            <div class="section-head">
+                <div class="section-label">Asks to decision-makers</div>
+                <h2>What we ask of municipality, county and capital</h2>
+            </div>
+            <ul class="asks">
+                <li>
+                    <span class="n">1</span>
+                    <span>Acknowledge the 25 arealinnspill as a structured portfolio, not 25 isolated cases.</span>
+                </li>
+                <li>
+                    <span class="n">2</span>
+                    <span>Adopt the 10 work packages as the steering unit for municipal and county dialogue.</span>
+                </li>
+                <li>
+                    <span class="n">3</span>
+                    <span>Prioritise near-term pilots (housing at Rovdas; Sandnes Fjord destination; first service node).</span>
+                </li>
+                <li>
+                    <span class="n">4</span>
+                    <span>Keep large mountain/harbour concepts on a study track before major CAPEX.</span>
+                </li>
+                <li>
+                    <span class="n">5</span>
+                    <span>Invite state, county and private capital into a transparent public–private sequencing discussion.</span>
+                </li>
+            </ul>
+            <div class="audience">
+                <span>Nordreisa kommune</span>
+                <span>Troms fylkeskommune</span>
+                <span>State / sector agencies</span>
+                <span>Private investors</span>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="wrap footer-grid">
+            <div class="contact-card glass">
+                <div class="org">PALT</div>
+                <h3>Vivi-Ann Sandnes</h3>
+                <p style="margin:.2rem 0 1rem;color:var(--muted)">Partner for municipal, county and investor dialogue.</p>
+                <p style="margin:0">
+                    <a href="mailto:vivi-ann@polararena.no">vivi-ann@polararena.no</a>
+                    <br>
+                    <a href="tel:+4790508660">+47 90 50 86 60</a>
+                </p>
+            </div>
+            <div>
+                <p style="margin:0 0 .75rem">Explore PALT’s 25 land-use proposals for Nordreisa, organised into ten work packages for community development.</p>
+                <p style="margin:0;font-size:.85rem;color:var(--dim)">Concept proposals and working estimates · P01–P25 project references</p>
+                <p style="margin:1rem 0 0">
+                    <a href="/why-nordreisa">Why Nordreisa →</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    (function() {
+        if (!/^(www\.)?nordreisa\.eu$/i.test(window.location.hostname) || !/^(\/|\/overview\/?)$/.test(window.location.pathname)) return;
+        var root = document.getElementById('palt-home');
+        if (!root) return;
+        var header = root.querySelector('.site-header');
+        var marker = root.querySelector('.palt-scroll-marker');
+        if (!header || !marker) return;
+        if (typeof window.IntersectionObserver !== 'function') {
+            header.classList.add('is-scrolled');
+            return;
+        }
+        var disposed = false;
+        var observer = new window.IntersectionObserver(function(entries) {
+            if (!root.isConnected) {
+                cleanup();
+                return;
+            }
+            if (!entries.length) return;
+            // This rectangle was computed by the browser; no synchronous layout query.
+            var entry = entries[entries.length - 1];
+            header.classList.toggle('is-scrolled', entry.boundingClientRect.top < 0);
+        }, {
+            threshold: [0, 1]
+        });
+
+        function pause() {
+            observer.disconnect();
+        }
+
+        function resume() {
+            if (disposed) return;
+            if (!root.isConnected) {
+                cleanup();
+                return;
+            }
+            observer.observe(marker);
+        }
+
+        function cleanup() {
+            if (disposed) return;
+            disposed = true;
+            observer.disconnect();
+            window.removeEventListener('pagehide', pause);
+            window.removeEventListener('pageshow', resume);
+        }
+        window.addEventListener('pagehide', pause);
+        window.addEventListener('pageshow', resume);
+        resume();
+    })();
+</script>
+</body>
+</html>
