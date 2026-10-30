@@ -1,0 +1,2257 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1000w.avif",
+      "sha256": "247c984a8accf73fa915edbe5d26acddfa0d0e4db09db6913d8148b47500da0b",
+      "format": "AVIF",
+      "width": 1000,
+      "height": 697,
+      "bytes": 100922
+    },
+    {
+      "path": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1500w.avif",
+      "sha256": "c63da654deda7a9226a4bf24e56f58e1227f0d07c07152a0fc79cd0aed16ffee",
+      "format": "AVIF",
+      "width": 1500,
+      "height": 1046,
+      "bytes": 189396
+    },
+    {
+      "path": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-400w.avif",
+      "sha256": "57ec9d959eaef0b88339dce3575ebb357a89a09ca115b209a205c581d34ad50d",
+      "format": "AVIF",
+      "width": 400,
+      "height": 279,
+      "bytes": 18178
+    },
+    {
+      "path": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-700w.avif",
+      "sha256": "612cf4e042bad9344b40ed547026287065dbabbaeaeb19e0f944260a42b61412",
+      "format": "AVIF",
+      "width": 700,
+      "height": 488,
+      "bytes": 53232
+    },
+    {
+      "path": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1000w.avif",
+      "sha256": "dfd0930331ec0cb31fa05538eb1b6c10e422b1934d200c42f3e6756882853e9a",
+      "format": "AVIF",
+      "width": 1000,
+      "height": 563,
+      "bytes": 83283
+    },
+    {
+      "path": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1500w.avif",
+      "sha256": "014d7b5da891c154e670aa3a8d038366302711d84b322b61ee2f6ae3e202943f",
+      "format": "AVIF",
+      "width": 1500,
+      "height": 844,
+      "bytes": 167694
+    },
+    {
+      "path": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-400w.avif",
+      "sha256": "f391cadf1d32ff108431a7e4427690305f831554583e9a706e302c2b2d9217c6",
+      "format": "AVIF",
+      "width": 400,
+      "height": 225,
+      "bytes": 13558
+    },
+    {
+      "path": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-700w.avif",
+      "sha256": "a519b6a5f1c20ff6bf1f137d8c9fe0073d804b060da55a002f5d3d5342d3ad9c",
+      "format": "AVIF",
+      "width": 700,
+      "height": 394,
+      "bytes": 40960
+    },
+    {
+      "path": "avif/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-r2-1510w.avif",
+      "sha256": "7f132138acf5e7569c5da9e19a35cc739ef375dee848aaf3d1826e7cf59fbadb",
+      "format": "AVIF",
+      "width": 1510,
+      "height": 630,
+      "bytes": 68791
+    },
+    {
+      "path": "avif/palt-minihusrovdas-9a5298fce5-r2-1000w.avif",
+      "sha256": "e2471c73bd13df99317f1876e66fbd1c10f2ec20a55e694c8236c47f8bd79d96",
+      "format": "AVIF",
+      "width": 1000,
+      "height": 667,
+      "bytes": 70614
+    },
+    {
+      "path": "avif/palt-minihusrovdas-9a5298fce5-r2-1500w.avif",
+      "sha256": "0026761147d77aab46f959b32fdac95b3431557adbae25689342f82454d3b4a8",
+      "format": "AVIF",
+      "width": 1500,
+      "height": 1000,
+      "bytes": 128973
+    },
+    {
+      "path": "avif/palt-minihusrovdas-9a5298fce5-r2-400w.avif",
+      "sha256": "b276e236838e5a50a4cda19d89ccd0887cc5b9942593e80c4c0bb8c02bdddf56",
+      "format": "AVIF",
+      "width": 400,
+      "height": 267,
+      "bytes": 14334
+    },
+    {
+      "path": "avif/palt-minihusrovdas-9a5298fce5-r2-700w.avif",
+      "sha256": "ef5798a380029174979d25e019723fb03135379199237ff8cdbfbf0e9db178c7",
+      "format": "AVIF",
+      "width": 700,
+      "height": 467,
+      "bytes": 38598
+    },
+    {
+      "path": "avif/palt-sfc-spawatherpark-2af3e82305-r2-1000w.avif",
+      "sha256": "bb07fd34bd09e4635b8b361ce004a20381a3d46185fb04116ae0024d7bfa0f64",
+      "format": "AVIF",
+      "width": 1000,
+      "height": 563,
+      "bytes": 73420
+    },
+    {
+      "path": "avif/palt-sfc-spawatherpark-2af3e82305-r2-1500w.avif",
+      "sha256": "521e7965a2a99931f9177921f546a576dbbe034c12ef26408dd47558dde19c6f",
+      "format": "AVIF",
+      "width": 1500,
+      "height": 844,
+      "bytes": 149559
+    },
+    {
+      "path": "avif/palt-sfc-spawatherpark-2af3e82305-r2-400w.avif",
+      "sha256": "e6a256b4bb93378d73652dd1167bf99d14436a610608f2cb4f2093565ee8f9cc",
+      "format": "AVIF",
+      "width": 400,
+      "height": 225,
+      "bytes": 12216
+    },
+    {
+      "path": "avif/palt-sfc-spawatherpark-2af3e82305-r2-700w.avif",
+      "sha256": "b3fe375a92aec213f4b5a451b1097c8a2221c0a6fe16643bfb69ef166185857e",
+      "format": "AVIF",
+      "width": 700,
+      "height": 394,
+      "bytes": 35862
+    },
+    {
+      "path": "avif/palt-web3-i-fjell-ca1b8b567f-r2-1000w.avif",
+      "sha256": "cd71a37dbf9e11e22a5e0d596ca903584fa0a21d3633f27439898c861b5fa606",
+      "format": "AVIF",
+      "width": 1000,
+      "height": 667,
+      "bytes": 84143
+    },
+    {
+      "path": "avif/palt-web3-i-fjell-ca1b8b567f-r2-1500w.avif",
+      "sha256": "8c9e1868588a3fa774be0525b5d3d1990f05a979f39b738a84e52b29b9101e91",
+      "format": "AVIF",
+      "width": 1500,
+      "height": 1000,
+      "bytes": 159395
+    },
+    {
+      "path": "avif/palt-web3-i-fjell-ca1b8b567f-r2-400w.avif",
+      "sha256": "dadfa5abd4ae138d4f4a13c1214389f2bbd00004c79fe4e53bce7d3752d0be78",
+      "format": "AVIF",
+      "width": 400,
+      "height": 267,
+      "bytes": 15692
+    },
+    {
+      "path": "avif/palt-web3-i-fjell-ca1b8b567f-r2-700w.avif",
+      "sha256": "7cd5d5629c043433cb644c1d690c0f5332a1e02e30b03fe7a75afbf0aab580f2",
+      "format": "AVIF",
+      "width": 700,
+      "height": 467,
+      "bytes": 46169
+    },
+    {
+      "path": "webp/10hyttetomtersfc-480w.webp",
+      "sha256": "09a2d979500a52d5dd77968f32b3ebe94c0303bacb97f2abaf496091f7b32bf8",
+      "format": "WEBP",
+      "width": 480,
+      "height": 320,
+      "bytes": 30880
+    },
+    {
+      "path": "webp/10hyttetomtersfc-960w.webp",
+      "sha256": "4db5feb0ba6f3436e2fc2f882cd433d11edb596310083fc11b38b4cc4e3db246",
+      "format": "WEBP",
+      "width": 960,
+      "height": 640,
+      "bytes": 94284
+    },
+    {
+      "path": "webp/10hyttetomtersfc.webp",
+      "sha256": "50f193b420130e51614c32d5997760b6cd89a2cf1449f9e321e1625b979bff5e",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 188694
+    },
+    {
+      "path": "webp/8-boliger-rovdas-minihouse-no-480w.webp",
+      "sha256": "1e0bcd2af5926f34168acc1f738090cbb7ec79b99ad0a1984d67e05fec10e61b",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 43824
+    },
+    {
+      "path": "webp/8-boliger-rovdas-minihouse-no-960w.webp",
+      "sha256": "e86f05a58bc3980a38dd8624c9d39c21783d0e3fc5c5e1dba66840502934f98c",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 156612
+    },
+    {
+      "path": "webp/8-boliger-rovdas-minihouse-no.webp",
+      "sha256": "5d85c1d564389cfe58165a467c54d6f32fa33257b6445f3f87ba20ee4f9ddafe",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 422198
+    },
+    {
+      "path": "webp/akapodiskdome5etasjer-480w.webp",
+      "sha256": "9e24c564ea1a0c6929fa29e078f342376774898c9037b66587153bebd5a72076",
+      "format": "WEBP",
+      "width": 480,
+      "height": 320,
+      "bytes": 65734
+    },
+    {
+      "path": "webp/akapodiskdome5etasjer-960w.webp",
+      "sha256": "17781576f4a2b7d03dd0a9f437228dca093a26c4720c2766c27e424354220295",
+      "format": "WEBP",
+      "width": 960,
+      "height": 640,
+      "bytes": 230206
+    },
+    {
+      "path": "webp/akapodiskdome5etasjer.webp",
+      "sha256": "0ad90a2fa0241f97b40bbbac3bb71d359b47630db036e44462126acd86d9e3bc",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 486286
+    },
+    {
+      "path": "webp/akapodiskdomeminihusveibakken-a-480w.webp",
+      "sha256": "1b4d1d54c2aaceae82b1a13061c4fb1dccd257ba93add2b20fc92b471f4591b3",
+      "format": "WEBP",
+      "width": 480,
+      "height": 335,
+      "bytes": 91604
+    },
+    {
+      "path": "webp/akapodiskdomeminihusveibakken-a-960w.webp",
+      "sha256": "3ccf323e432aed5b0713870d31d7c1b01ddad94aceaacdb5a3734465e269f2af",
+      "format": "WEBP",
+      "width": 960,
+      "height": 669,
+      "bytes": 339332
+    },
+    {
+      "path": "webp/akapodiskdomeminihusveibakken-a.webp",
+      "sha256": "9fc7d174a90c1190cf100420c00bdf03daaa41383bc7a733fea520a6b3a2961c",
+      "format": "WEBP",
+      "width": 1502,
+      "height": 1047,
+      "bytes": 693072
+    },
+    {
+      "path": "webp/akvaponisk-dome-480w.webp",
+      "sha256": "ca3ec5c6fcd6f9d3e94b82313c4582be16ebeadc4dcee339f2583b9442c1de3b",
+      "format": "WEBP",
+      "width": 480,
+      "height": 360,
+      "bytes": 84448
+    },
+    {
+      "path": "webp/akvaponisk-dome-960w.webp",
+      "sha256": "df2b0b1bc01c45d675b2d77857fdd4b9570ae27ec0cc233b4cb1f8edb0c0f81a",
+      "format": "WEBP",
+      "width": 960,
+      "height": 720,
+      "bytes": 274520
+    },
+    {
+      "path": "webp/akvaponisk-dome.webp",
+      "sha256": "ded3e4a3028a74c3acf7f7e225d0ae8050018c57f3afd4ee7b5546a16032d191",
+      "format": "WEBP",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 501946
+    },
+    {
+      "path": "webp/akvaponiskdomelandbruk-480w.webp",
+      "sha256": "9944ee010bff8bf77fa7e967da5bd44e6ff0be486d2c7dc5f7e1fb7bd2dc9c66",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 72994
+    },
+    {
+      "path": "webp/akvaponiskdomelandbruk-960w.webp",
+      "sha256": "b89d75aa190f8974b951fb7a82913a63d36cdd2d6f6966a256d15a54cf34ab7f",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 280274
+    },
+    {
+      "path": "webp/akvaponiskdomelandbruk.webp",
+      "sha256": "10d0a13a167c0ff7eeb10b5d9c63fdc6b96491b957a672f1699388dd8885f9a4",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 747548
+    },
+    {
+      "path": "webp/alleomradernordreisa-480w.webp",
+      "sha256": "c91da9f1503e3c967cc0aeac37e9eb9f39870aa2f5f983dbf7e3b57491191e9a",
+      "format": "WEBP",
+      "width": 480,
+      "height": 282,
+      "bytes": 86386
+    },
+    {
+      "path": "webp/alleomradernordreisa.webp",
+      "sha256": "4e8500f57a2e8f02c175173596659d97f7ef02d186ecd430ff7b091529c668c7",
+      "format": "WEBP",
+      "width": 898,
+      "height": 527,
+      "bytes": 231636
+    },
+    {
+      "path": "webp/beredskap.webp",
+      "sha256": "03fbb0c080407a7fbf046964cc3de4e2d437faa6835129557e10054a785e6117",
+      "format": "WEBP",
+      "width": 1920,
+      "height": 519,
+      "bytes": 165760
+    },
+    {
+      "path": "webp/byggetrinn-1-kvannes.webp",
+      "sha256": "4ccb10c5a0c264df4e2a86b91500e1c59eee98c644cc48a87d74678cf01fe055",
+      "format": "WEBP",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 484308
+    },
+    {
+      "path": "webp/clc-energi-gjennomgang-no-480w.webp",
+      "sha256": "0d634002360ac34d73862cf3f1f46e06f3f5676a32d33b4cad6c32247687d81a",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 37792
+    },
+    {
+      "path": "webp/clc-energi-gjennomgang-no-960w.webp",
+      "sha256": "277a11e7088b1d5bf43479a5200ffd2246214e41796c580e04d066da09858837",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 108428
+    },
+    {
+      "path": "webp/clc-energi-gjennomgang-no.webp",
+      "sha256": "df426ac8f348fcfcedd985c04f0121030c88b683cb7b4a7a94a67b89a457a738",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 246334
+    },
+    {
+      "path": "webp/clc-energi-no-480w.webp",
+      "sha256": "052a0590126147883f2cd8f5431fc0a3e0b7f8d5ec0c0ef2ce4f08ca1b5e42e1",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 63956
+    },
+    {
+      "path": "webp/clc-energi-no-960w.webp",
+      "sha256": "a2fd728f062cdca3bfce62cf129bb65bcc5498849cc859856c7c80c07162d934",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 215842
+    },
+    {
+      "path": "webp/clc-energi-no.webp",
+      "sha256": "d157361a71006535c11d35064e22e7656e944f41ce4bee67d0385017e46f64c7",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 518178
+    },
+    {
+      "path": "webp/dypvannskaifjellanleggnordkjosnes-480w.webp",
+      "sha256": "12ab0fd8171f8f9ad7ffdfe1d3bef6a7ffd66fe35b4d4e7eb1d222d2b7753cb5",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 38438
+    },
+    {
+      "path": "webp/dypvannskaifjellanleggnordkjosnes-960w.webp",
+      "sha256": "103591a506cdf029950304f638842463f9ef1d052828ac887ca0984936a2f9d8",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 158462
+    },
+    {
+      "path": "webp/dypvannskaifjellanleggnordkjosnes.webp",
+      "sha256": "545a21ccaa40f6f6c627c19d248286955b3ef781cadfee9ff2536d9b14dba394",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 419200
+    },
+    {
+      "path": "webp/dypvannskaifjellanleggnordkjosnes1-480w.webp",
+      "sha256": "c7ddb11c2c5147cb73bea1650da0d15648673f872013ddc5311a592d5c2d292e",
+      "format": "WEBP",
+      "width": 480,
+      "height": 320,
+      "bytes": 51244
+    },
+    {
+      "path": "webp/dypvannskaifjellanleggnordkjosnes1-960w.webp",
+      "sha256": "3c505aa4f206df2d878250f042eefb794ca24261648678c72b3902cef768b3fa",
+      "format": "WEBP",
+      "width": 960,
+      "height": 640,
+      "bytes": 202074
+    },
+    {
+      "path": "webp/dypvannskaifjellanleggnordkjosnes1.webp",
+      "sha256": "bfb655856c2e725641888cee74493fb8399b4380ce65f6ba75498f44f667f78e",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 476700
+    },
+    {
+      "path": "webp/gnomehytterbobilparknordkjosnes-480w.webp",
+      "sha256": "cf10f11870227f4d57edbc672d497fad0c3635c97936514dfdc53ff69caea008",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 51326
+    },
+    {
+      "path": "webp/gnomehytterbobilparknordkjosnes-960w.webp",
+      "sha256": "e9863bfdf96b1e8c5744881b511e10ec84a78f2bdbbcb4d9136f3c7a71e6192a",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 211174
+    },
+    {
+      "path": "webp/gnomehytterbobilparknordkjosnes.webp",
+      "sha256": "8381a3566ec2b73be306e2f758f4140229ed63eeaeaa765e3ab00dfae119f0ba",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 546260
+    },
+    {
+      "path": "webp/grottebolignordkjosnes-480w.webp",
+      "sha256": "11277a161d71460833c5e41ff21aefa46624fdc0d95de40f011929427582391c",
+      "format": "WEBP",
+      "width": 480,
+      "height": 277,
+      "bytes": 38690
+    },
+    {
+      "path": "webp/grottebolignordkjosnes-960w.webp",
+      "sha256": "401105863d18fbbfe03c0ca4aae85b13f31d2011289b343c537389b02e4b9479",
+      "format": "WEBP",
+      "width": 960,
+      "height": 553,
+      "bytes": 151898
+    },
+    {
+      "path": "webp/grottebolignordkjosnes.webp",
+      "sha256": "f0ca4da37f675298114dc51b10bca39494b14f7352e9adcee8cb618675d4c905",
+      "format": "WEBP",
+      "width": 1652,
+      "height": 952,
+      "bytes": 382868
+    },
+    {
+      "path": "webp/gudepark.webp",
+      "sha256": "180ceae2b3d531153723b233dbe216272d3dd249df658c0435579af85403d791",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 550658
+    },
+    {
+      "path": "webp/innspill-22-a.webp",
+      "sha256": "a9c5d24ec70550d74f0dc0e22e2dec51016f7a51bda41230dc90f3fd9dadfd6e",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 509618
+    },
+    {
+      "path": "webp/innspill-23a-480w.webp",
+      "sha256": "e99753254153094d63c3d1e176b992429b08b749724ff023d2836a22983223b0",
+      "format": "WEBP",
+      "width": 480,
+      "height": 325,
+      "bytes": 95446
+    },
+    {
+      "path": "webp/innspill-23a.webp",
+      "sha256": "8fddda04de0e89195f086058d04716e8e73dff1bd50538fb1749883bebb600d5",
+      "format": "WEBP",
+      "width": 763,
+      "height": 516,
+      "bytes": 225814
+    },
+    {
+      "path": "webp/innspill-9.webp",
+      "sha256": "25d350b9c1876672739f9297d80072f2a46ae38c11dde130715a0c45c67c1f28",
+      "format": "WEBP",
+      "width": 1376,
+      "height": 768,
+      "bytes": 206896
+    },
+    {
+      "path": "webp/kvaenagenzone3-480w.webp",
+      "sha256": "666c6f1e4eb829396c09e57ec71c2d031db70f052d5ca6f13c4576273d774f94",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 52388
+    },
+    {
+      "path": "webp/kvaenagenzone3-960w.webp",
+      "sha256": "9ef9df70c8d55a08e6b15241764dd39e45397ecfbe0d999b4d0e24e91d7790c6",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 183838
+    },
+    {
+      "path": "webp/kvaenagenzone3.webp",
+      "sha256": "9af4bce39d257baff497f08a9b5c082348a2042a2af98bf19a01bc390e7f35bb",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 446842
+    },
+    {
+      "path": "webp/kvaenangenzone2-480w.webp",
+      "sha256": "f93faf7a3e462c3226836e8670fa0cf99c18e931bf610ce4354c5a049ec6b672",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 52310
+    },
+    {
+      "path": "webp/kvaenangenzone2-960w.webp",
+      "sha256": "378740421e20211223037984419465f62ae69c410b3025ef659763eadf0730bc",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 178478
+    },
+    {
+      "path": "webp/kvaenangenzone2.webp",
+      "sha256": "25adfcca82b14c3d63de3da9d301852e1f236cc51f50ed71e20325f4b8a16d64",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 431420
+    },
+    {
+      "path": "webp/minihusrovdas-480w.webp",
+      "sha256": "60e8c71e2ece5c388a56dba030d5d48e3cb845df9fcd7e9d720795b61d499cf3",
+      "format": "WEBP",
+      "width": 480,
+      "height": 320,
+      "bytes": 57416
+    },
+    {
+      "path": "webp/minihusrovdas-960w.webp",
+      "sha256": "c5ae4934eedcc4c1b91466ba93bd68891f77ec26f588d9cd54dfff39eb07ea9e",
+      "format": "WEBP",
+      "width": 960,
+      "height": 640,
+      "bytes": 181184
+    },
+    {
+      "path": "webp/minihusrovdas.webp",
+      "sha256": "9a5298fce5d3b111c7e59cdda5d181f90ad827255931be48f8b141d965484519",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 393572
+    },
+    {
+      "path": "webp/minihusveibakken-2etg-480w.webp",
+      "sha256": "938dbac25748aadc87417a7ac5092faafed505da8eaa69ec308d38389007bc7c",
+      "format": "WEBP",
+      "width": 480,
+      "height": 227,
+      "bytes": 65750
+    },
+    {
+      "path": "webp/minihusveibakken-2etg-960w.webp",
+      "sha256": "343d45bb3188529572956a5d30553d6e9802d018c58c834c7bfb5fda373950a6",
+      "format": "WEBP",
+      "width": 960,
+      "height": 454,
+      "bytes": 228920
+    },
+    {
+      "path": "webp/minihusveibakken-2etg.webp",
+      "sha256": "a035f72a71407a65ee2855b3ff965eab639e091a227ff3f4c05f7c92bff6de70",
+      "format": "WEBP",
+      "width": 1225,
+      "height": 579,
+      "bytes": 324846
+    },
+    {
+      "path": "webp/naturarvnord-480w.webp",
+      "sha256": "f5db0790fc7674f93fb20ac267a61318774be06142f141905f3d350ec46af2d6",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 53708
+    },
+    {
+      "path": "webp/naturarvnord-960w.webp",
+      "sha256": "d66e579bab51e79e3b34dcb8eb97841b07fea3611cf29aaa5dc6f614f79d5738",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 185106
+    },
+    {
+      "path": "webp/naturarvnord.webp",
+      "sha256": "86ea3f2619b6597efd1a89a5fffb1066cceed08c42abff95018bb25b8c208d36",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 453248
+    },
+    {
+      "path": "webp/nordkjosfjellettunnelfjellhalldypvannskai1-480w.webp",
+      "sha256": "4a4ace94ead829a69d66b4ea6e2bc199fd0b552db1342668c33c84ab61a2b67b",
+      "format": "WEBP",
+      "width": 480,
+      "height": 214,
+      "bytes": 30452
+    },
+    {
+      "path": "webp/nordkjosfjellettunnelfjellhalldypvannskai1-960w.webp",
+      "sha256": "0807e07e89d09c6813f8a2d76fb6cd6034499cf8ad8276ede21c5e8a011ce081",
+      "format": "WEBP",
+      "width": 960,
+      "height": 428,
+      "bytes": 101426
+    },
+    {
+      "path": "webp/nordkjosfjellettunnelfjellhalldypvannskai1.webp",
+      "sha256": "740ff25c044fca5eba9586121d932e9e58e62a7bb848eacc3ae1080d2f7037ac",
+      "format": "WEBP",
+      "width": 1844,
+      "height": 823,
+      "bytes": 268096
+    },
+    {
+      "path": "webp/nordreisa-arctic-position-map-ubakgrunn.webp",
+      "sha256": "0bf6eeffb3ce900fed4bb604400a188c5dd9e5dc9673ccb81394dbef05872770",
+      "format": "WEBP",
+      "width": 883,
+      "height": 829,
+      "bytes": 108696
+    },
+    {
+      "path": "webp/nr-hoved-innspill-7-sone-1-48cffb38.webp",
+      "sha256": "1e2dcf391076fd5bb0c9a45434d57b9cc6dd3e4cf50eebea845eda95ea1b6fdf",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 453502
+    },
+    {
+      "path": "webp/nr-landbrukernringsomradet-fd0cbeed.webp",
+      "sha256": "889e36f875a532324d1a0e7f4364f906ee338295ba6ce99fcb71804ebd52066b",
+      "format": "WEBP",
+      "width": 1344,
+      "height": 768,
+      "bytes": 203938
+    },
+    {
+      "path": "webp/nr-rovdas-a-11e11879.webp",
+      "sha256": "198ae4daaadce1ae3c0478490772642da9a1f8b4ac36cb067fe9050716b98068",
+      "format": "WEBP",
+      "width": 963,
+      "height": 678,
+      "bytes": 220186
+    },
+    {
+      "path": "webp/nr-sandnes-fjord-camping-med-domer-abf4025a.webp",
+      "sha256": "a56d11969d0b54431dd6c9156dffcdc93ea8ab7daab0f2a2dbda63079cc2a4c9",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 477724
+    },
+    {
+      "path": "webp/nye-sandnesfjordcamping-480w.webp",
+      "sha256": "fc8eafc5cf0150c62ac05aac0d7e32b655a7164fca236674fc89b734fc6d9fcb",
+      "format": "WEBP",
+      "width": 480,
+      "height": 360,
+      "bytes": 62940
+    },
+    {
+      "path": "webp/nye-sandnesfjordcamping-960w.webp",
+      "sha256": "233395f9113eee2a728ab9251af51093ac92c4f20ab7af8763a3a326089b7fb8",
+      "format": "WEBP",
+      "width": 960,
+      "height": 720,
+      "bytes": 221814
+    },
+    {
+      "path": "webp/nye-sandnesfjordcamping.webp",
+      "sha256": "091f290089bf72e98e6d9b4e22df0885dfaee373d5405216534ee8e40989416c",
+      "format": "WEBP",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 424314
+    },
+    {
+      "path": "webp/p17-web3-connected.webp",
+      "sha256": "7e730dd9d6363896bfb573cc76a038e2c6fc7b57972f939cff91f7b16a485a22",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 359454
+    },
+    {
+      "path": "webp/p17-web3-mountain-experience-v2.webp",
+      "sha256": "c0af6aedbfab4d852ca9ea4f38fc63e952e8b46c755081f87ce4d8e4ce2267a8",
+      "format": "WEBP",
+      "width": 1920,
+      "height": 746,
+      "bytes": 255190
+    },
+    {
+      "path": "webp/palt-3-veksthus-og-landbruk-06d5fa17b8-1600w.webp",
+      "sha256": "b5ae0ebd787bcc04d135603c24a76c10c8f04d1d728bfc96e97e650d53f24a21",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 408194
+    },
+    {
+      "path": "webp/palt-3-veksthus-og-landbruk-06d5fa17b8-400w.webp",
+      "sha256": "5464fced85612a5c950c1b56ec331684310f0c5ac917ba57789fcb7b7cc73ef8",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 34030
+    },
+    {
+      "path": "webp/palt-3-veksthus-og-landbruk-06d5fa17b8-800w.webp",
+      "sha256": "63f6ae1b77527dafc9033b212feafe1a48558b502c07c6192abeb8812b2b1bd8",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 133906
+    },
+    {
+      "path": "webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-1600w.webp",
+      "sha256": "05e931336e9e917d227c024243f565918f55c9b993e6d92670c6fc40a30c032c",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 247700
+    },
+    {
+      "path": "webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-400w.webp",
+      "sha256": "d55d06f69b4a4314c3d0e7ac6ab981e9d4e1b5bae45a9c76cbda8d0773b48137",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 21708
+    },
+    {
+      "path": "webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-800w.webp",
+      "sha256": "c0b1f5515b5eac056786142f6d069c5fb5295f1f7b6744ecd59f169be314bdb1",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 76712
+    },
+    {
+      "path": "webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-1502w.webp",
+      "sha256": "b6771298d47f11a829cf054aaff09d1af0c8f7eb190a993207d8c996b88e82cc",
+      "format": "WEBP",
+      "width": 1502,
+      "height": 1047,
+      "bytes": 427412
+    },
+    {
+      "path": "webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-400w.webp",
+      "sha256": "7cbd775576634ead3c81c25856789e1d508e88e4bf2ff2dd2749a15a9f2b3920",
+      "format": "WEBP",
+      "width": 400,
+      "height": 279,
+      "bytes": 45010
+    },
+    {
+      "path": "webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-800w.webp",
+      "sha256": "1cdff6fa65afa03c8d1316bf40a6401b4790ca6ea6f0232571a156ec07bf68db",
+      "format": "WEBP",
+      "width": 800,
+      "height": 558,
+      "bytes": 159508
+    },
+    {
+      "path": "webp/palt-beredskap-c17c973c0b-1600w.webp",
+      "sha256": "154d757b40a89e4e1db0472ff621e072b863ddaf9251b99e85a6369da289c1c1",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 432,
+      "bytes": 121024
+    },
+    {
+      "path": "webp/palt-beredskap-c17c973c0b-400w.webp",
+      "sha256": "3403a0c7dcadfa67c021726e89a295c29f90acdcd739e757e3d380073e780357",
+      "format": "WEBP",
+      "width": 400,
+      "height": 108,
+      "bytes": 13212
+    },
+    {
+      "path": "webp/palt-beredskap-c17c973c0b-800w.webp",
+      "sha256": "d41f4211d70b86d0871de84c89759fbc879c151c06be56cea410ab5c059bc98a",
+      "format": "WEBP",
+      "width": 800,
+      "height": 216,
+      "bytes": 45036
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-1600w.webp",
+      "sha256": "3e77ca4d011f3421ea55ae636b38d0f4d315ec11da5d7955cd63451168c2c4c4",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 419126
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-400w.webp",
+      "sha256": "2b4eab46239bf75635088810be3b0a6b73c461569454263a24bce77754eab126",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 31684
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-800w.webp",
+      "sha256": "aa969e17c31fc64ce3be7ea357d89f953002ed882fbd09b94ec39d2f2d4be4db",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 126896
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp",
+      "sha256": "2d1d2f406a2ce35dd7bd6e4372724545e169c6ce605a6f8a063e533c88ff1a25",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 395756
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-400w.webp",
+      "sha256": "8213da823e7f4826ff3dd43e29513ffa2fb7e27cf03f125b1b44cd8190d6000d",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 31270
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-800w.webp",
+      "sha256": "ddc0c2685b3ca19c3e2c3e407bf79186e7b40c83ae12856342de3aa02c5d2cf7",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 126612
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-7fbc17ad1d-1600w.webp",
+      "sha256": "986827a530787b2cfe29ce9e9338c4877f31e272138f99551fc5a9be42024d48",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 411166
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-7fbc17ad1d-400w.webp",
+      "sha256": "2f34e7dcf38d0c5283c8ab15bacc1ecdc51e93b4ed1333ec4a7bf1393a404e3d",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 32108
+    },
+    {
+      "path": "webp/palt-bobilparkering-nordkjos-7fbc17ad1d-800w.webp",
+      "sha256": "b7a288137789eaf523c84d330a2d540b6ad0ba9f6653a2f7eb42ae2ff81e3dd3",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 129388
+    },
+    {
+      "path": "webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp",
+      "sha256": "c02c2428190bae8e23889b311265048120e999fa07438d2c638524380c05744c",
+      "format": "WEBP",
+      "width": 1510,
+      "height": 630,
+      "bytes": 215730
+    },
+    {
+      "path": "webp/palt-clc-energi-gjennomgang-no-ea253f7487-1600w.webp",
+      "sha256": "449052703936fb466d7216030f1e3bbeacf1ef18268908a03c5fc05f35358f3a",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 147356
+    },
+    {
+      "path": "webp/palt-clc-energi-gjennomgang-no-ea253f7487-400w.webp",
+      "sha256": "aa07c2714607891b66220e7df8542f239aa28c713b0e676b45c9b3fcebc9bd95",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 18590
+    },
+    {
+      "path": "webp/palt-clc-energi-gjennomgang-no-ea253f7487-800w.webp",
+      "sha256": "067095cd2cd7157ddd112e5f59245ee17c77545f27f96be8c7145653baa07b10",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 54968
+    },
+    {
+      "path": "webp/palt-clc-energi-no-fa880e64ff-1600w.webp",
+      "sha256": "8ca90fcddada9f8bc6b09d740eb757e7193313bdae9cef9752077c047513a538",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 311668
+    },
+    {
+      "path": "webp/palt-clc-energi-no-fa880e64ff-400w.webp",
+      "sha256": "68ce27eae8c811a0c1aef7ada6a8b263264711735dadde2e0dbb95606fac6fd2",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 31232
+    },
+    {
+      "path": "webp/palt-clc-energi-no-fa880e64ff-800w.webp",
+      "sha256": "4ac02a38fd581b2b42e33b59907a00d9c6cccfcfc601ce4477773febbd95e089",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 108000
+    },
+    {
+      "path": "webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-1344w.webp",
+      "sha256": "be3cdcd2d94e0b20b307680140908dcebe6542da74d0851aec271814d3480607",
+      "format": "WEBP",
+      "width": 1344,
+      "height": 768,
+      "bytes": 115666
+    },
+    {
+      "path": "webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-400w.webp",
+      "sha256": "b6ad603f3c29afc951895966b0a220a4791d228cc5536d11247e13d13a95f637",
+      "format": "WEBP",
+      "width": 400,
+      "height": 229,
+      "bytes": 18594
+    },
+    {
+      "path": "webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-800w.webp",
+      "sha256": "6e1d7fb52f1a5ae6c088d29f533fd4deda9df67d24e1b8dc081832a3831456be",
+      "format": "WEBP",
+      "width": 800,
+      "height": 457,
+      "bytes": 54724
+    },
+    {
+      "path": "webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp",
+      "sha256": "33ea4d7abc32f2ed475f105fb7d6b775e26eaca5283c54f05dc8d808a7feb1af",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 408210
+    },
+    {
+      "path": "webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-400w.webp",
+      "sha256": "13e61a75d845a04c005f030f1fbbcff1f6729b2c69e14a31ca64116faf573217",
+      "format": "WEBP",
+      "width": 400,
+      "height": 267,
+      "bytes": 33412
+    },
+    {
+      "path": "webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-800w.webp",
+      "sha256": "6d6df4190880460f48b9693f18bbd2d1b381d4f62c215bf690082deeffaa1b2c",
+      "format": "WEBP",
+      "width": 800,
+      "height": 533,
+      "bytes": 128194
+    },
+    {
+      "path": "webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-1600w.webp",
+      "sha256": "5a0be984793d36677187c9728e4d5ff3369c94e6ed41789546947f9438819728",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 324472
+    },
+    {
+      "path": "webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-400w.webp",
+      "sha256": "f5004675ddcb614fcac9384bbcecccd8bd4f5605947189217cfcb81e1b35cea2",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 23402
+    },
+    {
+      "path": "webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-800w.webp",
+      "sha256": "c1d34be47ad47052917979c334c5dfa199c0843a3f9760db38f19717273b7fde",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 96436
+    },
+    {
+      "path": "webp/palt-gudepark-84a933a3b2-1536w.webp",
+      "sha256": "a1d260b67e2405c44a987b794d2a22da16eee7ff2eb1192b3b6191c35fcbe09c",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 487448
+    },
+    {
+      "path": "webp/palt-gudepark-84a933a3b2-400w.webp",
+      "sha256": "6be1166451b7f3019da5b8001eb4e1e4c6ae4551f02c2a7053010ed2b154898d",
+      "format": "WEBP",
+      "width": 400,
+      "height": 267,
+      "bytes": 43820
+    },
+    {
+      "path": "webp/palt-gudepark-84a933a3b2-800w.webp",
+      "sha256": "f0c6d3cb04934c8ef06056fddd4d2d5787c99ed1924f0739d184e1f815fd0eef",
+      "format": "WEBP",
+      "width": 800,
+      "height": 533,
+      "bytes": 160756
+    },
+    {
+      "path": "webp/palt-innspill-19-1-c621944e2e-1600w.webp",
+      "sha256": "6b31057a56bf9aaa1423838d37f9c08cc316a79e2efce58a27759ba84add8954",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 342432
+    },
+    {
+      "path": "webp/palt-innspill-19-1-c621944e2e-400w.webp",
+      "sha256": "fc29ef0f8a9b39b640e3d427b0ca68f578c8a963dddff819fe9e0ba01dec3100",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 35682
+    },
+    {
+      "path": "webp/palt-innspill-19-1-c621944e2e-800w.webp",
+      "sha256": "9d510ca7ca90df566a06018ec07d1d44a8246a4e98cd2342ee3f29124b86e834",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 119458
+    },
+    {
+      "path": "webp/palt-innspill-20-a-3102a04bcc-1600w.webp",
+      "sha256": "295047a19bb9208e73566becc3e89c05edd5ac14c4d27aeee42990f51909cf7d",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 230798
+    },
+    {
+      "path": "webp/palt-innspill-20-a-3102a04bcc-400w.webp",
+      "sha256": "4a37e3916d94cf66a9b3ee4f79464ff6c5996c69fa87670b4114d50ce290f2f1",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 22132
+    },
+    {
+      "path": "webp/palt-innspill-20-a-3102a04bcc-800w.webp",
+      "sha256": "e731db1b9d83e8caaf0e927f4426ac764582cb625c130bf1c2251965614771d9",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 80352
+    },
+    {
+      "path": "webp/palt-innspill-21-a-a4d4625153-1600w.webp",
+      "sha256": "c15eecc02a97e386ce629807d5e6415d654b01e49b1fc68da5f612bfd647779f",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 293126
+    },
+    {
+      "path": "webp/palt-innspill-21-a-a4d4625153-400w.webp",
+      "sha256": "8f1ebcd0668ce1702635ace649a7e3aef9ed870e8499b7c04af25d4453a9a84c",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 27364
+    },
+    {
+      "path": "webp/palt-innspill-21-a-a4d4625153-800w.webp",
+      "sha256": "29569fb7a2916602cca76ae73fc226a3bbc40cace5a996c615a2b4d0056a060c",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 100564
+    },
+    {
+      "path": "webp/palt-innspill-22-a-e2ff31b8f4-1600w.webp",
+      "sha256": "5925b0803a17e5da038f97d98ad4c0b710bef98524ba43a4e1148a3a998a5ef7",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 255388
+    },
+    {
+      "path": "webp/palt-innspill-22-a-e2ff31b8f4-400w.webp",
+      "sha256": "23f6105eb90138c421e929dcf76c5fca07e8bdfa515957febaed4563703091b8",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 23018
+    },
+    {
+      "path": "webp/palt-innspill-22-a-e2ff31b8f4-800w.webp",
+      "sha256": "b66b0b2f768469c661da7fcf449348ad457419967793a209d34c3b7615e63bc7",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 85102
+    },
+    {
+      "path": "webp/palt-innspill-24-f76d5667f7-1376w.webp",
+      "sha256": "f88c48359971f5c6825a23908ed26388c34405f52adf0d6c6c787c54e579aa6a",
+      "format": "WEBP",
+      "width": 1376,
+      "height": 768,
+      "bytes": 166540
+    },
+    {
+      "path": "webp/palt-innspill-24-f76d5667f7-400w.webp",
+      "sha256": "1cb31951e2fef94aa533ed2d20ac943e9ac88b46c14237194bc8d8735b3253d3",
+      "format": "WEBP",
+      "width": 400,
+      "height": 223,
+      "bytes": 23502
+    },
+    {
+      "path": "webp/palt-innspill-24-f76d5667f7-800w.webp",
+      "sha256": "a8a17e3f024b46cc020d9b1741dccc4a067b301032103fc0674394e84cefb52c",
+      "format": "WEBP",
+      "width": 800,
+      "height": 447,
+      "bytes": 70172
+    },
+    {
+      "path": "webp/palt-innspill-25-1-fc107daa17-1600w.webp",
+      "sha256": "1140dbe9d22d9bd96df2a21cabdd3bb1190b935ba2c859f52a154f3ed209fe8a",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 352234
+    },
+    {
+      "path": "webp/palt-innspill-25-1-fc107daa17-400w.webp",
+      "sha256": "16a76abc9e2b98ccd60b093378627d80e9bb2cb2f706cfee0fd00bf94076e170",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 30532
+    },
+    {
+      "path": "webp/palt-innspill-25-1-fc107daa17-800w.webp",
+      "sha256": "c281eef88e6130a20b4719e8e0a7344be68fb629caf116cdc202aa2908af1815",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 114464
+    },
+    {
+      "path": "webp/palt-innspill-9-0f28859ae9-1376w.webp",
+      "sha256": "34dab1579e8ac92d392c336b7ce82303c130e184603d4a2227c9a0009015c14d",
+      "format": "WEBP",
+      "width": 1376,
+      "height": 768,
+      "bytes": 143898
+    },
+    {
+      "path": "webp/palt-innspill-9-0f28859ae9-800w.webp",
+      "sha256": "32838cad262695ad1abc11cca8c4ec8e1932de404e6441edc721d873b14769d3",
+      "format": "WEBP",
+      "width": 800,
+      "height": 447,
+      "bytes": 66382
+    },
+    {
+      "path": "webp/palt-minihusrovdas-9a5298fce5-1536w.webp",
+      "sha256": "2b7627f39235b670ec462e20533d149de1eedcfb1de8df2dbcb0c5512f14cf3b",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 248566
+    },
+    {
+      "path": "webp/palt-minihusrovdas-9a5298fce5-400w.webp",
+      "sha256": "8cbf2c66948c0039ad2f4105ce33e04e9d7eb49695b1552809b13ad6c73685dd",
+      "format": "WEBP",
+      "width": 400,
+      "height": 267,
+      "bytes": 29296
+    },
+    {
+      "path": "webp/palt-minihusrovdas-9a5298fce5-800w.webp",
+      "sha256": "715f34a7f56e9be6e7b72ec1ea16e023c7d493da0bc6c96c69d99b7cf93d90d1",
+      "format": "WEBP",
+      "width": 800,
+      "height": 533,
+      "bytes": 90310
+    },
+    {
+      "path": "webp/palt-naturarv-nord-plakat-87af97775d-1600w.webp",
+      "sha256": "4becde4f64aab85a78d99a1f97fe78ae0ca295e0328f247085f8b1dd96275acf",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 181772
+    },
+    {
+      "path": "webp/palt-naturarv-nord-plakat-87af97775d-400w.webp",
+      "sha256": "92129b71bbf6139fa7cd72f94bcb366051e8021643c530e487025581214c2055",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 20306
+    },
+    {
+      "path": "webp/palt-naturarv-nord-plakat-87af97775d-800w.webp",
+      "sha256": "b469b31ade958634b525f1778028b31eba0f85e25716e9882b3648e331b70e9c",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 65246
+    },
+    {
+      "path": "webp/palt-nye-sandnesfjordcamping-b63c8bccc1-1448w.webp",
+      "sha256": "8a46cccdf23060ae936b9938bdf41c10ccac3009a39ea4ca72456f054be1cc3e",
+      "format": "WEBP",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 382062
+    },
+    {
+      "path": "webp/palt-nye-sandnesfjordcamping-b63c8bccc1-400w.webp",
+      "sha256": "937d84f55bf71b700012380739817f4b3043de76f2189d5b0de11b70b9742e35",
+      "format": "WEBP",
+      "width": 400,
+      "height": 300,
+      "bytes": 41706
+    },
+    {
+      "path": "webp/palt-nye-sandnesfjordcamping-b63c8bccc1-800w.webp",
+      "sha256": "c07554b99a829ad735fa3aef977ed0a431ab7d7cd8aa54a0999a3bc4da0e0453",
+      "format": "WEBP",
+      "width": 800,
+      "height": 600,
+      "bytes": 146490
+    },
+    {
+      "path": "webp/palt-rovdas-2-etasjes-boliger-3c54089121-1600w.webp",
+      "sha256": "687a1226ec040704de02aa7ba6a8710d3f96908e147e1cf2aed1947396f6cd6e",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 307456
+    },
+    {
+      "path": "webp/palt-rovdas-2-etasjes-boliger-3c54089121-400w.webp",
+      "sha256": "d5e2b5a0bd74b586663e7711767904656c1dbc60b78f0a7a732be490ded8093d",
+      "format": "WEBP",
+      "width": 400,
+      "height": 225,
+      "bytes": 26022
+    },
+    {
+      "path": "webp/palt-rovdas-2-etasjes-boliger-3c54089121-800w.webp",
+      "sha256": "fe57fb1ddb252074cc45883b7726667dfd89bdef1b07f23dd3ee695a1752e968",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 95150
+    },
+    {
+      "path": "webp/palt-sfc-spawatherpark-2af3e82305-1600w.webp",
+      "sha256": "501f69036d3638892773ebfc697acb32654633b4fd775ef4ab4a6708cd715b62",
+      "format": "WEBP",
+      "width": 1600,
+      "height": 900,
+      "bytes": 356586
+    },
+    {
+      "path": "webp/palt-sfc-spawatherpark-2af3e82305-800w.webp",
+      "sha256": "3b246428df4c2085a2464ca2b8058d26d7a3529ce9bff39e3b94660d8ad3af50",
+      "format": "WEBP",
+      "width": 800,
+      "height": 450,
+      "bytes": 110580
+    },
+    {
+      "path": "webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-1448w.webp",
+      "sha256": "673ff103b781045633ec8f8007f326bc7685a0c6fb30a8d94ad3b0ed6e893f99",
+      "format": "WEBP",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 387106
+    },
+    {
+      "path": "webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-400w.webp",
+      "sha256": "c0a2792b9fc2e64f8f877b31c65707b822746090fec73164da80e6c5afc4b119",
+      "format": "WEBP",
+      "width": 400,
+      "height": 300,
+      "bytes": 41434
+    },
+    {
+      "path": "webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-800w.webp",
+      "sha256": "0c435e1439ce9295b3ffda2623b20dcb0687ae8a72d70a7c011a567e5c3b9d34",
+      "format": "WEBP",
+      "width": 800,
+      "height": 600,
+      "bytes": 146932
+    },
+    {
+      "path": "webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-1448w.webp",
+      "sha256": "63182b5994d8c8271056d9b99772bfef159aaf4d1277f90d4c066c6d68d3ca1f",
+      "format": "WEBP",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 347628
+    },
+    {
+      "path": "webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-400w.webp",
+      "sha256": "8c430c00fa08ea5f52b9bbdd257a440a86834f211eb06640c3e62bff14e0ae00",
+      "format": "WEBP",
+      "width": 400,
+      "height": 300,
+      "bytes": 43722
+    },
+    {
+      "path": "webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-800w.webp",
+      "sha256": "b56527a9dfa805622f9317a83fa4211bb37bd32f96e1979d2831fe0ca438c837",
+      "format": "WEBP",
+      "width": 800,
+      "height": 600,
+      "bytes": 140242
+    },
+    {
+      "path": "webp/palt-web3-b6c3dd4e34-1536w.webp",
+      "sha256": "45055fd8c5a93bdb62c216141a34d6b2e8ffaf0292a8d88cea69ed9df6994b06",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 329848
+    },
+    {
+      "path": "webp/palt-web3-b6c3dd4e34-400w.webp",
+      "sha256": "766c22e03d3472b75c21a752bb62af2d3e76851acc30a9335b8df55cf4c1f3b3",
+      "format": "WEBP",
+      "width": 400,
+      "height": 267,
+      "bytes": 32900
+    },
+    {
+      "path": "webp/palt-web3-b6c3dd4e34-800w.webp",
+      "sha256": "fb4392a5a65daef91f27c3fe8628eaabd8b5f2e30846882ce59c73d0d23017a9",
+      "format": "WEBP",
+      "width": 800,
+      "height": 533,
+      "bytes": 109790
+    },
+    {
+      "path": "webp/palt-web3-i-fjell-ca1b8b567f-1536w.webp",
+      "sha256": "7092dd83380c7478d56341b035bf406cb615645e64418f18f7ae26853af3d506",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 322920
+    },
+    {
+      "path": "webp/palt-web3-i-fjell-ca1b8b567f-400w.webp",
+      "sha256": "b3b165ce6f3d052d04199c1f82aff07c37491417eb3bc101c4985da6d52a78b3",
+      "format": "WEBP",
+      "width": 400,
+      "height": 267,
+      "bytes": 32158
+    },
+    {
+      "path": "webp/palt-web3-i-fjell-ca1b8b567f-800w.webp",
+      "sha256": "66e831b83df769bac8665e682a72eda1e04efc6acaecdf8d2f6e9c79a8e561b9",
+      "format": "WEBP",
+      "width": 800,
+      "height": 533,
+      "bytes": 105200
+    },
+    {
+      "path": "webp/rovdas-2-etasjes-boliger-480w.webp",
+      "sha256": "9ce66a5aeae2eb6e3f53445bbccd469aa202b9fe59c76f315e0d64915ba199dd",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 56400
+    },
+    {
+      "path": "webp/rovdas-2-etasjes-boliger-960w.webp",
+      "sha256": "6528aa911159ac541dc7ee6524ec50c7641986eb30544714cf797becbb789eb3",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 200216
+    },
+    {
+      "path": "webp/rovdas-2-etasjes-boliger.webp",
+      "sha256": "2139cd3b6630e013462d8c04a015f8581f8d5bfcc2ef0cfdf882bb835e124ed4",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 522930
+    },
+    {
+      "path": "webp/sfc-gudeparkhyttersaunaspaomradet-480w.webp",
+      "sha256": "799a1fb25cea5f8cc63ca0650846ba98f7768b1935b0be8d4c7b69f0cde01367",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 54922
+    },
+    {
+      "path": "webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp",
+      "sha256": "da8c672ac799a8d980c2a653c87ca706f73f0397cc11872b08e3c0393121dfbf",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 206720
+    },
+    {
+      "path": "webp/sfc-gudeparkhyttersaunaspaomradet.webp",
+      "sha256": "3ae42cf28d2869913106f0a6fb7d21fcfc6102f1a9372b0d94066af59b3fbe93",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 531010
+    },
+    {
+      "path": "webp/sfc-spawatherpark-480w.webp",
+      "sha256": "9ed55330b6e7d20afb1720bdb0bef567b5c6a2eb9cd245d528f336b4cdcd4c76",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 44986
+    },
+    {
+      "path": "webp/sfc-spawatherpark-960w.webp",
+      "sha256": "0f9ac84fb60770e23ea6db85f5a234ede07e80e25f80a2649a3f998d66bae911",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 177318
+    },
+    {
+      "path": "webp/sfc-spawatherpark.webp",
+      "sha256": "2af3e8230552738e28e2a86cd26a5d15f9f265c9bd59de3e0463f09eda3821a2",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 467124
+    },
+    {
+      "path": "webp/signaturbyggsone3kvaenangen-480w.webp",
+      "sha256": "60bad785b3f9c7daa156a161238227cebda5461f9a6d34e03f60e602e0884f6c",
+      "format": "WEBP",
+      "width": 480,
+      "height": 231,
+      "bytes": 40830
+    },
+    {
+      "path": "webp/signaturbyggsone3kvaenangen-960w.webp",
+      "sha256": "66f7d877f36bba6afdda2f546438188ce619774ded3b3fde5a9f3bce336a4abf",
+      "format": "WEBP",
+      "width": 960,
+      "height": 463,
+      "bytes": 148536
+    },
+    {
+      "path": "webp/signaturbyggsone3kvaenangen.webp",
+      "sha256": "df3f4f26a2b8628b617938f4cf0b90e04185a533ce27277a7a852d019412bde7",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 806,
+      "bytes": 375784
+    },
+    {
+      "path": "webp/skyway-nordkjosfjellet-kvaennes-960w.webp",
+      "sha256": "6cdb5f705da22acdd97669e794535d79ac4ae58392e497421133b4ce036f8e75",
+      "format": "WEBP",
+      "width": 960,
+      "height": 579,
+      "bytes": 339212
+    },
+    {
+      "path": "webp/spa-sauna-badelands-anlegget-480w.webp",
+      "sha256": "187ea035520b445614afaab4b1a05bfbe3746ddf1ce2faf9008d4c35404b99e8",
+      "format": "WEBP",
+      "width": 480,
+      "height": 360,
+      "bytes": 63882
+    },
+    {
+      "path": "webp/spa-sauna-badelands-anlegget-960w.webp",
+      "sha256": "edbe8560d461a61ff59a1d4cef153326fc171c68b144e1f8a3bd16f845a4d401",
+      "format": "WEBP",
+      "width": 960,
+      "height": 720,
+      "bytes": 224108
+    },
+    {
+      "path": "webp/spa-sauna-badelands-anlegget.webp",
+      "sha256": "e1e54e70f4b6898069bf49a819485743369f9cc608f544888f2bc6d64ef26e27",
+      "format": "WEBP",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 428894
+    },
+    {
+      "path": "webp/spa-sauna-funpark-480w.webp",
+      "sha256": "b479e847b7c1df4f5b4021407e6b30961a55b6c90d774336ca947375762895ad",
+      "format": "WEBP",
+      "width": 480,
+      "height": 360,
+      "bytes": 56744
+    },
+    {
+      "path": "webp/spa-sauna-funpark-960w.webp",
+      "sha256": "94d35de31c91d5d5bff70bf7c9196faffd7a6c493dc8b842aa288ac475e5f020",
+      "format": "WEBP",
+      "width": 960,
+      "height": 720,
+      "bytes": 203548
+    },
+    {
+      "path": "webp/spa-sauna-funpark.webp",
+      "sha256": "6eb7d97e3db007ebec86af3d0832d0de260320783b3a1112aa908bee3036db80",
+      "format": "WEBP",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 385162
+    },
+    {
+      "path": "webp/utgravinginnspill10-480w.webp",
+      "sha256": "76117818f6a40889b2dac66a0f63e8cb2cd6afea24b97b710dd4aef268914ca0",
+      "format": "WEBP",
+      "width": 480,
+      "height": 270,
+      "bytes": 58224
+    },
+    {
+      "path": "webp/utgravinginnspill10-960w.webp",
+      "sha256": "4186124142a845fcc4695f29f4ec135f23e2df51615716cf595037375e3ddb06",
+      "format": "WEBP",
+      "width": 960,
+      "height": 540,
+      "bytes": 229076
+    },
+    {
+      "path": "webp/utgravinginnspill10.webp",
+      "sha256": "5ac37392d3861d4e98223277afd9967cbeb3b5c30e765ae714e172f7e2c9f5c0",
+      "format": "WEBP",
+      "width": 1672,
+      "height": 941,
+      "bytes": 614796
+    },
+    {
+      "path": "webp/veibakken-aktiviteter-innspill-24-480w.webp",
+      "sha256": "ba28eafd8f200bbc08ecfe2fe80ea3e8f03576b6b6950180772ec4f21ea36851",
+      "format": "WEBP",
+      "width": 480,
+      "height": 335,
+      "bytes": 94292
+    },
+    {
+      "path": "webp/veibakken-aktiviteter-innspill-24-960w.webp",
+      "sha256": "b7f201e1ebf2bd5494bfbe2771bbb1c8199452bbe64ac1c4e53e5dbfc0998c49",
+      "format": "WEBP",
+      "width": 960,
+      "height": 669,
+      "bytes": 346598
+    },
+    {
+      "path": "webp/veibakken-aktiviteter-innspill-24.webp",
+      "sha256": "5f6cc9a65efde651c5184e0792d8faa5f5f42c2f875eeb29570f506e2dff0f0e",
+      "format": "WEBP",
+      "width": 1502,
+      "height": 1047,
+      "bytes": 704812
+    },
+    {
+      "path": "webp/web3-480w.webp",
+      "sha256": "380b1949c319ec606c1ff81b3417ccce58c30f1ffb1dfce4d7a4ebd09740d322",
+      "format": "WEBP",
+      "width": 480,
+      "height": 320,
+      "bytes": 48588
+    },
+    {
+      "path": "webp/web3-960w.webp",
+      "sha256": "6b836eae79f88b3e68990c088c95df90f37a7bcc582a4f800f119d1f69682136",
+      "format": "WEBP",
+      "width": 960,
+      "height": 640,
+      "bytes": 162754
+    },
+    {
+      "path": "webp/web3-a.webp",
+      "sha256": "1a07e3a1f8d03418aee4575c6e990c68e0aa6a2b1177540c13d65cc45391212a",
+      "format": "WEBP",
+      "width": 640,
+      "height": 427,
+      "bytes": 54292
+    },
+    {
+      "path": "webp/web3-i-fjell-480w.webp",
+      "sha256": "d4dd972a0a9efe9a203e3c149fdd26149e301ae511db8b54d73d65978d57b448",
+      "format": "WEBP",
+      "width": 480,
+      "height": 320,
+      "bytes": 65400
+    },
+    {
+      "path": "webp/web3-i-fjell-960w.webp",
+      "sha256": "834353fca2b54a040488eec298e4e4c97502a69487926ddd318c3e448b19e7e3",
+      "format": "WEBP",
+      "width": 960,
+      "height": 640,
+      "bytes": 215140
+    },
+    {
+      "path": "webp/web3-i-fjell.webp",
+      "sha256": "283793e44334764df6d2783d0e68b625e19112ac196ae3c8e056ef9b24135af4",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 460146
+    },
+    {
+      "path": "webp/web3.webp",
+      "sha256": "67ae794afbd75b036e436077b07ba8c96fdd8d4642e2a091ff2a8c7f7a753b4b",
+      "format": "WEBP",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 343752
+    }
+  ],
+  "url_aliases": {
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1000w.avif": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1000w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1500w.avif": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-1500w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-400w.avif": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-400w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-700w.avif": "avif/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-r2-700w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1000w.avif": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1000w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1500w.avif": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-1500w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-400w.avif": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-400w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-700w.avif": "avif/palt-bobilparkering-nordkjos-1-e3b47c5cc6-r2-700w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-r2-1510w.avif": "avif/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-r2-1510w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-minihusrovdas-9a5298fce5-r2-1000w.avif": "avif/palt-minihusrovdas-9a5298fce5-r2-1000w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-minihusrovdas-9a5298fce5-r2-1500w.avif": "avif/palt-minihusrovdas-9a5298fce5-r2-1500w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-minihusrovdas-9a5298fce5-r2-400w.avif": "avif/palt-minihusrovdas-9a5298fce5-r2-400w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-minihusrovdas-9a5298fce5-r2-700w.avif": "avif/palt-minihusrovdas-9a5298fce5-r2-700w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-sfc-spawatherpark-2af3e82305-r2-1000w.avif": "avif/palt-sfc-spawatherpark-2af3e82305-r2-1000w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-sfc-spawatherpark-2af3e82305-r2-1500w.avif": "avif/palt-sfc-spawatherpark-2af3e82305-r2-1500w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-sfc-spawatherpark-2af3e82305-r2-400w.avif": "avif/palt-sfc-spawatherpark-2af3e82305-r2-400w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-sfc-spawatherpark-2af3e82305-r2-700w.avif": "avif/palt-sfc-spawatherpark-2af3e82305-r2-700w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-web3-i-fjell-ca1b8b567f-r2-1000w.avif": "avif/palt-web3-i-fjell-ca1b8b567f-r2-1000w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-web3-i-fjell-ca1b8b567f-r2-1500w.avif": "avif/palt-web3-i-fjell-ca1b8b567f-r2-1500w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-web3-i-fjell-ca1b8b567f-r2-400w.avif": "avif/palt-web3-i-fjell-ca1b8b567f-r2-400w.avif",
+    "https://cdn.nyverden.no/Photo/RUNDE2/palt-web3-i-fjell-ca1b8b567f-r2-700w.avif": "avif/palt-web3-i-fjell-ca1b8b567f-r2-700w.avif",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-3-veksthus-og-landbruk-06d5fa17b8-1600w.webp": "webp/palt-3-veksthus-og-landbruk-06d5fa17b8-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-3-veksthus-og-landbruk-06d5fa17b8-400w.webp": "webp/palt-3-veksthus-og-landbruk-06d5fa17b8-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-3-veksthus-og-landbruk-06d5fa17b8-800w.webp": "webp/palt-3-veksthus-og-landbruk-06d5fa17b8-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-1600w.webp": "webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-400w.webp": "webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-800w.webp": "webp/palt-8-boliger-rovdas-minihouse-no-8eea8cbc53-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-1502w.webp": "webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-1502w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-400w.webp": "webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-800w.webp": "webp/palt-akapodiskdomeminihusveibakken-a-9fc7d174a9-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-beredskap-c17c973c0b-1600w.webp": "webp/palt-beredskap-c17c973c0b-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-beredskap-c17c973c0b-400w.webp": "webp/palt-beredskap-c17c973c0b-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-beredskap-c17c973c0b-800w.webp": "webp/palt-beredskap-c17c973c0b-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-1-e3b47c5cc6-1600w.webp": "webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-1-e3b47c5cc6-400w.webp": "webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-1-e3b47c5cc6-800w.webp": "webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp": "webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-1-fbc31bbd56-400w.webp": "webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-1-fbc31bbd56-800w.webp": "webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-7fbc17ad1d-1600w.webp": "webp/palt-bobilparkering-nordkjos-7fbc17ad1d-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-7fbc17ad1d-400w.webp": "webp/palt-bobilparkering-nordkjos-7fbc17ad1d-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-bobilparkering-nordkjos-7fbc17ad1d-800w.webp": "webp/palt-bobilparkering-nordkjos-7fbc17ad1d-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp": "webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-clc-energi-gjennomgang-no-ea253f7487-1600w.webp": "webp/palt-clc-energi-gjennomgang-no-ea253f7487-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-clc-energi-gjennomgang-no-ea253f7487-400w.webp": "webp/palt-clc-energi-gjennomgang-no-ea253f7487-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-clc-energi-gjennomgang-no-ea253f7487-800w.webp": "webp/palt-clc-energi-gjennomgang-no-ea253f7487-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-clc-energi-no-fa880e64ff-1600w.webp": "webp/palt-clc-energi-no-fa880e64ff-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-clc-energi-no-fa880e64ff-400w.webp": "webp/palt-clc-energi-no-fa880e64ff-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-clc-energi-no-fa880e64ff-800w.webp": "webp/palt-clc-energi-no-fa880e64ff-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-domene-p-rovdas-kv-nnes10-9e48399d72-1344w.webp": "webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-1344w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-domene-p-rovdas-kv-nnes10-9e48399d72-400w.webp": "webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-domene-p-rovdas-kv-nnes10-9e48399d72-800w.webp": "webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp": "webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-400w.webp": "webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-800w.webp": "webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-1600w.webp": "webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-400w.webp": "webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-800w.webp": "webp/palt-dypvannskaifjellanleggnordkjosnes-545a21ccaa-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-gudepark-84a933a3b2-1536w.webp": "webp/palt-gudepark-84a933a3b2-1536w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-gudepark-84a933a3b2-400w.webp": "webp/palt-gudepark-84a933a3b2-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-gudepark-84a933a3b2-800w.webp": "webp/palt-gudepark-84a933a3b2-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-19-1-c621944e2e-1600w.webp": "webp/palt-innspill-19-1-c621944e2e-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-19-1-c621944e2e-400w.webp": "webp/palt-innspill-19-1-c621944e2e-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-19-1-c621944e2e-800w.webp": "webp/palt-innspill-19-1-c621944e2e-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-20-a-3102a04bcc-1600w.webp": "webp/palt-innspill-20-a-3102a04bcc-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-20-a-3102a04bcc-400w.webp": "webp/palt-innspill-20-a-3102a04bcc-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-20-a-3102a04bcc-800w.webp": "webp/palt-innspill-20-a-3102a04bcc-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-21-a-a4d4625153-1600w.webp": "webp/palt-innspill-21-a-a4d4625153-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-21-a-a4d4625153-400w.webp": "webp/palt-innspill-21-a-a4d4625153-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-21-a-a4d4625153-800w.webp": "webp/palt-innspill-21-a-a4d4625153-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-22-a-e2ff31b8f4-1600w.webp": "webp/palt-innspill-22-a-e2ff31b8f4-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-22-a-e2ff31b8f4-400w.webp": "webp/palt-innspill-22-a-e2ff31b8f4-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-22-a-e2ff31b8f4-800w.webp": "webp/palt-innspill-22-a-e2ff31b8f4-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-24-f76d5667f7-1376w.webp": "webp/palt-innspill-24-f76d5667f7-1376w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-24-f76d5667f7-400w.webp": "webp/palt-innspill-24-f76d5667f7-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-24-f76d5667f7-800w.webp": "webp/palt-innspill-24-f76d5667f7-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-25-1-fc107daa17-1600w.webp": "webp/palt-innspill-25-1-fc107daa17-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-25-1-fc107daa17-400w.webp": "webp/palt-innspill-25-1-fc107daa17-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-25-1-fc107daa17-800w.webp": "webp/palt-innspill-25-1-fc107daa17-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-9-0f28859ae9-1376w.webp": "webp/palt-innspill-9-0f28859ae9-1376w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-innspill-9-0f28859ae9-800w.webp": "webp/palt-innspill-9-0f28859ae9-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-minihusrovdas-9a5298fce5-1536w.webp": "webp/palt-minihusrovdas-9a5298fce5-1536w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-minihusrovdas-9a5298fce5-400w.webp": "webp/palt-minihusrovdas-9a5298fce5-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-minihusrovdas-9a5298fce5-800w.webp": "webp/palt-minihusrovdas-9a5298fce5-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-naturarv-nord-plakat-87af97775d-1600w.webp": "webp/palt-naturarv-nord-plakat-87af97775d-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-naturarv-nord-plakat-87af97775d-400w.webp": "webp/palt-naturarv-nord-plakat-87af97775d-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-naturarv-nord-plakat-87af97775d-800w.webp": "webp/palt-naturarv-nord-plakat-87af97775d-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-nye-sandnesfjordcamping-b63c8bccc1-1448w.webp": "webp/palt-nye-sandnesfjordcamping-b63c8bccc1-1448w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-nye-sandnesfjordcamping-b63c8bccc1-400w.webp": "webp/palt-nye-sandnesfjordcamping-b63c8bccc1-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-nye-sandnesfjordcamping-b63c8bccc1-800w.webp": "webp/palt-nye-sandnesfjordcamping-b63c8bccc1-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-rovdas-2-etasjes-boliger-3c54089121-1600w.webp": "webp/palt-rovdas-2-etasjes-boliger-3c54089121-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-rovdas-2-etasjes-boliger-3c54089121-400w.webp": "webp/palt-rovdas-2-etasjes-boliger-3c54089121-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-rovdas-2-etasjes-boliger-3c54089121-800w.webp": "webp/palt-rovdas-2-etasjes-boliger-3c54089121-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-sfc-spawatherpark-2af3e82305-1600w.webp": "webp/palt-sfc-spawatherpark-2af3e82305-1600w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-sfc-spawatherpark-2af3e82305-800w.webp": "webp/palt-sfc-spawatherpark-2af3e82305-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-spa-sauna-badelands-anlegget-3bf3221c49-1448w.webp": "webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-1448w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-spa-sauna-badelands-anlegget-3bf3221c49-400w.webp": "webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-spa-sauna-badelands-anlegget-3bf3221c49-800w.webp": "webp/palt-spa-sauna-badelands-anlegget-3bf3221c49-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-1448w.webp": "webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-1448w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-400w.webp": "webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-800w.webp": "webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-web3-b6c3dd4e34-1536w.webp": "webp/palt-web3-b6c3dd4e34-1536w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-web3-b6c3dd4e34-400w.webp": "webp/palt-web3-b6c3dd4e34-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-web3-b6c3dd4e34-800w.webp": "webp/palt-web3-b6c3dd4e34-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-web3-i-fjell-ca1b8b567f-1536w.webp": "webp/palt-web3-i-fjell-ca1b8b567f-1536w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-web3-i-fjell-ca1b8b567f-400w.webp": "webp/palt-web3-i-fjell-ca1b8b567f-400w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/palt-web3-i-fjell-ca1b8b567f-800w.webp": "webp/palt-web3-i-fjell-ca1b8b567f-800w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/webp/minihusveibakken-2etg-960w.webp": "webp/minihusveibakken-2etg-960w.webp",
+    "https://cdn.nyverden.no/Photo/performance-20261028/webp/rovdas-2-etasjes-boliger-960w.webp": "webp/rovdas-2-etasjes-boliger-960w.webp",
+    "https://lead.b-cdn.net/webp/10hyttetomtersfc-480w.webp": "webp/10hyttetomtersfc-480w.webp",
+    "https://lead.b-cdn.net/webp/10hyttetomtersfc-960w.webp": "webp/10hyttetomtersfc-960w.webp",
+    "https://lead.b-cdn.net/webp/10hyttetomtersfc.webp": "webp/10hyttetomtersfc.webp",
+    "https://lead.b-cdn.net/webp/8-boliger-rovdas-minihouse-no-480w.webp": "webp/8-boliger-rovdas-minihouse-no-480w.webp",
+    "https://lead.b-cdn.net/webp/8-boliger-rovdas-minihouse-no-960w.webp": "webp/8-boliger-rovdas-minihouse-no-960w.webp",
+    "https://lead.b-cdn.net/webp/8-boliger-rovdas-minihouse-no.webp": "webp/8-boliger-rovdas-minihouse-no.webp",
+    "https://lead.b-cdn.net/webp/akapodiskdome5etasjer-480w.webp": "webp/akapodiskdome5etasjer-480w.webp",
+    "https://lead.b-cdn.net/webp/akapodiskdome5etasjer-960w.webp": "webp/akapodiskdome5etasjer-960w.webp",
+    "https://lead.b-cdn.net/webp/akapodiskdome5etasjer.webp": "webp/akapodiskdome5etasjer.webp",
+    "https://lead.b-cdn.net/webp/akapodiskdomeminihusveibakken-a-480w.webp": "webp/akapodiskdomeminihusveibakken-a-480w.webp",
+    "https://lead.b-cdn.net/webp/akapodiskdomeminihusveibakken-a-960w.webp": "webp/akapodiskdomeminihusveibakken-a-960w.webp",
+    "https://lead.b-cdn.net/webp/akapodiskdomeminihusveibakken-a.webp": "webp/akapodiskdomeminihusveibakken-a.webp",
+    "https://lead.b-cdn.net/webp/akvaponisk-dome-480w.webp": "webp/akvaponisk-dome-480w.webp",
+    "https://lead.b-cdn.net/webp/akvaponisk-dome-960w.webp": "webp/akvaponisk-dome-960w.webp",
+    "https://lead.b-cdn.net/webp/akvaponisk-dome.webp": "webp/akvaponisk-dome.webp",
+    "https://lead.b-cdn.net/webp/akvaponiskdomelandbruk-480w.webp": "webp/akvaponiskdomelandbruk-480w.webp",
+    "https://lead.b-cdn.net/webp/akvaponiskdomelandbruk-960w.webp": "webp/akvaponiskdomelandbruk-960w.webp",
+    "https://lead.b-cdn.net/webp/akvaponiskdomelandbruk.webp": "webp/akvaponiskdomelandbruk.webp",
+    "https://lead.b-cdn.net/webp/alleomradernordreisa-480w.webp": "webp/alleomradernordreisa-480w.webp",
+    "https://lead.b-cdn.net/webp/alleomradernordreisa.webp": "webp/alleomradernordreisa.webp",
+    "https://lead.b-cdn.net/webp/beredskap.webp": "webp/beredskap.webp",
+    "https://lead.b-cdn.net/webp/byggetrinn-1-kvannes.webp": "webp/byggetrinn-1-kvannes.webp",
+    "https://lead.b-cdn.net/webp/c7d75e97-Kv%C3%A6nnes-Rovdas-Nordkjosen-Sandnes%20Fjordcamping.png": "webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp",
+    "https://lead.b-cdn.net/webp/clc-energi-gjennomgang-no-480w.webp": "webp/clc-energi-gjennomgang-no-480w.webp",
+    "https://lead.b-cdn.net/webp/clc-energi-gjennomgang-no-960w.webp": "webp/clc-energi-gjennomgang-no-960w.webp",
+    "https://lead.b-cdn.net/webp/clc-energi-gjennomgang-no.webp": "webp/clc-energi-gjennomgang-no.webp",
+    "https://lead.b-cdn.net/webp/clc-energi-no-480w.webp": "webp/clc-energi-no-480w.webp",
+    "https://lead.b-cdn.net/webp/clc-energi-no-960w.webp": "webp/clc-energi-no-960w.webp",
+    "https://lead.b-cdn.net/webp/clc-energi-no.webp": "webp/clc-energi-no.webp",
+    "https://lead.b-cdn.net/webp/dypvannskaifjellanleggnordkjosnes-480w.webp": "webp/dypvannskaifjellanleggnordkjosnes-480w.webp",
+    "https://lead.b-cdn.net/webp/dypvannskaifjellanleggnordkjosnes-960w.webp": "webp/dypvannskaifjellanleggnordkjosnes-960w.webp",
+    "https://lead.b-cdn.net/webp/dypvannskaifjellanleggnordkjosnes.webp": "webp/dypvannskaifjellanleggnordkjosnes.webp",
+    "https://lead.b-cdn.net/webp/dypvannskaifjellanleggnordkjosnes1-480w.webp": "webp/dypvannskaifjellanleggnordkjosnes1-480w.webp",
+    "https://lead.b-cdn.net/webp/dypvannskaifjellanleggnordkjosnes1-960w.webp": "webp/dypvannskaifjellanleggnordkjosnes1-960w.webp",
+    "https://lead.b-cdn.net/webp/dypvannskaifjellanleggnordkjosnes1.webp": "webp/dypvannskaifjellanleggnordkjosnes1.webp",
+    "https://lead.b-cdn.net/webp/gnomehytterbobilparknordkjosnes-480w.webp": "webp/gnomehytterbobilparknordkjosnes-480w.webp",
+    "https://lead.b-cdn.net/webp/gnomehytterbobilparknordkjosnes-960w.webp": "webp/gnomehytterbobilparknordkjosnes-960w.webp",
+    "https://lead.b-cdn.net/webp/gnomehytterbobilparknordkjosnes.webp": "webp/gnomehytterbobilparknordkjosnes.webp",
+    "https://lead.b-cdn.net/webp/grottebolignordkjosnes-480w.webp": "webp/grottebolignordkjosnes-480w.webp",
+    "https://lead.b-cdn.net/webp/grottebolignordkjosnes-960w.webp": "webp/grottebolignordkjosnes-960w.webp",
+    "https://lead.b-cdn.net/webp/grottebolignordkjosnes.webp": "webp/grottebolignordkjosnes.webp",
+    "https://lead.b-cdn.net/webp/gudepark.webp": "webp/gudepark.webp",
+    "https://lead.b-cdn.net/webp/innspill-22-a.webp": "webp/innspill-22-a.webp",
+    "https://lead.b-cdn.net/webp/innspill-23a-480w.webp": "webp/innspill-23a-480w.webp",
+    "https://lead.b-cdn.net/webp/innspill-23a.webp": "webp/innspill-23a.webp",
+    "https://lead.b-cdn.net/webp/innspill-9.webp": "webp/innspill-9.webp",
+    "https://lead.b-cdn.net/webp/kvaenagenzone3-480w.webp": "webp/kvaenagenzone3-480w.webp",
+    "https://lead.b-cdn.net/webp/kvaenagenzone3-960w.webp": "webp/kvaenagenzone3-960w.webp",
+    "https://lead.b-cdn.net/webp/kvaenagenzone3.webp": "webp/kvaenagenzone3.webp",
+    "https://lead.b-cdn.net/webp/kvaenangenzone2-480w.webp": "webp/kvaenangenzone2-480w.webp",
+    "https://lead.b-cdn.net/webp/kvaenangenzone2-960w.webp": "webp/kvaenangenzone2-960w.webp",
+    "https://lead.b-cdn.net/webp/kvaenangenzone2.webp": "webp/kvaenangenzone2.webp",
+    "https://lead.b-cdn.net/webp/minihusrovdas-480w.webp": "webp/minihusrovdas-480w.webp",
+    "https://lead.b-cdn.net/webp/minihusrovdas-960w.webp": "webp/minihusrovdas-960w.webp",
+    "https://lead.b-cdn.net/webp/minihusrovdas.webp": "webp/minihusrovdas.webp",
+    "https://lead.b-cdn.net/webp/minihusveibakken-2etg-480w.webp": "webp/minihusveibakken-2etg-480w.webp",
+    "https://lead.b-cdn.net/webp/minihusveibakken-2etg-960w.webp": "webp/minihusveibakken-2etg-960w.webp",
+    "https://lead.b-cdn.net/webp/minihusveibakken-2etg.webp": "webp/minihusveibakken-2etg.webp",
+    "https://lead.b-cdn.net/webp/naturarvnord-480w.webp": "webp/naturarvnord-480w.webp",
+    "https://lead.b-cdn.net/webp/naturarvnord-960w.webp": "webp/naturarvnord-960w.webp",
+    "https://lead.b-cdn.net/webp/naturarvnord.webp": "webp/naturarvnord.webp",
+    "https://lead.b-cdn.net/webp/nordkjosfjellettunnelfjellhalldypvannskai1-480w.webp": "webp/nordkjosfjellettunnelfjellhalldypvannskai1-480w.webp",
+    "https://lead.b-cdn.net/webp/nordkjosfjellettunnelfjellhalldypvannskai1-960w.webp": "webp/nordkjosfjellettunnelfjellhalldypvannskai1-960w.webp",
+    "https://lead.b-cdn.net/webp/nordkjosfjellettunnelfjellhalldypvannskai1.webp": "webp/nordkjosfjellettunnelfjellhalldypvannskai1.webp",
+    "https://lead.b-cdn.net/webp/nordreisa-arctic-position-map-ubakgrunn.webp": "webp/nordreisa-arctic-position-map-ubakgrunn.webp",
+    "https://lead.b-cdn.net/webp/nr-hoved-innspill-7-sone-1-48cffb38.webp": "webp/nr-hoved-innspill-7-sone-1-48cffb38.webp",
+    "https://lead.b-cdn.net/webp/nr-landbrukernringsomradet-fd0cbeed.webp": "webp/nr-landbrukernringsomradet-fd0cbeed.webp",
+    "https://lead.b-cdn.net/webp/nr-rovdas-a-11e11879.webp": "webp/nr-rovdas-a-11e11879.webp",
+    "https://lead.b-cdn.net/webp/nr-sandnes-fjord-camping-med-domer-abf4025a.webp": "webp/nr-sandnes-fjord-camping-med-domer-abf4025a.webp",
+    "https://lead.b-cdn.net/webp/nye-sandnesfjordcamping-480w.webp": "webp/nye-sandnesfjordcamping-480w.webp",
+    "https://lead.b-cdn.net/webp/nye-sandnesfjordcamping-960w.webp": "webp/nye-sandnesfjordcamping-960w.webp",
+    "https://lead.b-cdn.net/webp/nye-sandnesfjordcamping.webp": "webp/nye-sandnesfjordcamping.webp",
+    "https://lead.b-cdn.net/webp/p17-web3-connected.webp": "webp/p17-web3-connected.webp",
+    "https://lead.b-cdn.net/webp/p17-web3-mountain-experience-v2.webp": "webp/p17-web3-mountain-experience-v2.webp",
+    "https://lead.b-cdn.net/webp/rovdas-2-etasjes-boliger-480w.webp": "webp/rovdas-2-etasjes-boliger-480w.webp",
+    "https://lead.b-cdn.net/webp/rovdas-2-etasjes-boliger-960w.webp": "webp/rovdas-2-etasjes-boliger-960w.webp",
+    "https://lead.b-cdn.net/webp/rovdas-2-etasjes-boliger.webp": "webp/rovdas-2-etasjes-boliger.webp",
+    "https://lead.b-cdn.net/webp/sfc-gudeparkhyttersaunaspaomradet-480w.webp": "webp/sfc-gudeparkhyttersaunaspaomradet-480w.webp",
+    "https://lead.b-cdn.net/webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp": "webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp",
+    "https://lead.b-cdn.net/webp/sfc-gudeparkhyttersaunaspaomradet.webp": "webp/sfc-gudeparkhyttersaunaspaomradet.webp",
+    "https://lead.b-cdn.net/webp/sfc-spawatherpark-480w.webp": "webp/sfc-spawatherpark-480w.webp",
+    "https://lead.b-cdn.net/webp/sfc-spawatherpark-960w.webp": "webp/sfc-spawatherpark-960w.webp",
+    "https://lead.b-cdn.net/webp/sfc-spawatherpark.webp": "webp/sfc-spawatherpark.webp",
+    "https://lead.b-cdn.net/webp/signaturbyggsone3kvaenangen-480w.webp": "webp/signaturbyggsone3kvaenangen-480w.webp",
+    "https://lead.b-cdn.net/webp/signaturbyggsone3kvaenangen-960w.webp": "webp/signaturbyggsone3kvaenangen-960w.webp",
+    "https://lead.b-cdn.net/webp/signaturbyggsone3kvaenangen.webp": "webp/signaturbyggsone3kvaenangen.webp",
+    "https://lead.b-cdn.net/webp/skyway-nordkjosfjellet-kvaennes-960w.webp": "webp/skyway-nordkjosfjellet-kvaennes-960w.webp",
+    "https://lead.b-cdn.net/webp/spa-sauna-badelands-anlegget-480w.webp": "webp/spa-sauna-badelands-anlegget-480w.webp",
+    "https://lead.b-cdn.net/webp/spa-sauna-badelands-anlegget-960w.webp": "webp/spa-sauna-badelands-anlegget-960w.webp",
+    "https://lead.b-cdn.net/webp/spa-sauna-badelands-anlegget.webp": "webp/spa-sauna-badelands-anlegget.webp",
+    "https://lead.b-cdn.net/webp/spa-sauna-funpark.webp": "webp/spa-sauna-funpark.webp",
+    "https://lead.b-cdn.net/webp/utgravinginnspill10-480w.webp": "webp/utgravinginnspill10-480w.webp",
+    "https://lead.b-cdn.net/webp/utgravinginnspill10-960w.webp": "webp/utgravinginnspill10-960w.webp",
+    "https://lead.b-cdn.net/webp/utgravinginnspill10.webp": "webp/utgravinginnspill10.webp",
+    "https://lead.b-cdn.net/webp/veibakken-aktiviteter-innspill-24-480w.webp": "webp/veibakken-aktiviteter-innspill-24-480w.webp",
+    "https://lead.b-cdn.net/webp/veibakken-aktiviteter-innspill-24-960w.webp": "webp/veibakken-aktiviteter-innspill-24-960w.webp",
+    "https://lead.b-cdn.net/webp/veibakken-aktiviteter-innspill-24.webp": "webp/veibakken-aktiviteter-innspill-24.webp",
+    "https://lead.b-cdn.net/webp/web3-480w.webp": "webp/web3-480w.webp",
+    "https://lead.b-cdn.net/webp/web3-960w.webp": "webp/web3-960w.webp",
+    "https://lead.b-cdn.net/webp/web3-a.webp": "webp/web3-a.webp",
+    "https://lead.b-cdn.net/webp/web3-i-fjell-480w.webp": "webp/web3-i-fjell-480w.webp",
+    "https://lead.b-cdn.net/webp/web3-i-fjell-960w.webp": "webp/web3-i-fjell-960w.webp",
+    "https://lead.b-cdn.net/webp/web3-i-fjell.webp": "webp/web3-i-fjell.webp",
+    "https://lead.b-cdn.net/webp/web3.webp": "webp/web3.webp",
+    "https://nyverden.b-cdn.net/Photo/performance-20261028/webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp": "webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp",
+    "https://lead.b-cdn.net/webp/spa-sauna-funpark-480w.webp": "webp/spa-sauna-funpark-480w.webp",
+    "https://lead.b-cdn.net/webp/spa-sauna-funpark-960w.webp": "webp/spa-sauna-funpark-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/10hytteTomterSFC.png": "webp/10hyttetomtersfc.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/AkapodiskDome5etasjer.png": "webp/akapodiskdome5etasjer.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/AkapodiskDomeMinihusVeibakken-a.png": "webp/akapodiskdomeminihusveibakken-a.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/Bobilparkering%20Nordkjos%20-%201.png": "webp/palt-bobilparkering-nordkjos-1-e3b47c5cc6-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/GnomeHytterBobilparkNordkjosnes.png": "webp/gnomehytterbobilparknordkjosnes.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/Innspill%2023a.png": "webp/innspill-23a.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/Kv%C3%A6nagenZone3.png": "webp/kvaenagenzone3.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/Kv%C3%A6nangenZone2.png": "webp/kvaenangenzone2.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/LandbrukErn%C3%A6ringsomr%C3%A5det.png": "webp/nr-landbrukernringsomradet-fd0cbeed.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/MinihusRovdas.png": "webp/minihusrovdas.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/NaturarvNord.png": "webp/naturarvnord.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/NordkjosfjelletTunnelFjellhallDypvannskai1.png": "webp/nordkjosfjellettunnelfjellhalldypvannskai1.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/Rovdas-a.png": "webp/nr-rovdas-a-11e11879.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/SFC-GudeparkHytterSaunaSpaOmr%C3%A5det.png": "webp/sfc-gudeparkhyttersaunaspaomradet.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/SignaturByggSone3Kv%C3%A6nangen.png": "webp/signaturbyggsone3kvaenangen.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/UtgravingInnspill10.png": "webp/utgravinginnspill10.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/10hyttetomtersfc-480w.webp": "webp/10hyttetomtersfc-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/10hyttetomtersfc-960w.webp": "webp/10hyttetomtersfc-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/10hyttetomtersfc.webp": "webp/10hyttetomtersfc.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/8-boliger-rovdas-minihouse-no-480w.webp": "webp/8-boliger-rovdas-minihouse-no-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/8-boliger-rovdas-minihouse-no-960w.webp": "webp/8-boliger-rovdas-minihouse-no-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/8-boliger-rovdas-minihouse-no.webp": "webp/8-boliger-rovdas-minihouse-no.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akapodiskdome5etasjer-480w.webp": "webp/akapodiskdome5etasjer-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akapodiskdome5etasjer-960w.webp": "webp/akapodiskdome5etasjer-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akapodiskdome5etasjer.webp": "webp/akapodiskdome5etasjer.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akapodiskdomeminihusveibakken-a-480w.webp": "webp/akapodiskdomeminihusveibakken-a-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akapodiskdomeminihusveibakken-a-960w.webp": "webp/akapodiskdomeminihusveibakken-a-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akapodiskdomeminihusveibakken-a.webp": "webp/akapodiskdomeminihusveibakken-a.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akvaponisk-dome-480w.webp": "webp/akvaponisk-dome-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akvaponisk-dome-960w.webp": "webp/akvaponisk-dome-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akvaponisk-dome.webp": "webp/akvaponisk-dome.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akvaponiskdomelandbruk-480w.webp": "webp/akvaponiskdomelandbruk-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akvaponiskdomelandbruk-960w.webp": "webp/akvaponiskdomelandbruk-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/akvaponiskdomelandbruk.webp": "webp/akvaponiskdomelandbruk.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/alleomradernordreisa-480w.webp": "webp/alleomradernordreisa-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/alleomradernordreisa.webp": "webp/alleomradernordreisa.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/c7d75e97-Kv%C3%A6nnes-Rovdas-Nordkjosen-Sandnes%20Fjordcamping.png": "webp/palt-c7d75e97-kvnnes-rovdas-nordkjosen-sandnes-fjo-c7d75e97fb-1510w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/clc-energi-gjennomgang-no-480w.webp": "webp/clc-energi-gjennomgang-no-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/clc-energi-gjennomgang-no-960w.webp": "webp/clc-energi-gjennomgang-no-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/clc-energi-gjennomgang-no.webp": "webp/clc-energi-gjennomgang-no.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/clc-energi-no-480w.webp": "webp/clc-energi-no-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/clc-energi-no-960w.webp": "webp/clc-energi-no-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/clc-energi-no.webp": "webp/clc-energi-no.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/dypvannskaifjellanleggnordkjosnes-480w.webp": "webp/dypvannskaifjellanleggnordkjosnes-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/dypvannskaifjellanleggnordkjosnes-960w.webp": "webp/dypvannskaifjellanleggnordkjosnes-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/dypvannskaifjellanleggnordkjosnes.webp": "webp/dypvannskaifjellanleggnordkjosnes.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/dypvannskaifjellanleggnordkjosnes1-480w.webp": "webp/dypvannskaifjellanleggnordkjosnes1-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/dypvannskaifjellanleggnordkjosnes1-960w.webp": "webp/dypvannskaifjellanleggnordkjosnes1-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/dypvannskaifjellanleggnordkjosnes1.webp": "webp/dypvannskaifjellanleggnordkjosnes1.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/gnomehytterbobilparknordkjosnes-480w.webp": "webp/gnomehytterbobilparknordkjosnes-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/gnomehytterbobilparknordkjosnes-960w.webp": "webp/gnomehytterbobilparknordkjosnes-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/gnomehytterbobilparknordkjosnes.webp": "webp/gnomehytterbobilparknordkjosnes.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/grottebolignordkjosnes-480w.webp": "webp/grottebolignordkjosnes-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/grottebolignordkjosnes-960w.webp": "webp/grottebolignordkjosnes-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/grottebolignordkjosnes.webp": "webp/grottebolignordkjosnes.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/innspill-23a-480w.webp": "webp/innspill-23a-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/innspill-23a.webp": "webp/innspill-23a.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/kvaenagenzone3-480w.webp": "webp/kvaenagenzone3-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/kvaenagenzone3-960w.webp": "webp/kvaenagenzone3-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/kvaenagenzone3.webp": "webp/kvaenagenzone3.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/kvaenangenzone2-480w.webp": "webp/kvaenangenzone2-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/kvaenangenzone2-960w.webp": "webp/kvaenangenzone2-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/kvaenangenzone2.webp": "webp/kvaenangenzone2.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/minihusrovdas-480w.webp": "webp/minihusrovdas-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/minihusrovdas-960w.webp": "webp/minihusrovdas-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/minihusrovdas.webp": "webp/minihusrovdas.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/minihusveibakken-2etg-480w.webp": "webp/minihusveibakken-2etg-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/minihusveibakken-2etg-960w.webp": "webp/minihusveibakken-2etg-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/minihusveibakken-2etg.webp": "webp/minihusveibakken-2etg.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/naturarvnord-480w.webp": "webp/naturarvnord-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/naturarvnord-960w.webp": "webp/naturarvnord-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/naturarvnord.webp": "webp/naturarvnord.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/nordkjosfjellettunnelfjellhalldypvannskai1-480w.webp": "webp/nordkjosfjellettunnelfjellhalldypvannskai1-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/nordkjosfjellettunnelfjellhalldypvannskai1-960w.webp": "webp/nordkjosfjellettunnelfjellhalldypvannskai1-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/nordkjosfjellettunnelfjellhalldypvannskai1.webp": "webp/nordkjosfjellettunnelfjellhalldypvannskai1.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/nordreisa-arctic-position-map-ubakgrunn.webp": "webp/nordreisa-arctic-position-map-ubakgrunn.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/nye-sandnesfjordcamping-480w.webp": "webp/nye-sandnesfjordcamping-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/nye-sandnesfjordcamping-960w.webp": "webp/nye-sandnesfjordcamping-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/nye-sandnesfjordcamping.webp": "webp/nye-sandnesfjordcamping.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/rovdas-2-etasjes-boliger-480w.webp": "webp/rovdas-2-etasjes-boliger-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/rovdas-2-etasjes-boliger-960w.webp": "webp/rovdas-2-etasjes-boliger-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/rovdas-2-etasjes-boliger.webp": "webp/rovdas-2-etasjes-boliger.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-gudeparkhyttersaunaspaomradet-480w.webp": "webp/sfc-gudeparkhyttersaunaspaomradet-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp": "webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-gudeparkhyttersaunaspaomradet.webp": "webp/sfc-gudeparkhyttersaunaspaomradet.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-spawatherpark-480w.webp": "webp/sfc-spawatherpark-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-spawatherpark-960w.webp": "webp/sfc-spawatherpark-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-spawatherpark.webp": "webp/sfc-spawatherpark.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/signaturbyggsone3kvaenangen-480w.webp": "webp/signaturbyggsone3kvaenangen-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/signaturbyggsone3kvaenangen-960w.webp": "webp/signaturbyggsone3kvaenangen-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/signaturbyggsone3kvaenangen.webp": "webp/signaturbyggsone3kvaenangen.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/spa-sauna-badelands-anlegget-480w.webp": "webp/spa-sauna-badelands-anlegget-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/spa-sauna-badelands-anlegget-960w.webp": "webp/spa-sauna-badelands-anlegget-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/spa-sauna-badelands-anlegget.webp": "webp/spa-sauna-badelands-anlegget.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/utgravinginnspill10-480w.webp": "webp/utgravinginnspill10-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/utgravinginnspill10-960w.webp": "webp/utgravinginnspill10-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/utgravinginnspill10.webp": "webp/utgravinginnspill10.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/veibakken-aktiviteter-innspill-24-480w.webp": "webp/veibakken-aktiviteter-innspill-24-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/veibakken-aktiviteter-innspill-24-960w.webp": "webp/veibakken-aktiviteter-innspill-24-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/veibakken-aktiviteter-innspill-24.webp": "webp/veibakken-aktiviteter-innspill-24.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/web3-480w.webp": "webp/web3-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/web3-960w.webp": "webp/web3-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/web3-a.webp": "webp/web3-a.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/web3-i-fjell-480w.webp": "webp/web3-i-fjell-480w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/web3-i-fjell-960w.webp": "webp/web3-i-fjell-960w.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/web3-i-fjell.webp": "webp/web3-i-fjell.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/web3.webp": "webp/web3.webp",
+    "https://lead.b-cdn.net/Nordreisa/3-veksthus-og-landbruk.jpg": "webp/palt-3-veksthus-og-landbruk-06d5fa17b8-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/8-boliger-rovdas-minihouse-no.jpg": "webp/8-boliger-rovdas-minihouse-no.webp",
+    "https://lead.b-cdn.net/Nordreisa/Veibakken%20Aktiviteter%20Innspill%2024.png": "webp/veibakken-aktiviteter-innspill-24.webp",
+    "https://lead.b-cdn.net/Nordreisa/akvaponisk-dome.jpg": "webp/akvaponisk-dome.webp",
+    "https://lead.b-cdn.net/Nordreisa/beredskap.jpg": "webp/beredskap.webp",
+    "https://lead.b-cdn.net/Nordreisa/bobilparkering-nordkjos-1.jpg": "webp/palt-bobilparkering-nordkjos-1-fbc31bbd56-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/bobilparkering-nordkjos.jpg": "webp/palt-bobilparkering-nordkjos-7fbc17ad1d-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/byggetrinn-1-kvannes.jpg": "webp/byggetrinn-1-kvannes.webp",
+    "https://lead.b-cdn.net/Nordreisa/clc-energi-gjennomgang-no.jpg": "webp/clc-energi-gjennomgang-no.webp",
+    "https://lead.b-cdn.net/Nordreisa/clc-energi-no.jpg": "webp/clc-energi-no.webp",
+    "https://lead.b-cdn.net/Nordreisa/domene-p-rovdas-kv-nnes10.jpg": "webp/palt-domene-p-rovdas-kv-nnes10-9e48399d72-1344w.webp",
+    "https://lead.b-cdn.net/Nordreisa/dypvannskai-og-fjellanlegg-nordkjosnes.jpg": "webp/palt-dypvannskai-og-fjellanlegg-nordkjosnes-4523cfec79-1536w.webp",
+    "https://lead.b-cdn.net/Nordreisa/gudepark.jpg": "webp/gudepark.webp",
+    "https://lead.b-cdn.net/Nordreisa/hoved-innspill-7-sone-1.jpg": "webp/nr-hoved-innspill-7-sone-1-48cffb38.webp",
+    "https://lead.b-cdn.net/Nordreisa/innspill-19-1.jpg": "webp/palt-innspill-19-1-c621944e2e-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/innspill-20-a.jpg": "webp/palt-innspill-20-a-3102a04bcc-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/innspill-21-a.jpg": "webp/palt-innspill-21-a-a4d4625153-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/innspill-22-a.jpg": "webp/innspill-22-a.webp",
+    "https://lead.b-cdn.net/Nordreisa/innspill-24.jpg": "webp/palt-innspill-24-f76d5667f7-1376w.webp",
+    "https://lead.b-cdn.net/Nordreisa/innspill-25-1.jpg": "webp/palt-innspill-25-1-fc107daa17-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/innspill-9.jpg": "webp/innspill-9.webp",
+    "https://lead.b-cdn.net/Nordreisa/naturarv-nord-plakat.jpg": "webp/palt-naturarv-nord-plakat-87af97775d-1600w.webp",
+    "https://lead.b-cdn.net/Nordreisa/nordreisa-arctic-position-map%20ubakgrunn.png": "webp/nordreisa-arctic-position-map-ubakgrunn.webp",
+    "https://lead.b-cdn.net/Nordreisa/nye-sandnesfjordcamping.jpg": "webp/nye-sandnesfjordcamping.webp",
+    "https://lead.b-cdn.net/Nordreisa/p17-web3-connected.jpg": "webp/p17-web3-connected.webp",
+    "https://lead.b-cdn.net/Nordreisa/p17-web3-mountain-experience-v2.jpg": "webp/p17-web3-mountain-experience-v2.webp",
+    "https://lead.b-cdn.net/Nordreisa/rovdas-2-etasjes-boliger.jpg": "webp/rovdas-2-etasjes-boliger.webp",
+    "https://lead.b-cdn.net/Nordreisa/sandnes-fjord-camping-med-domer.jpg": "webp/nr-sandnes-fjord-camping-med-domer-abf4025a.webp",
+    "https://lead.b-cdn.net/Nordreisa/spa-sauna-badelands-anlegget.jpg": "webp/spa-sauna-badelands-anlegget.webp",
+    "https://lead.b-cdn.net/Nordreisa/spa-sauna-funpark.jpg": "webp/spa-sauna-funpark.webp",
+    "https://lead.b-cdn.net/Nordreisa/vekst-sirkelen-i-dome-milj-et-no.jpg": "webp/palt-vekst-sirkelen-i-dome-milj-et-no-1558283035-1448w.webp",
+    "https://lead.b-cdn.net/Nordreisa/web3-i-fjell.jpg": "webp/web3-i-fjell.webp",
+    "https://lead.b-cdn.net/Nordreisa/web3.jpg": "webp/web3.webp",
+    "https://lead.b-cdn.net/Nordreisa-eu/webp/skyway-nordkjosfjellet-kvaennes-960w.webp": "webp/skyway-nordkjosfjellet-kvaennes-960w.webp"
+  },
+  "pages": [
+    {
+      "url": "https://nordreisa.eu/",
+      "slug": "forside",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap04-rovdas",
+      "slug": "ap04-rovdas",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap03-energi",
+      "slug": "ap03-energi",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap02-mat",
+      "slug": "ap02-mat",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap01-sandnes-fjord",
+      "slug": "ap01-sandnes-fjord",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap08-strategi",
+      "slug": "ap08-strategi",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap06-servicenoder",
+      "slug": "ap06-servicenoder",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap09-vinter",
+      "slug": "ap09-vinter",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap05-nordkjosfjellet",
+      "slug": "ap05-nordkjosfjellet",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap07-kvaennes-rovdas",
+      "slug": "ap07-kvaennes-rovdas",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p01-sandnes-fjord-camping-domes",
+      "slug": "p01-sandnes-fjord-camping-domes",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/calculations",
+      "slug": "calculations",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/ap10-veibakken",
+      "slug": "ap10-veibakken",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p02-spa-sauna-waterpark",
+      "slug": "p02-spa-sauna-waterpark",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/overview",
+      "slug": "overview",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p05-rovdas-minihouse-8-units",
+      "slug": "p05-rovdas-minihouse-8-units",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p06-rovdas-two-storey-housing",
+      "slug": "p06-rovdas-two-storey-housing",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p03-greenhouse-aquaponic-dome",
+      "slug": "p03-greenhouse-aquaponic-dome",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p07-cave-lodging-web3-in-the-mountain",
+      "slug": "p07-cave-lodging-web3-in-the-mountain",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p04-clc-energy",
+      "slug": "p04-clc-energy",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p09-service-node-input-9",
+      "slug": "p09-service-node-input-9",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p08-motorhome-parking-nordkjos",
+      "slug": "p08-motorhome-parking-nordkjos",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p10-kvaennes-building-phase-1",
+      "slug": "p10-kvaennes-building-phase-1",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p11-naturarv-nord",
+      "slug": "p11-naturarv-nord",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p12-deep-water-quay-mountain-facility",
+      "slug": "p12-deep-water-quay-mountain-facility",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p15-growth-circle-in-the-dome-environment",
+      "slug": "p15-growth-circle-in-the-dome-environment",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p13-motorhome-parking-nordkjos-variant",
+      "slug": "p13-motorhome-parking-nordkjos-variant",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p16-domes-at-rovdas-kvaennes",
+      "slug": "p16-domes-at-rovdas-kvaennes",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p14-preparedness-beredskap",
+      "slug": "p14-preparedness-beredskap",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p17-web3-layer",
+      "slug": "p17-web3-layer",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p20-strategy-input-20",
+      "slug": "p20-strategy-input-20",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p18-clc-energy-review-extension",
+      "slug": "p18-clc-energy-review-extension",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p22-winter-offer",
+      "slug": "p22-winter-offer",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p21-strategy-input-21",
+      "slug": "p21-strategy-input-21",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p19-kvaennes-area-input-19",
+      "slug": "p19-kvaennes-area-input-19",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p25-nordkjosfjellet-input-25",
+      "slug": "p25-nordkjosfjellet-input-25",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p24-veibakken-input-24",
+      "slug": "p24-veibakken-input-24",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/p23-gudepark",
+      "slug": "p23-gudepark",
+      "status": 200
+    },
+    {
+      "url": "https://nordreisa.eu/why-nordreisa",
+      "slug": "why-nordreisa",
+      "status": 200
+    }
+  ]
+}

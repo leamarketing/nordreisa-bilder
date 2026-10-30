@@ -1,0 +1,2482 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#070b12">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+
+    :root {
+        --bg: #070b12;
+        --bg-elev: #0d1420;
+        --ink: #f3f6fb;
+        --muted: #9aa8bc;
+        --dim: #6b7a90;
+        --line: rgba(255, 255, 255, .08);
+        --line-strong: rgba(255, 255, 255, .14);
+        --accent: #5eead4;
+        --accent-2: #7dd3fc;
+        --accent-soft: rgba(94, 234, 212, .12);
+        --warm: #fbbf24;
+        --glass: rgba(16, 24, 40, .55);
+        --glass-border: rgba(255, 255, 255, .12);
+        --radius: 18px;
+        --radius-sm: 12px;
+        --shadow: 0 24px 80px rgba(0, 0, 0, .45);
+        --max: 1180px;
+        --font: "Instrument Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        --display: "Fraunces", Georgia, "Times New Roman", serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    a {
+        color: var(--accent-2);
+        text-decoration: none;
+        transition: color .2s ease, opacity .2s ease;
+    }
+
+    a:hover {
+        color: var(--accent);
+    }
+
+    .wrap {
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+        border-bottom: 1px solid transparent;
+    }
+
+    .site-header.is-scrolled {
+        background: rgba(7, 11, 18, .72);
+        backdrop-filter: blur(16px) saturate(1.2);
+        -webkit-backdrop-filter: blur(16px) saturate(1.2);
+        border-bottom-color: var(--line);
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        font-weight: 700;
+        letter-spacing: .04em;
+        color: var(--ink);
+        font-size: .95rem;
+        text-transform: uppercase;
+    }
+
+    .brand em {
+        font-style: normal;
+        color: var(--accent);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .25rem .9rem;
+    }
+
+    .nav-links a {
+        color: var(--muted);
+        font-size: .9rem;
+        font-weight: 500;
+        padding: .35rem .2rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: var(--ink);
+    }
+
+    .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        background: var(--accent);
+        color: #042f2e !important;
+        font-weight: 600;
+        font-size: .85rem;
+        padding: .55rem 1rem;
+        border-radius: 999px;
+    }
+
+    .nav-cta:hover {
+        filter: brightness(1.05);
+        color: #042f2e !important;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: .45rem;
+        padding: .75rem 1.25rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: .92rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background: var(--accent);
+        color: #042f2e !important;
+    }
+
+    .btn-primary:hover {
+        filter: brightness(1.06);
+        color: #042f2e !important;
+    }
+
+    .btn-ghost {
+        background: rgba(255, 255, 255, .06);
+        color: var(--ink) !important;
+        border-color: var(--line-strong);
+    }
+
+    .btn-ghost:hover {
+        border-color: rgba(94, 234, 212, .45);
+        color: var(--accent) !important;
+    }
+
+    .btn-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+        margin-top: 1.5rem;
+    }
+
+    .hero-bleed {
+        position: relative;
+        min-height: 88vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 7rem 0 3.5rem;
+        overflow: hidden;
+    }
+
+    .hero-bleed .hero-media {
+        position: absolute;
+        inset: 0;
+    }
+
+    .hero-bleed .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(1.05) contrast(1.05);
+    }
+
+    .hero-bleed .hero-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(105deg, rgba(7, 11, 18, .92) 0%, rgba(7, 11, 18, .72) 42%, rgba(7, 11, 18, .35) 70%, rgba(7, 11, 18, .55) 100%),
+            linear-gradient(180deg, rgba(7, 11, 18, .25), rgba(7, 11, 18, .95) 88%);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    .eyebrow {
+        font-size: .78rem;
+        font-weight: 600;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .85rem;
+    }
+
+    .hero-bleed h1 {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: clamp(2.4rem, 6vw, 4.2rem);
+        line-height: 1.05;
+        margin: 0 0 1rem;
+        max-width: min(28ch, 100%);
+    }
+
+    .hero-lead {
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+        color: rgba(243, 246, 251, .85);
+        max-width: 42ch;
+        margin: 0;
+    }
+
+    .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1.35rem;
+    }
+
+    .chip {
+        font-size: .82rem;
+        color: var(--muted);
+        padding: .4rem .85rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .04);
+        backdrop-filter: blur(8px);
+    }
+
+    .chip strong {
+        color: var(--ink);
+        font-weight: 700;
+    }
+
+    .kpi-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .85rem;
+        margin: -2.2rem auto 2rem;
+        position: relative;
+        z-index: 2;
+        width: min(var(--max), calc(100% - 2.5rem));
+    }
+
+    .kpi-cell {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(14px);
+        padding: 1.1rem 1.2rem;
+        box-shadow: var(--shadow);
+    }
+
+    .kpi-cell .label {
+        font-size: .72rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--dim);
+    }
+
+    .kpi-cell .value {
+        font-family: var(--display);
+        font-size: 1.55rem;
+        font-weight: 700;
+        margin: .25rem 0 .15rem;
+        color: var(--accent-2);
+    }
+
+    .kpi-cell .hint {
+        font-size: .78rem;
+        color: var(--muted);
+    }
+
+    .disclaimer-quiet {
+        font-size: .85rem;
+        color: var(--dim);
+        max-width: 72ch;
+        margin: 0 auto 2.5rem;
+        width: min(var(--max), calc(100% - 2.5rem));
+    }
+
+    .disclaimer-quiet strong {
+        color: var(--muted);
+    }
+
+    .section-head {
+        margin: 0 0 1.75rem;
+    }
+
+    .section-label {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: .5rem;
+    }
+
+    .section-head h2 {
+        font-family: var(--display);
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        margin: 0 0 .55rem;
+        line-height: 1.15;
+    }
+
+    .section-head p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 54ch;
+    }
+
+    .pkg-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.15rem;
+    }
+
+    .pkg-tile {
+        display: flex;
+        flex-direction: column;
+        color: inherit;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        backdrop-filter: blur(12px);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .pkg-tile:hover {
+        text-decoration: none;
+        color: inherit;
+        border-color: rgba(94, 234, 212, .4);
+        transform: translateY(-4px);
+        box-shadow: 0 20px 55px rgba(0, 0, 0, .4);
+    }
+
+    .pkg-tile .cover {
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: #0a1220;
+    }
+
+    .pkg-tile .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    .pkg-tile:hover .cover img {
+        transform: scale(1.06);
+    }
+
+    .pkg-tile .body {
+        padding: 1.15rem 1.2rem 1.3rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pkg-tile .code {
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .1em;
+        color: var(--accent);
+        text-transform: uppercase;
+    }
+
+    .pkg-tile h3 {
+        font-family: var(--display);
+        font-size: 1.15rem;
+        margin: .35rem 0 .4rem;
+        line-height: 1.2;
+    }
+
+    .pkg-tile .meta {
+        font-size: .8rem;
+        color: rgba(243, 246, 251, .7);
+    }
+
+    .pkg-tile .cta {
+        margin-top: .65rem;
+        font-size: .82rem;
+        font-weight: 600;
+        color: var(--accent);
+        opacity: 0;
+        transform: translateY(4px);
+        transition: opacity .2s, transform .2s;
+    }
+
+    .pkg-tile:hover .cta {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .proj-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.15rem;
+    }
+
+    .proj-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        color: inherit;
+        backdrop-filter: blur(10px);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .proj-card:hover {
+        text-decoration: none;
+        color: inherit;
+        border-color: rgba(94, 234, 212, .35);
+        transform: translateY(-3px);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+    }
+
+    .proj-card .thumb {
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: #0a1220;
+    }
+
+    .proj-card .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .5s ease;
+    }
+
+    .proj-card:hover .thumb img {
+        transform: scale(1.05);
+    }
+
+    .proj-card .thumb .ph {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        color: var(--dim);
+        font-size: .85rem;
+        background: linear-gradient(135deg, #0f1a2c, #132033);
+    }
+
+    .proj-card .body {
+        padding: 1rem 1.1rem 1.2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proj-card .id {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        color: var(--accent);
+    }
+
+    .proj-card h3 {
+        font-size: 1.05rem;
+        margin: .3rem 0 .45rem;
+        line-height: 1.25;
+        font-weight: 600;
+    }
+
+    .proj-card .place {
+        font-size: .85rem;
+        color: var(--muted);
+        margin-bottom: .6rem;
+    }
+
+    .proj-card .foot {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .8rem;
+        color: var(--dim);
+        padding-top: .5rem;
+        border-top: 1px solid var(--line);
+    }
+
+    .proj-card .foot .link {
+        color: var(--accent);
+        font-weight: 600;
+    }
+
+    .glass {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(14px);
+        padding: 1.35rem 1.45rem;
+    }
+
+    .asks {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: .7rem;
+    }
+
+    .asks li {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: .9rem;
+        align-items: start;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-sm);
+        padding: 1rem 1.15rem;
+    }
+
+    .asks .n {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        font-size: .8rem;
+        font-weight: 700;
+        background: var(--accent-soft);
+        color: var(--accent);
+        border: 1px solid rgba(94, 234, 212, .25);
+    }
+
+    .audience {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+
+    .audience span {
+        padding: .35rem .8rem;
+        border-radius: 999px;
+        font-size: .82rem;
+        color: var(--muted);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .03);
+    }
+
+    .page-hero {
+        position: relative;
+        min-height: 52vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 6.5rem 0 2.5rem;
+        overflow: hidden;
+    }
+
+    .page-hero .hero-media {
+        position: absolute;
+        inset: 0;
+    }
+
+    .page-hero .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .page-hero .hero-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(7, 11, 18, .4), rgba(7, 11, 18, .88) 70%, var(--bg));
+    }
+
+    .page-hero .inner {
+        position: relative;
+        z-index: 1;
+        width: min(var(--max), calc(100% - 2.5rem));
+        margin: 0 auto;
+    }
+
+    .breadcrumbs {
+        font-size: .82rem;
+        color: var(--dim);
+        margin-bottom: .85rem;
+    }
+
+    .breadcrumbs a {
+        color: var(--muted);
+    }
+
+    .page-hero h1 {
+        font-family: var(--display);
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        margin: .4rem 0 .6rem;
+        line-height: 1.1;
+        max-width: min(28ch, 100%);
+    }
+
+    .page-hero .hero-sub {
+        color: rgba(243, 246, 251, .8);
+        max-width: 48ch;
+        font-size: 1.05rem;
+        margin: 0;
+    }
+
+    .content {
+        padding: 2.5rem 0 4rem;
+    }
+
+    .split {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 880px) {
+        .split {
+            grid-template-columns: 1.4fr .85fr;
+            align-items: start;
+        }
+    }
+
+    .prose h2 {
+        font-family: var(--display);
+        font-size: 1.45rem;
+        margin: 0 0 1rem;
+    }
+
+    .prose p {
+        margin: 0 0 1rem;
+        color: rgba(243, 246, 251, .88);
+    }
+
+    .prose ul {
+        margin: 0 0 1.2rem;
+        padding-left: 1.15rem;
+        color: rgba(243, 246, 251, .88);
+    }
+
+    .prose li {
+        margin-bottom: .4rem;
+    }
+
+    .prose li strong {
+        color: var(--ink);
+    }
+
+    .side-stack {
+        display: grid;
+        gap: 1rem;
+        position: sticky;
+        top: 5.5rem;
+    }
+
+    .fig-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .fig-chip {
+        background: rgba(255, 255, 255, .05);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        padding: .7rem .9rem;
+        min-width: 7.5rem;
+    }
+
+    .fig-chip .k {
+        font-size: .68rem;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--dim);
+    }
+
+    .fig-chip .v {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--accent-2);
+        margin-top: .15rem;
+    }
+
+    .stat-list {
+        display: grid;
+        gap: .55rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .stat-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: .9rem;
+        padding: .45rem 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .stat-list .k {
+        color: var(--muted);
+    }
+
+    .stat-list .v {
+        color: var(--ink);
+        font-weight: 600;
+        text-align: right;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: .85rem;
+        margin: 1.25rem 0;
+    }
+
+    .gallery figure {
+        margin: 0;
+        border-radius: var(--radius-sm);
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: #0a1220;
+    }
+
+    .gallery img {
+        width: 100%;
+        aspect-ratio: 16/10;
+        object-fit: cover;
+    }
+
+    .gallery figcaption {
+        font-size: .78rem;
+        color: var(--dim);
+        padding: .55rem .7rem;
+    }
+
+    .related {
+        margin-top: 2.5rem;
+    }
+
+    .related h2 {
+        font-family: var(--display);
+        font-size: 1.35rem;
+        margin: 0 0 1rem;
+    }
+
+    .pager {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--line);
+    }
+
+    .pager a {
+        color: var(--ink);
+        font-weight: 500;
+        font-size: .9rem;
+        padding: .65rem 1rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, .03);
+    }
+
+    .pager a:hover {
+        border-color: rgba(94, 234, 212, .4);
+        color: var(--accent);
+    }
+
+    .placeholder {
+        min-height: 160px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: var(--dim);
+        background: linear-gradient(135deg, #0f1a2c, #132033);
+        border: 1px dashed var(--line);
+        border-radius: var(--radius-sm);
+        padding: 1.2rem;
+        font-size: .9rem;
+    }
+
+    footer {
+        border-top: 1px solid var(--line);
+        padding: 3rem 0 3.5rem;
+        color: var(--muted);
+        font-size: .92rem;
+    }
+
+    .contact-card h3 {
+        margin: 0 0 .35rem;
+        color: var(--ink);
+        font-size: 1.1rem;
+    }
+
+    .contact-card .org {
+        color: var(--accent);
+        font-size: .85rem;
+        font-weight: 600;
+        margin-bottom: .75rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 720px) {
+        .footer-grid {
+            grid-template-columns: 1.2fr 1fr;
+        }
+    }
+
+    @media (max-width: 720px) {
+        .kpi-strip {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .pkg-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-bleed {
+            min-height: 78vh;
+            padding-top: 6rem;
+        }
+
+        .nav-cta {
+            display: none;
+        }
+    }
+
+    section.wrap {
+        padding: 3rem 0;
+    }
+
+    /* ClickSites / GTranslate overlap fix */
+    font {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    body font[style*="vertical-align"] {
+        display: inline !important;
+    }
+
+    .page-hero h1,
+    .hero-bleed h1 {
+        max-width: min(28ch, 100%) !important;
+        line-height: 1.15 !important;
+    }
+
+    .page-hero .hero-sub,
+    .prose p,
+    .hero-lead,
+    .page-hero .hero-sub {
+        line-height: 1.65 !important;
+        max-width: 62ch;
+    }
+
+    .co-card {
+        display: grid;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--glass);
+        overflow: hidden;
+        margin: 0 0 1.4rem
+    }
+
+    .co-card .pic {
+        position: relative;
+        background: #0a1220;
+        aspect-ratio: 16/10
+    }
+
+    .co-card .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        inset: 0
+    }
+
+    @media(min-width:900px) {
+        .co-card {
+            grid-template-columns: 340px 1fr
+        }
+
+        .co-card .pic {
+            aspect-ratio: auto;
+            min-height: 240px
+        }
+    }
+
+    .co-card .body {
+        padding: 1.2rem 1.3rem 1.4rem
+    }
+
+    .co-card h3 {
+        font-family: var(--display);
+        font-size: 1.3rem;
+        margin: .25rem 0 .2rem;
+        line-height: 1.2
+    }
+
+    .co-card .idline {
+        font-size: .74rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        color: var(--accent);
+        text-transform: uppercase
+    }
+
+    .co-card .place {
+        font-size: .88rem;
+        color: var(--muted);
+        margin: 0 0 .7rem
+    }
+
+    .badge {
+        display: inline-block;
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        padding: .2rem .6rem;
+        border-radius: 999px;
+        margin-left: .5rem;
+        vertical-align: middle
+    }
+
+    .badge.yes {
+        background: var(--accent-soft);
+        color: var(--accent);
+        border: 1px solid rgba(94, 234, 212, .4)
+    }
+
+    .badge.no {
+        background: rgba(251, 191, 36, .1);
+        color: var(--warm);
+        border: 1px solid rgba(251, 191, 36, .4)
+    }
+
+    .co-card h4 {
+        font-size: .78rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--dim);
+        margin: 1rem 0 .4rem
+    }
+
+    table.cost {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: .93rem
+    }
+
+    table.cost td,
+    table.cost th {
+        padding: .42rem .5rem;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top
+    }
+
+    table.cost td.amt,
+    table.cost th.amt {
+        text-align: right;
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums
+    }
+
+    table.cost tr.sum td {
+        font-weight: 700;
+        color: var(--accent-2);
+        border-bottom: 0
+    }
+
+    table.cost tr.dim td {
+        color: var(--muted)
+    }
+
+    ul.items {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: rgba(243, 246, 251, .9);
+        font-size: .93rem
+    }
+
+    ul.items li {
+        margin: .25rem 0
+    }
+
+    .basis {
+        font-size: .85rem;
+        color: var(--muted);
+        margin: .8rem 0 0
+    }
+
+    .check {
+        border: 1px dashed rgba(251, 191, 36, .5);
+        border-radius: var(--radius-sm);
+        padding: .7rem .9rem;
+        background: rgba(251, 191, 36, .07);
+        font-size: .88rem;
+        color: rgba(243, 246, 251, .92);
+        margin-top: .9rem
+    }
+
+    .check strong {
+        color: var(--warm)
+    }
+
+    .readbox {
+        padding: 1.6rem 1.7rem 1.8rem;
+        margin: 0 0 2rem
+    }
+
+    .readbox ul {
+        margin: .6rem 0 0;
+        padding-left: 1.15rem
+    }
+
+    .readbox li {
+        margin: .5rem 0;
+        color: rgba(243, 246, 251, .9)
+    }
+
+    .toc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin: 0 0 2rem
+    }
+
+    .toc a {
+        background: rgba(255, 255, 255, .05);
+        border: 1px solid var(--line-strong);
+        border-radius: 999px;
+        padding: .35rem .8rem;
+        font-size: .85rem;
+        color: var(--ink)
+    }
+
+    .toc a:hover {
+        border-color: rgba(94, 234, 212, .5);
+        color: var(--accent)
+    }
+
+    .ap-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: .5rem 1.5rem;
+        margin: 2.8rem 0 1.1rem;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: .7rem
+    }
+
+    .ap-head h2 {
+        font-family: var(--display);
+        font-size: 1.6rem;
+        margin: 0
+    }
+
+    .ap-head .aptot {
+        color: var(--accent-2);
+        font-weight: 700
+    }
+
+    .co-card .more {
+        margin-top: 1rem;
+        font-size: .88rem
+    }
+
+    .srclist {
+        font-size: .9rem;
+        color: var(--muted)
+    }
+
+    .srclist li {
+        margin: .3rem 0
+    }
+</style>
+
+<header class="site-header">
+    <div class="wrap nav">
+        <a class="brand" href="/">PALT <em>·</em> Nordreisa</a>
+        <nav class="nav-links" aria-label="Main">
+            <a href="/">Overview</a>
+            <a href="/#packages">Packages</a>
+            <a href="/#projects">Projects</a>
+            <a href="/#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="/#packages">Explore portfolio</a>
+    </div>
+</header>
+<main>
+    <section class="page-hero">
+        <div class="hero-media"><img src="https://lead.b-cdn.net/Nordreisa/sandnes-fjord-camping-med-domer.jpg" alt="Sandnes Fjord Camping with dome accommodation — PALT Nordreisa" width="1600" height="900" loading="eager" decoding="async" fetchpriority="high"></div>
+        <div class="inner">
+            <div class="breadcrumbs"><a href="/">Overview</a> · Cost overview</div>
+            <div class="eyebrow">P01-P25 · AP01-AP10</div>
+            <h1>Cost overview: the 25 inputs</h1>
+            <p class="hero-sub">Main cost items per project, with the basis behind each figure and what is still open.</p>
+        </div>
+    </section>
+    <div class="wrap content">
+        <div class="kpi-strip">
+            <div class="kpi-cell">
+                <div class="label">Working total (13 of 25 counted)</div>
+                <div class="value">4,391.6 MNOK</div>
+                <div class="hint">Sum of working estimates, mostly midpoints</div>
+            </div>
+            <div class="kpi-cell">
+                <div class="label">Range for the same 13</div>
+                <div class="value">~2,950-7,220 MNOK</div>
+                <div class="hint">Low to high case, checked 20 Sep 2026</div>
+            </div>
+            <div class="kpi-cell">
+                <div class="label">Annual income at full operation</div>
+                <div class="value">~409.6 MNOK</div>
+                <div class="hint">Indicative, not a forecast</div>
+            </div>
+            <div class="kpi-cell">
+                <div class="label">Jobs (working range)</div>
+                <div class="value">247-1,015</div>
+                <div class="hint">Upper end not yet explained</div>
+            </div>
+        </div>
+        <div class="glass readbox">
+            <div class="section-label">How to read these numbers</div>
+            <ul>
+                <li><strong>4,391.6 MNOK is the sum of working estimates, not a budget and not a funding need.</strong> It counts 13 of the 25 inputs, mostly at the midpoint of their range. The other 12 are studies, duplicates, programmes or already part of P10.</li>
+                <li><strong>Kvænnes (P10) is 63 % of the total.</strong> The total is in practice the Kvænnes figure.</li>
+                <li><strong>Not calculated:</strong> the tunnel and mountain-hall system around Nordkjosnes (about 7 km of tunnel in the concept drawings). By PALT's own unit rate for a narrow tunnel the tunnel bore alone is about 1,400-2,100 MNOK. See P12.</li>
+                <li><strong>Kvænnes needs public or non-commercial capital.</strong> Modelled EBITDA is 11.1 MNOK/year against about 149 MNOK/year needed for an 8 % return on the private capital. The gap is about 138 MNOK/year in the base scenario.</li>
+                <li><strong>Yellow boxes marked 'Cost check'</strong> are a bottom-up control made 20 Sep 2026. They use stated assumptions and market references, not quotes.</li>
+            </ul>
+        </div>
+        <nav class="toc" aria-label="Work packages"><a href="#ap01">AP01 Sandnes Fjord destination</a><a href="#ap02">AP02 Food, agriculture and learning</a><a href="#ap03">AP03 Local energy system</a><a href="#ap04">AP04 Rovdas housing programme</a><a href="#ap05">AP05 Nordkjosfjellet programme</a><a href="#ap06">AP06 Tourism and service nodes</a><a href="#ap07">AP07 Kvænnes master plan</a><a href="#ap08">AP08 Tourism and community strategy</a><a href="#ap09">AP09 Winter infrastructure</a><a href="#ap10">AP10 Veibakken experience area</a></nav>
+        <div class="ap-head" id="ap01">
+            <h2>AP01 · Sandnes Fjord destination</h2><span class="aptot">Working estimate: ~370 MNOK</span>
+        </div>
+        <article class="co-card" id="p01">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/nye-sandnesfjordcamping.jpg" alt="Sandnes Fjord Camping &amp; Domes" loading="lazy" width="1448" height="1086" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P01<span class="badge yes">In total</span></div>
+                <h3>Sandnes Fjord Camping &amp; Domes</h3>
+                <p class="place">Sandnes Fjord</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~220 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">120-320 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~35 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">15-35</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">3/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Dome lodges along the ridge boardwalk</li>
+                    <li>Reception, restaurant and rooms by the E6</li>
+                    <li>Fjord-side spa and sauna</li>
+                    <li>Harbour, small-boat and kayak access</li>
+                    <li>Roads, parking, water and sewage</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Slide 27: cost frame 120-320 MNOK. Working estimate is the midpoint. Not yet split by item.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The frame also mentions the spa and an indoor water park (see P02), which is priced separately at ~150. A bottom-up check of P01 without the water park gives roughly 140-600 MNOK (base ~280).</div>
+                <p class="more"><a href="/p01-sandnes-fjord-camping-domes">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p02">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/spa-sauna-badelands-anlegget.jpg" alt="Spa, Sauna &amp; Waterpark" loading="lazy" width="1448" height="1086" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P02<span class="badge yes">In total</span></div>
+                <h3>Spa, Sauna &amp; Waterpark</h3>
+                <p class="place">Sandnes Fjord</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~150 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">60-250 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~25 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">8-25</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">3/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Dome water park (badeland)</li>
+                    <li>Long water slide from the reception building</li>
+                    <li>Spa, sauna and soaking pools</li>
+                    <li>Sea-water heat exchange for pool heating</li>
+                    <li>Building services and water treatment</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative working estimate with no slide source. Sauna first, full park later.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> Comparable Norwegian water parks cost about 130-142 MNOK (Kristiansand, Hovden). Bottom-up check for this concept: roughly 130-300 (base ~190). The low end of 60 is not supported by references.</div>
+                <p class="more"><a href="/p02-spa-sauna-waterpark">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap02">
+            <h2>AP02 · Food, agriculture and learning</h2><span class="aptot">Working estimate: ~210 MNOK</span>
+        </div>
+        <article class="co-card" id="p03">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/akvaponisk-dome.jpg" alt="Greenhouse &amp; Aquaponic Dome" loading="lazy" width="1448" height="1086" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P03<span class="badge yes">In total</span></div>
+                <h3>Greenhouse &amp; Aquaponic Dome</h3>
+                <p class="place">Veibakken</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~185 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">45-360 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~55 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">15-45</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Affordable first phase (pilot)</td>
+                            <td class="amt">45-80</td>
+                        </tr>
+                        <tr>
+                            <td>Full first build</td>
+                            <td class="amt">120-250</td>
+                        </tr>
+                        <tr>
+                            <td>Extended long-term version</td>
+                            <td class="amt">250-360</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="basis"><strong>Basis:</strong> Slide 39. The working estimate 185 is the midpoint of the full first build. The next decision is a pilot of 1,500-3,000 m2.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The source is confirmed. Income of 55 MNOK/year here and 20 MNOK/year in P15 may overlap (same food sales) and should be separated.</div>
+                <p class="more"><a href="/p03-greenhouse-aquaponic-dome">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p15">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/LandbrukErn%C3%A6ringsomr%C3%A5det.png" alt="Growth Circle in the Dome Environment" loading="lazy" width="1344" height="768" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P15<span class="badge yes">In total</span></div>
+                <h3>Growth Circle in the Dome Environment</h3>
+                <p class="place">Veibakken / Nordreisa</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~25 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">8-60 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~20 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">8-25</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Processing and food brand</li>
+                    <li>Plots, courses and demonstration field</li>
+                    <li>Distribution and market channels</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative processing/brand estimate. The greenhouse investment sits in P03 and is not duplicated here.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> Income of 20 MNOK/year may overlap with P03 (55). Document what is production (P03) and what is processing and marketing (P15).</div>
+                <p class="more"><a href="/p15-growth-circle-in-the-dome-environment">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap03">
+            <h2>AP03 · Local energy system</h2><span class="aptot">Working estimate: ~235 (120-350) MNOK</span>
+        </div>
+        <article class="co-card" id="p04">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/clc-energi-no.jpg" alt="CLC Energy" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P04<span class="badge yes">In total</span></div>
+                <h3>CLC Energy</h3>
+                <p class="place">Nordreisa energy sites</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~235 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">120-350 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~35 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">8-25</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pre-project: mapping, energy model, technical assessments</td>
+                            <td class="amt">2-8</td>
+                        </tr>
+                        <tr>
+                            <td>Pilot phase: local energy production, storage, test</td>
+                            <td class="amt">20-80</td>
+                        </tr>
+                        <tr>
+                            <td>First energy hub: local heat, microgrid, control system</td>
+                            <td class="amt">120-350</td>
+                        </tr>
+                        <tr>
+                            <td>Regional CLC model (not counted)</td>
+                            <td class="amt">500-1,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="basis"><strong>Basis:</strong> Slide 43 (cost overview). The working estimate 235 is the midpoint of the first energy hub. Three paying anchor customers are required before construction.</p>
+                <p class="more"><a href="/p04-clc-energy">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p18">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/clc-energi-gjennomgang-no.jpg" alt="CLC Energy Review / Extension" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P18<span class="badge no">Not in total: Part of P04</span></div>
+                <h3>CLC Energy Review / Extension</h3>
+                <p class="place">Nordreisa</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~8 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">2-20 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">In P04</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">1-5</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Energy map, load profiles, ranked measure list</td>
+                            <td class="amt">2-8</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="basis"><strong>Basis:</strong> Same as the P04 pre-project (slide 43). Not additive.</p>
+                <p class="more"><a href="/p18-clc-energy-review-extension">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap04">
+            <h2>AP04 · Rovdas housing programme</h2><span class="aptot">Working estimate: ~18 (P05 only) MNOK</span>
+        </div>
+        <article class="co-card" id="p05">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa-eu/webp/minihusrovdas.webp" alt="Rovdas MiniHouse (8 units)" loading="lazy" srcset="https://lead.b-cdn.net/Nordreisa-eu/webp/minihusrovdas-480w.webp 480w, https://lead.b-cdn.net/Nordreisa-eu/webp/minihusrovdas-960w.webp 960w, https://lead.b-cdn.net/Nordreisa-eu/webp/minihusrovdas.webp 1536w" sizes="(max-width: 879px) calc(100vw - 2.5rem), 320px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/MinihusRovdas.png&quot;;" width="1536" height="1024" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P05<span class="badge yes">In total</span></div>
+                <h3>Rovdas MiniHouse (8 units)</h3>
+                <p class="place">Rovdas (gnr 13/bnr 172-175)</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~18 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">14-22 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~1.15 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">2-6</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">4/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Per mini-house (60-80 m2 gross area, 2 storeys)</td>
+                            <td class="amt">1.8-2.8</td>
+                        </tr>
+                        <tr>
+                            <td>8 mini-houses on 4 plots (2 per plot)</td>
+                            <td class="amt">14-22</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="basis"><strong>Basis:</strong> Slide 45. Income of ~1.15 MNOK/year assumes 8 x 12,000 NOK/month rental; a sale gives a different profile.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The slide price equals about 26,000-40,000 NOK/m2 and appears to cover the buildings only. With market prices for small houses plus site services, the check gives roughly 18-36 (base ~26). To be confirmed: are plot, water/sewage and roads included?</div>
+                <p class="more"><a href="/p05-rovdas-minihouse-8-units">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p06">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa-eu/webp/minihusveibakken-2etg.webp" alt="Veibakken Two-Storey Housing" loading="lazy" srcset="https://lead.b-cdn.net/Nordreisa-eu/webp/minihusveibakken-2etg-480w.webp 480w, https://lead.b-cdn.net/Nordreisa-eu/webp/minihusveibakken-2etg-960w.webp 960w, https://lead.b-cdn.net/Nordreisa-eu/webp/minihusveibakken-2etg.webp 1225w" sizes="(max-width: 879px) calc(100vw - 2.5rem), 320px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/MinihusVeibakken%202etg.png&quot;;" width="1225" height="579" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P06<span class="badge no">Not in total: Being redefined</span></div>
+                <h3>Veibakken Two-Storey Housing</h3>
+                <p class="place">Veibakken (gnr 12/bnr 1)</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~29 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">18-43 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~1.62 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">3-8</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">4/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Two-storey houses in a cluster (number not fixed)</li>
+                    <li>Terrace apartments (concept image)</li>
+                    <li>Roads, water and sewage shared with the Veibakken field (P03)</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> The 29 MNOK figure comes from the Rovdas 6-12 unit scenario (9 units), not from the Veibakken concept. A dedicated estimate is needed.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The concept image shows roughly 20 two-storey houses plus terrace apartments. The house cluster alone checks at about 28-119 MNOK (base ~70). Not counted in the total.</div>
+                <p class="more"><a href="/p06-rovdas-two-storey-housing">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap05">
+            <h2>AP05 · Nordkjosfjellet programme</h2><span class="aptot">Working estimate: ~600 (P07 pilot) MNOK</span>
+        </div>
+        <article class="co-card" id="p07">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/web3-i-fjell.jpg" alt="Cave Lodging / WEB3 in the Mountain" loading="lazy" width="1536" height="1024" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P07<span class="badge yes">In total</span></div>
+                <h3>Cave Lodging / WEB3 in the Mountain</h3>
+                <p class="place">Nordkjosen / Nordkjosfjellet</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~600 (pilot) MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">150-1,500 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~120 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">20-60</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">1/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Data hall modules (pilot / first commercial module)</li>
+                    <li>Cooling, power distribution and security</li>
+                    <li>Power and fibre connection</li>
+                    <li>Rock hall and access tunnel (see P12, not included here)</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative, very high uncertainty. Geology, power/fibre and a customer contract can change the frame substantially.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> No target capacity (MW) is stated. At the Oslo build cost of 12.4 USD/W (Turner &amp; Townsend 2025, assumed 10.5 NOK/USD) 600 MNOK corresponds to roughly 4-5 MW, before rock hall, tunnel and power connection.</div>
+                <p class="more"><a href="/p07-cave-lodging-web3-in-the-mountain">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p12">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/dypvannskai-og-fjellanlegg-nordkjosnes.jpg" alt="Deep-Water Quay &amp; Mountain Facility" loading="lazy" width="1536" height="1024" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P12<span class="badge no">Not in total: Study only</span></div>
+                <h3>Deep-Water Quay &amp; Mountain Facility</h3>
+                <p class="place">Nordkjosnes</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~40 (study) MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">15-80 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">Study phase</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">0-5</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">1/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Concept selection study / feasibility</td>
+                            <td class="amt">15-80</td>
+                        </tr>
+                        <tr class="dim">
+                            <td>Tunnel, quay, energy and data centre</td>
+                            <td class="amt">Not costed</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="basis"><strong>Basis:</strong> Full development is not calculated. Tunnel, quay, energy and data centre each need a separate business case.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The concept drawings show about 7 km of tunnel (4.5 km E6-Nordkjosnes plus 2.5 km to Indre Storvik) and about 0.25 km2 of mountain halls. With PALT's own unit rate for a narrow tunnel (0.2-0.3 MNOK per metre) the tunnel bore alone is roughly 1,400-2,100 MNOK, or about 1,750-2,940 with a concept-stage reserve of 25-40 %. A vehicle tunnel is larger and more expensive. None of this is in the 4,391.6 total.</div>
+                <p class="more"><a href="/p12-deep-water-quay-mountain-facility">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p17">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/web3.jpg" alt="WEB3 Layer" loading="lazy" width="1536" height="1024" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P17<span class="badge no">Not in total: Support track for P07</span></div>
+                <h3>WEB3 Layer</h3>
+                <p class="place">Nordkjosfjellet / digital</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~12 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">3-30 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~4 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">3-15</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">1/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Partner, fibre, power and market track</li>
+                    <li>Investor memorandum and partner outreach</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Programme cost, no land investment. Supports P07/P12.</p>
+                <p class="more"><a href="/p17-web3-layer">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p25">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/innspill-25-1.jpg" alt="SkyWay (Nordkjosfjellet input 25)" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P25<span class="badge no">Not in total: Study only</span></div>
+                <h3>SkyWay (Nordkjosfjellet input 25)</h3>
+                <p class="place">Regional corridor, route not fixed</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~20 (study) MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">5-60 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">Study phase</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">1-5</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">1/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Needs and alternatives study</td>
+                            <td class="amt">5-60</td>
+                        </tr>
+                        <tr class="dim">
+                            <td>Technology and route investment</td>
+                            <td class="amt">Not costed</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="basis"><strong>Basis:</strong> Full technology investment cannot be calculated before a concept choice.</p>
+                <p class="more"><a href="/p25-nordkjosfjellet-input-25">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap06">
+            <h2>AP06 · Tourism and service nodes</h2><span class="aptot">Working estimate: ~40 MNOK</span>
+        </div>
+        <article class="co-card" id="p08">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/bobilparkering-nordkjos.jpg" alt="Motorhome Parking Nordkjos" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P08<span class="badge yes">In total</span></div>
+                <h3>Motorhome Parking Nordkjos</h3>
+                <p class="place">Nordkjos</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~18 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">8-35 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~3.2 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">3-8</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2-3/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>20-40 motorhome bays (ground works, marking)</li>
+                    <li>Service building: toilets, dump station, water, waste</li>
+                    <li>Power, signage and visitor information</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative capacity estimate. Location and number of bays must be settled against P13.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> Equals roughly 0.45-0.9 MNOK per bay at 20-40 bays. No benchmark for cost per bay was found, so the figure cannot be verified without an itemised list.</div>
+                <p class="more"><a href="/p08-motorhome-parking-nordkjos">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p09">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-gudeparkhyttersaunaspaomradet.webp" alt="Service Node Input 9 (Straumfjordnes)" loading="lazy" srcset="https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-gudeparkhyttersaunaspaomradet-480w.webp 480w, https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-gudeparkhyttersaunaspaomradet-960w.webp 960w, https://lead.b-cdn.net/Nordreisa-eu/webp/sfc-gudeparkhyttersaunaspaomradet.webp 1672w" sizes="(max-width: 879px) calc(100vw - 2.5rem), 320px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/SFC-GudeparkHytterSaunaSpaOmr%C3%A5det.png&quot;;" width="1672" height="941" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P09<span class="badge yes">In total</span></div>
+                <h3>Service Node Input 9 (Straumfjordnes)</h3>
+                <p class="place">Straumfjordnes</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~22 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">10-38 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~13.6 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">3-8</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>10 small cabins</li>
+                    <li>Coastal path and viewpoint</li>
+                    <li>Simple service point</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative unit estimate. Assumes seasonal rental, guiding and a simple service point.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> Bottom-up check gives roughly 8-37 (base ~20). The working estimate is in the right order of magnitude.</div>
+                <p class="more"><a href="/p09-service-node-input-9">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p13">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/bobilparkering-nordkjos-1.jpg" alt="Motorhome Parking Nordkjos (variant)" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P13<span class="badge no">Not in total: Alternative to P08</span></div>
+                <h3>Motorhome Parking Nordkjosnes (variant)</h3>
+                <p class="place">Reisa Fjæra (gnr 4/bnr 2)</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~12 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">5-25 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~2.4 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">3-8</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Motorhome area with service and signage</li>
+                    <li>Activity elements and local products</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Duplicate/alternative to P08. Keep one investment per location.</p>
+                <p class="more"><a href="/p13-motorhome-parking-nordkjos-variant">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap07">
+            <h2>AP07 · Kvænnes master plan</h2><span class="aptot">Working estimate: ~2,783.6 MNOK</span>
+        </div>
+        <article class="co-card" id="p10">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/hoved-innspill-7-sone-1.jpg" alt="Kvænnes Eco-Park, zones 1-3" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P10<span class="badge yes">In total</span></div>
+                <h3>Kvænnes Eco-Park, zones 1-3</h3>
+                <p class="place">Kvænnes (gnr 12/bnr 1), 165,579 m2</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~2,783.6 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">2,367-3,970 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~87.6 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">150-730</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Excavation and primary support (2.48 million m3 at 400 NOK/m3)</td>
+                            <td class="amt">993.5</td>
+                        </tr>
+                        <tr>
+                            <td>Design, geotechnics and permits (10 %)</td>
+                            <td class="amt">99.3</td>
+                        </tr>
+                        <tr>
+                            <td>Shared internal infrastructure</td>
+                            <td class="amt">250.0</td>
+                        </tr>
+                        <tr>
+                            <td>Processing equipment</td>
+                            <td class="amt">140.0</td>
+                        </tr>
+                        <tr>
+                            <td>Zone 1 fit-out and technical (8,000 m2)</td>
+                            <td class="amt">240.0</td>
+                        </tr>
+                        <tr>
+                            <td>Zone 2 fit-out and technical (12,000 m2)</td>
+                            <td class="amt">216.0</td>
+                        </tr>
+                        <tr>
+                            <td>Zone 3 fit-out and technical (8,000 m2)</td>
+                            <td class="amt">360.0</td>
+                        </tr>
+                        <tr>
+                            <td>Uncertainty reserve (20 %)</td>
+                            <td class="amt">459.8</td>
+                        </tr>
+                        <tr>
+                            <td>Working capital</td>
+                            <td class="amt">25.0</td>
+                        </tr>
+                        <tr class="sum">
+                            <td>Total programme CAPEX (base)</td>
+                            <td class="amt">2,783.6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="basis"><strong>Basis:</strong> Kvænnes total assessment model, base scenario (range: upside 2,366.7, conservative 3,969.5). Mass handling is modelled to contribute about +295.8 MNOK over 10 years. The excavation price has no contractor quote yet: every 100 NOK/m3 moves the total by about 328 MNOK.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The model calculates correctly. Base EBITDA is 11.1 MNOK/year against about 149 MNOK/year needed for an 8 % return on the private capital (assuming 25 % non-commercial capital): a gap of about 138 MNOK/year. The programme needs public or non-commercial capital and is not shown as commercially viable on its own. The 730 upper jobs figure is not explained by the operating budget, which carries at most about 96 full-time positions.</div>
+                <p class="more"><a href="/p10-kvaennes-building-phase-1">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p11">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/naturarv-nord-plakat.jpg" alt="Naturarv Nord (Kven institute)" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P11<span class="badge no">Not in total: Part of P10</span></div>
+                <h3>Naturarv Nord (Kven institute)</h3>
+                <p class="place">Kvænnes / nature zone</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~90 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">35-180 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~18 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">10-30</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Exhibition and cultural centre</li>
+                    <li>Language and course rooms</li>
+                    <li>Culture trail</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative working estimate. Included as a function within P10/P16, so it is not added again. Public or non-profit funding is likely.</p>
+                <p class="more"><a href="/p11-naturarv-nord">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p14">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/beredskap.jpg" alt="Preparedness (Beredskap)" loading="lazy" width="1600" height="432" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P14<span class="badge no">Not in total: Part of P10</span></div>
+                <h3>Preparedness (Beredskap)</h3>
+                <p class="place">Kvænnes area</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~45 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">15-100 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~8 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">5-15</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items</h4>
+                <table class="cost">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="amt">MNOK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dim">
+                            <td>Tunnel and mountain-facility system (concept, not costed)</td>
+                            <td class="amt">Not costed</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>Main cost items</h4>
+                <ul class="items">
+                    <li>Helipad and drone hub</li>
+                    <li>Support functions for preparedness</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> The 45 MNOK working estimate covers the helipad and drone hub only. The tunnel and facility figures on the page are draft planning figures.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The helipad/drone hub does not appear in the Kvænnes zone 1-3 model, so it may not be inside the 2,783.6 total. See P12 for the tunnel system, which is not costed.</div>
+                <p class="more"><a href="/p14-preparedness-beredskap">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p16">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa-eu/webp/signaturbyggsone3kvaenangen.webp" alt="Domes at Kvænnes" loading="lazy" srcset="https://lead.b-cdn.net/Nordreisa-eu/webp/signaturbyggsone3kvaenangen-480w.webp 480w, https://lead.b-cdn.net/Nordreisa-eu/webp/signaturbyggsone3kvaenangen-960w.webp 960w, https://lead.b-cdn.net/Nordreisa-eu/webp/signaturbyggsone3kvaenangen.webp 1672w" sizes="(max-width: 879px) calc(100vw - 2.5rem), 320px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa-eu/Webside%20Nordreisa-eu/nordreisa-cdn-images/SignaturByggSone3Kv%C3%A6nangen.png&quot;;" width="1672" height="806" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P16<span class="badge no">Not in total: Part of P10</span></div>
+                <h3>Domes at Kvænnes</h3>
+                <p class="place">Kvænnes</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~60 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">25-120 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">In P10</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">0-5</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Overall plan and facilitation</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Planning and facilitation phase overlapping P10. No separate build cost.</p>
+                <p class="more"><a href="/p16-domes-at-rovdas-kvaennes">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p19">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/innspill-19-1.jpg" alt="Kvænnes Area Input 19" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P19<span class="badge no">Not in total: Part of P10</span></div>
+                <h3>Kvænnes Area Input 19</h3>
+                <p class="place">Kvænnes</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~15 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">5-35 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~3 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">3-10</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Programme and smaller premises: courses, meeting places, first aid</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative estimate. A programme/operator function under P10, not a separate large building investment.</p>
+                <p class="more"><a href="/p19-kvaennes-area-input-19">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap08">
+            <h2>AP08 · Tourism and community strategy</h2><span class="aptot">Working estimate: ~25 (not counted) MNOK</span>
+        </div>
+        <article class="co-card" id="p20">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/innspill-20-a.jpg" alt="Strategy Input 20 (tourism programme)" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P20<span class="badge no">Not in total: Programme</span></div>
+                <h3>Strategy Input 20 (tourism programme)</h3>
+                <p class="place">Nordreisa (non-areal)</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~15 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">5-40 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~3 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">3-10</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Product map and joint booking logic</li>
+                    <li>Three sellable year-round packages</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Programme cost. Physical investments sit in the individual projects. The AP08 figure (~25 with P21) is not counted in the total.</p>
+                <p class="more"><a href="/p20-strategy-input-20">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p21">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/innspill-21-a.jpg" alt="Strategy Input 21 (Polar Arena framework)" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P21<span class="badge no">Not in total: Framework</span></div>
+                <h3>Strategy Input 21 (Polar Arena framework)</h3>
+                <p class="place">Nordreisa (non-areal)</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~10 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">3-25 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">None (enabler)</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">1-4</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Ten-page framework document: goals, principles, map, portfolio steering</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Strategy, design and anchoring. No direct income.</p>
+                <p class="more"><a href="/p21-strategy-input-21">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap09">
+            <h2>AP09 · Winter infrastructure</h2><span class="aptot">Working estimate: ~15 MNOK</span>
+        </div>
+        <article class="co-card" id="p22">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/innspill-22-a.jpg" alt="Winter Offer (snowmobile trails)" loading="lazy" width="1600" height="900" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P22<span class="badge yes">In total</span></div>
+                <h3>Winter Offer (snowmobile trails)</h3>
+                <p class="place">Nordreisa winter arenas</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~15 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">5-35 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~1.5 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">2-8</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">3/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>GIS-based route matrix with conflict level per stretch</li>
+                    <li>Signage and marking</li>
+                    <li>Safety measures</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative plan/infrastructure frame. Commercial income is limited; societal value is central.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> 15 MNOK is not itemised and looks high for planning, signage and safety, against about 1.5 MNOK/year income. A component list is needed, and it may be a municipal planning task rather than an investment.</div>
+                <p class="more"><a href="/p22-winter-offer">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="ap-head" id="ap10">
+            <h2>AP10 · Veibakken experience area</h2><span class="aptot">Working estimate: ~120 MNOK</span>
+        </div>
+        <article class="co-card" id="p23">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa/gudepark.jpg" alt="Gudepark" loading="lazy" width="1536" height="1024" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P23<span class="badge yes">In total</span></div>
+                <h3>Gudepark</h3>
+                <p class="place">Veibakken</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~45 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">15-100 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~7.5 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">5-15</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Landscape-based nature and culture trail with seven theme zones</li>
+                    <li>Discreet installations and interpretation</li>
+                    <li>Pilot with 1-2 zones before the full park</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative low-impact phase estimate. No quantities yet.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> Cannot be verified without quantities. The 45 should be tied to the 1-2 zone pilot, not the full park.</div>
+                <p class="more"><a href="/p23-gudepark">Open project page →</a></p>
+            </div>
+        </article>
+        <article class="co-card" id="p24">
+            <div class="pic"><img src="https://lead.b-cdn.net/Nordreisa-eu/webp/veibakken-aktiviteter-innspill-24.webp" alt="Polar Arena Veibakken" loading="lazy" srcset="https://lead.b-cdn.net/Nordreisa-eu/webp/veibakken-aktiviteter-innspill-24-480w.webp 480w, https://lead.b-cdn.net/Nordreisa-eu/webp/veibakken-aktiviteter-innspill-24-960w.webp 960w, https://lead.b-cdn.net/Nordreisa-eu/webp/veibakken-aktiviteter-innspill-24.webp 1502w" sizes="(max-width: 879px) calc(100vw - 2.5rem), 320px" onerror="this.onerror=null;this.removeAttribute(&quot;srcset&quot;);this.removeAttribute(&quot;sizes&quot;);this.src=&quot;https://lead.b-cdn.net/Nordreisa/Veibakken%20Aktiviteter%20Innspill%2024.png&quot;;" width="1502" height="1047" decoding="async"></div>
+            <div class="body">
+                <div class="idline">P24<span class="badge yes">In total</span></div>
+                <h3>Polar Arena Veibakken</h3>
+                <p class="place">Veibakken</p>
+                <div class="fig-chips">
+                    <div class="fig-chip">
+                        <div class="k">Working estimate</div>
+                        <div class="v">~75 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Range</div>
+                        <div class="v">25-180 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Income / yr</div>
+                        <div class="v">~15 MNOK</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Jobs</div>
+                        <div class="v">8-25</div>
+                    </div>
+                    <div class="fig-chip">
+                        <div class="k">Maturity</div>
+                        <div class="v">2/5</div>
+                    </div>
+                </div>
+                <h4>Main cost items (amounts not yet split)</h4>
+                <ul class="items">
+                    <li>Year-round activity and outdoor centre, phase 1</li>
+                    <li>Parking, safety and area works</li>
+                </ul>
+                <p class="basis"><strong>Basis:</strong> Illustrative phase-1 estimate. Coordinated with P23 on land, with a separate operating model.</p>
+                <!-- COST CHECK: bottom-up control with assumptions. Remove this box if you do not want it public. -->
+                <div class="check"><strong>Cost check 20 Sep 2026.</strong> The minimum product and floor area are not defined, so the figure cannot be verified until a space programme exists.</div>
+                <p class="more"><a href="/p24-veibakken-input-24">Open project page →</a></p>
+            </div>
+        </article>
+        <div class="glass readbox" style="margin-top:2.5rem">
+            <div class="section-label">Method and sources</div>
+            <ul class="srclist">
+                <li>Figures come from the PALT rough-calculation model (Grovkalkyler), the slide deck for the 25 inputs, the Kvænnes total assessment model and the tunnel cost brief of 10 Nov 2025.</li>
+                <li>All amounts are MNOK, 2026 price level, excluding VAT, financing, land purchase and extraordinary ground conditions, unless stated.</li>
+                <li>'Cost check' boxes compare the working estimate with a bottom-up estimate using market references (residential building cost 2026, Norwegian water parks, Turner &amp; Townsend data centre cost index 2025) and stated assumptions.</li>
+                <li>Cost per motorhome bay, greenhouse/aquaponics per m2, snowmobile trails and helipad cost were not verified: no source was found.</li>
+                <li>All figures are working estimates, not approved budgets, quotes or a financing commitment.</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer id="contact">
+    <div class="wrap footer-grid">
+        <div class="contact-card glass">
+            <div class="org">PALT</div>
+            <h3>Vivi-Ann Sandnes</h3>
+            <p style="margin:.2rem 0 1rem;color:var(--muted)">Partner for municipal, county and investor dialogue.</p>
+            <p style="margin:0">
+                <a href="mailto:vivi-ann@polararena.no">vivi-ann@polararena.no</a><br>
+                <a href="tel:+4790508660">+47 90 50 86 60</a>
+            </p>
+        </div>
+        <div>
+            <p style="margin:0 0 .75rem">Cost overview for PALT’s 25 land-use proposals in Nordreisa. All figures are working estimates.</p>
+            <p style="margin:0;font-size:.85rem;color:var(--dim)">Working estimates only · P01–P25 project references</p>
+        </div>
+    </div>
+</footer>
+<script>
+    (function() {
+        window.PALT_LANG = {
+            source: "en",
+            readyForGenerator: true
+        };
+        var header = document.querySelector(".site-header");
+        if (header) {
+            var onScroll = function() {
+                if (window.scrollY > 24) header.classList.add("is-scrolled");
+                else header.classList.remove("is-scrolled");
+            };
+            onScroll();
+            window.addEventListener("scroll", onScroll, {
+                passive: true
+            });
+        }
+    })();
+</script>
+<script data-palt-seo="palt-cost-overview">
+    (function() {
+        if (!document.head) return;
+        var seo = {
+            "title": "Cost overview P01-P25 · PALT Nordreisa",
+            "description": "Main cost items for each of the 25 area inputs in Nordreisa, with working estimates, ranges, sources and open questions.",
+            "url": "",
+            "image": "https://lead.b-cdn.net/Nordreisa/sandnes-fjord-camping-med-domer.jpg",
+            "imageAlt": "Sandnes Fjord Camping with dome accommodation — PALT Nordreisa"
+        };
+        var meta = [
+            ["name", "description", "Main cost items for each of the 25 area inputs in Nordreisa, with working estimates, ranges, sources and open questions."],
+            ["property", "og:title", "Cost overview P01-P25 · PALT Nordreisa"],
+            ["property", "og:description", "Main cost items for each of the 25 area inputs in Nordreisa, with working estimates, ranges, sources and open questions."],
+            ["property", "og:type", "website"],
+            ["property", "og:site_name", "PALT Nordreisa"],
+            ["property", "og:image", "https://lead.b-cdn.net/Nordreisa/sandnes-fjord-camping-med-domer.jpg"],
+            ["property", "og:image:alt", "Sandnes Fjord Camping with dome accommodation — PALT Nordreisa"],
+            ["property", "og:image:width", "1600"],
+            ["property", "og:image:height", "900"],
+            ["name", "twitter:card", "summary_large_image"],
+            ["name", "twitter:title", "Cost overview P01-P25 · PALT Nordreisa"],
+            ["name", "twitter:description", "Main cost items for each of the 25 area inputs in Nordreisa, with working estimates, ranges, sources and open questions."],
+            ["name", "twitter:image", "https://lead.b-cdn.net/Nordreisa/sandnes-fjord-camping-med-domer.jpg"],
+            ["name", "twitter:image:alt", "Sandnes Fjord Camping with dome accommodation — PALT Nordreisa"]
+        ];
+
+        if (/^(www\.)?nordreisa\.eu$/i.test(window.location.hostname) && /^https?:$/.test(window.location.protocol)) {
+            seo.url = "https://nordreisa.eu" + window.location.pathname;
+            meta.push(["property", "og:url", seo.url]);
+        }
+
+        function updateHead(selector, tagName, attributes, text) {
+            var matches = document.querySelectorAll(selector);
+            var element = null;
+            var i;
+            for (i = 0; i < matches.length; i++) {
+                if (matches[i].parentNode === document.head) {
+                    element = matches[i];
+                    break;
+                }
+            }
+            element = element || matches[0] || document.createElement(tagName);
+            for (var name in attributes) {
+                if (Object.prototype.hasOwnProperty.call(attributes, name)) {
+                    if (element.getAttribute(name) !== attributes[name]) {
+                        element.setAttribute(name, attributes[name]);
+                    }
+                }
+            }
+            if (typeof text === "string" && element.textContent !== text) element.textContent = text;
+            for (i = 0; i < matches.length; i++) {
+                if (matches[i] !== element && matches[i].parentNode) {
+                    matches[i].parentNode.removeChild(matches[i]);
+                }
+            }
+            if (element.parentNode !== document.head) document.head.appendChild(element);
+        }
+
+        var initialPath = window.location.pathname;
+        var observer = null;
+        var observerOptions = {
+            childList: true,
+            subtree: true,
+            characterData: true,
+            attributes: true,
+            attributeFilter: ["content", "href", "name", "property", "rel"]
+        };
+
+        function applySeo() {
+            if (window.location.pathname !== initialPath) {
+                if (observer) observer.disconnect();
+                return;
+            }
+            if (observer) observer.disconnect();
+            updateHead("title", "title", {}, seo.title);
+            for (var i = 0; i < meta.length; i++) {
+                var attributes = {
+                    content: meta[i][2]
+                };
+                attributes[meta[i][0]] = meta[i][1];
+                updateHead('meta[' + meta[i][0] + '="' + meta[i][1] + '"]', "meta", attributes);
+            }
+            if (seo.url) updateHead('link[rel="canonical"]', "link", {
+                rel: "canonical",
+                href: seo.url
+            });
+            if (observer) observer.observe(document.head, observerOptions);
+        }
+
+        applySeo();
+        if (typeof window.MutationObserver === "function") {
+            observer = new window.MutationObserver(applySeo);
+            observer.observe(document.head, observerOptions);
+        }
+        document.addEventListener("DOMContentLoaded", applySeo, {
+            once: true
+        });
+        window.addEventListener("load", applySeo, {
+            once: true
+        });
+    })();
+</script>
