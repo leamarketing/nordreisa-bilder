@@ -163,6 +163,9 @@ def main():
         shown = re.sub(r'<meta\b[^>]*name=[\"\']robots[\"\'][^>]*>', '', document, flags=re.I)
         shown = shown.replace('</head>', '<meta name="robots" content="noindex,nofollow">\n</head>', 1)
 
+        # Prevent source SEO scripts from re-enabling indexing in the preview.
+        shown = shown.replace('["name", "robots", "index, follow"]', '["name", "robots", "noindex,nofollow"]')
+
         def preview_link(match):
             value = html.unescape(match[2])
             address = urlsplit(value)
